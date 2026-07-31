@@ -1,0 +1,143 @@
+{
+  "entities": {
+    "products": {
+      "title": "Products",
+      "description": "Industrial products catalog",
+      "fields": {
+        "title": { "type": "string" },
+        "slug": { "type": "string" },
+        "category": { "type": "string" },
+        "shortDescription": { "type": "string" },
+        "description": { "type": "string" },
+        "features": { "type": "array", "items": { "type": "string" } },
+        "benefits": { "type": "array", "items": { "type": "string" } },
+        "applications": { "type": "array", "items": { "type": "string" } },
+        "specifications": { "type": "array", "items": { "type": "object" } },
+        "keywords": { "type": "array", "items": { "type": "string" } },
+        "metaTitle": { "type": "string" },
+        "metaDescription": { "type": "string" },
+        "featured": { "type": "boolean" },
+        "status": { "type": "string" },
+        "price": { "type": "number" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "categories": {
+      "title": "Categories",
+      "description": "Product categories",
+      "fields": {
+        "title": { "type": "string" },
+        "slug": { "type": "string" },
+        "description": { "type": "string" },
+        "icon": { "type": "string" },
+        "image": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "homepage": {
+      "title": "Homepage",
+      "description": "Homepage dynamic content",
+      "fields": {
+        "heroTitle": { "type": "string" },
+        "heroSubtitle": { "type": "string" },
+        "heroImage": { "type": "string" },
+        "aboutPreview": { "type": "string" },
+        "whyChooseUs": { "type": "array", "items": { "type": "object" } },
+        "counterSection": { "type": "array", "items": { "type": "object" } },
+        "industries": { "type": "array", "items": { "type": "string" } },
+        "ctaSection": { "type": "object" }
+      }
+    },
+    "about": {
+      "title": "About",
+      "description": "About company information",
+      "fields": {
+        "companyDescription": { "type": "string" },
+        "mission": { "type": "string" },
+        "vision": { "type": "string" },
+        "values": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "description": "Customer feedback",
+      "fields": {
+        "customerName": { "type": "string" },
+        "company": { "type": "string" },
+        "photo": { "type": "string" },
+        "rating": { "type": "number" },
+        "review": { "type": "string" }
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Frequently asked questions",
+      "fields": {
+        "question": { "type": "string" },
+        "answer": { "type": "string" }
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Company contact details",
+      "fields": {
+        "phone": { "type": "string" },
+        "email": { "type": "string" },
+        "address": { "type": "string" },
+        "googleMapLink": { "type": "string" },
+        "businessHours": { "type": "string" },
+        "whatsAppNumber": { "type": "string" }
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "description": "Global website settings",
+      "fields": {
+        "websiteName": { "type": "string" },
+        "logo": { "type": "string" },
+        "favicon": { "type": "string" },
+        "primaryColor": { "type": "string" },
+        "secondaryColor": { "type": "string" },
+        "googleAnalyticsId": { "type": "string" },
+        "googleTagManager": { "type": "string" },
+        "searchConsoleVerification": { "type": "string" },
+        "socialLinks": { "type": "object" }
+      }
+    },
+    "gallery": {
+      "title": "Gallery",
+      "description": "Photo gallery",
+      "fields": {
+        "image": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" }
+      }
+    },
+    "enquiries": {
+      "title": "Enquiries",
+      "description": "Customer inquiry form submissions",
+      "fields": {
+        "customerName": { "type": "string" },
+        "company": { "type": "string" },
+        "phone": { "type": "string" },
+        "email": { "type": "string" },
+        "product": { "type": "string" },
+        "message": { "type": "string" },
+        "createdDate": { "type": "string" },
+        "status": { "type": "string" }
+      }
+    },
+    "users": {
+      "title": "Users",
+      "description": "Admin user profiles",
+      "fields": {
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "name": { "type": "string" }
+      }
+    }
+  }
+}

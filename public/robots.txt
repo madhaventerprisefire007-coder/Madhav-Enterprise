@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /products/
+Allow: /categories/
+Allow: /about
+Allow: /contact
+Allow: /gallery
+Disallow: /admin
+Disallow: /api/
+Disallow: /*?*
+
+Sitemap: https://madhaventerprise.in/sitemap.xml

@@ -1,0 +1,25 @@
+{
+  "short_name": "Madhav Enterprise",
+  "name": "Madhav Enterprise - Industrial Water Level Controllers & Valves Vadodara",
+  "description": "Vadodara's Premier Manufacturer & Supplier of Automatic Water Level Controllers, Industrial Valves, Motor Pumps & CPVC Fittings.",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "theme_color": "#E86A2D",
+  "display": "standalone",
+  "orientation": "portrait",
+  "categories": ["industrial", "business", "utilities"]
+}

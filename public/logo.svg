@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" width="800" height="260" fill="none">
+  <!-- Background for standalone viewing if needed, transparent by default -->
+  
+  <!-- 1. ME MONOGRAM -->
+  <g id="monogram" transform="translate(20, 30)">
+    <!-- Black 'M' -->
+    <path d="M 10 180 L 10 20 L 38 20 L 72 105 L 106 20 L 134 20 L 134 180 L 106 180 L 106 72 L 79 138 L 65 138 L 38 72 L 38 180 Z" fill="#111111" />
+    
+    <!-- Orange 'E' nested on the right -->
+    <path d="M 106 95 L 180 95 L 180 120 L 132 120 L 132 132 L 175 132 L 175 152 L 132 152 L 132 160 L 180 160 L 180 180 L 106 180 Z" fill="#E86A2D" />
+  </g>
+
+  <!-- 2. BRAND NAME TEXT -->
+  <g id="brand-text" transform="translate(245, 60)">
+    <!-- MADHAV -->
+    <text x="0" y="80" font-family="'Syne', 'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="82" fill="#111111" letter-spacing="3">MADHAV</text>
+    <!-- ENTERPRISE -->
+    <text x="5" y="135" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="700" font-size="36" fill="#E86A2D" letter-spacing="14">ENTERPRISE</text>
+  </g>
+
+  <!-- 3. PEACOCK FEATHER (MOR PANKH) -->
+  <g id="peacock-feather" transform="translate(620, 10)">
+    <!-- Main Quill / Stem -->
+    <path d="M 20 230 C 50 180 80 120 95 20" stroke="#0D5C46" stroke-width="3.5" stroke-linecap="round" />
+    
+    <!-- Feather Barbs (Vanes) -->
+    <!-- Lower Barbs -->
+    <path d="M 25 220 C 5 210 -10 190 5 180 M 28 210 C 60 205 75 195 60 185" stroke="#0D5C46" stroke-width="1.8" opacity="0.85" />
+    <path d="M 32 200 C 10 185 -5 165 12 155 M 36 190 C 70 180 82 170 68 158" stroke="#127A5D" stroke-width="1.8" opacity="0.85" />
+    <path d="M 42 175 C 15 160 0 140 20 130 M 48 165 C 80 155 92 142 78 132" stroke="#127A5D" stroke-width="1.8" opacity="0.9" />
+    
+    <!-- Mid-Feather Dense Barbs -->
+    <path d="M 52 150 C 20 135 5 110 30 100 M 58 140 C 95 130 108 115 90 102" stroke="#108E6C" stroke-width="2" />
+    <path d="M 62 125 C 25 110 10 85 38 75 M 70 115 C 105 105 118 88 98 78" stroke="#108E6C" stroke-width="2" />
+    <path d="M 72 100 C 35 85 20 60 48 50 M 80 90 C 115 78 125 58 105 50" stroke="#14A37B" stroke-width="2" />
+
+    <!-- Top Feather Fan Surrounding Eye -->
+    <path d="M 82 75 C 45 55 30 30 60 20 M 88 65 C 122 50 130 30 110 22" stroke="#14A37B" stroke-width="2" />
+    <path d="M 88 50 C 60 30 50 10 75 5 M 92 45 C 120 30 125 10 105 3" stroke="#14A37B" stroke-width="1.8" />
+
+    <!-- Feather Eye (Center Oval Assembly) -->
+    <g transform="translate(72, 30) rotate(-12)">
+      <!-- Outer Green Halo -->
+      <ellipse cx="20" cy="25" rx="32" ry="42" fill="#0D5C46" opacity="0.3" />
+      <!-- Gold Outer Ring -->
+      <ellipse cx="20" cy="25" rx="26" ry="34" fill="#D49E35" />
+      <!-- Bronze/Orange Ring -->
+      <ellipse cx="20" cy="25" rx="20" ry="26" fill="#E86A2D" />
+      <!-- Deep Blue Outer Eye -->
+      <ellipse cx="20" cy="27" rx="14" ry="18" fill="#1B365D" />
+      <!-- Iridescent Cyan Center -->
+      <ellipse cx="20" cy="28" rx="8" ry="10" fill="#00A896" />
+      <!-- Deep Purple Core -->
+      <ellipse cx="20" cy="29" rx="4" ry="5" fill="#110B29" />
+    </g>
+  </g>
+</svg>
