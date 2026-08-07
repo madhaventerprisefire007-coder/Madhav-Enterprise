@@ -140,7 +140,7 @@ export const CallNowModal: React.FC<CallNowModalProps> = ({ isOpen, onClose }) =
             <div className="text-[11px] text-neutral-500 pt-2 flex items-center justify-between border-t border-neutral-100">
               <span className="flex items-center gap-1">
                 <MapPin className="w-3 h-3 text-[#E86A2D]" />
-                <span>Makarpura GIDC, Vadodara</span>
+                <span>Vasna Road, Diwalipura, Vadodara</span>
               </span>
               <span className="flex items-center gap-1">
                 <Clock className="w-3 h-3 text-[#E86A2D]" />

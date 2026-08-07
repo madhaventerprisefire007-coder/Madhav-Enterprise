@@ -51,7 +51,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
             About Madhav Enterprise
           </h1>
           <p className="text-sm md:text-base text-neutral-300 leading-relaxed">
-            Leading manufacturer and supplier of Automatic Water Level Controllers, Heavy Industrial Valves, Motor Pumps, Submersible Systems, and CPVC Piping based in Makarpura GIDC, Vadodara.
+            Leading manufacturer and supplier of Automatic Water Level Controllers, Heavy Industrial Valves, Motor Pumps, Submersible Systems, and CPVC Piping based in Vadodara, Gujarat.
           </p>
         </div>
       </section>
@@ -103,7 +103,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <p className="text-xs font-mono text-[#E86A2D]">GIDC Makarpura Facility</p>
+                  <p className="text-xs font-mono text-[#E86A2D]">Vadodara Manufacturing Facility</p>
                   <p className="text-base font-bold text-white">State-of-the-Art Electronics & Pressure Testing Lab</p>
                 </div>
               </div>
@@ -194,13 +194,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
             <div className="lg:col-span-8 space-y-4">
               <div className="inline-flex items-center gap-2 bg-[#E86A2D]/20 text-[#E86A2D] px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
                 <MapPin className="w-3.5 h-3.5" />
-                <span>Makarpura GIDC Industrial Advantage</span>
+                <span>Vadodara Industrial Advantage</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-display font-bold text-white">
                 Located at the Heart of Gujarat’s Industrial Corridor
               </h2>
               <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
-                Our manufacturing workshop at Makarpura GIDC allows seamless access to national highway networks, enabling express 24-hour delivery of pumps, valves, and water controllers to Ankleshwar, Nandesari, Halol, Ahmedabad, Surat, and across India.
+                Our manufacturing workshop at Vadodara allows seamless access to national highway networks, enabling express 24-hour delivery of pumps, valves, and water controllers to Ankleshwar, Nandesari, Halol, Ahmedabad, Surat, and across India.
               </p>
             </div>
 

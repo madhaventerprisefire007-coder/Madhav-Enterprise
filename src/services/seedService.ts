@@ -56,11 +56,11 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
       heroTitle: 'Industrial Water Level Controllers & Heavy Duty Valves',
       heroSubtitle: 'Vadodara’s Leading Manufacturer & Supplier of Precision Flow Controls, Centrifugal Motor Pumps, and Hydro-Pneumatic Pressure Boosters.',
       heroImage: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
-      aboutPreview: 'Madhav Enterprise has been delivering premium industrial automation, water level logic controllers, and high-pressure fluid valves in Makarpura GIDC, Vadodara since 2008.',
+      aboutPreview: 'Madhav Enterprise has been delivering premium industrial automation, water level logic controllers, and high-pressure fluid valves in Vadodara, Gujarat since 2008.',
       whyChooseUs: [
         { id: '1', title: '100% Quality Tested', description: 'Strict quality control & pressure test verification before delivery.', icon: 'ShieldCheck' },
         { id: '2', title: '16+ Years Industry Expertise', description: 'Trusted by over 1,500+ chemical, pharmaceutical, and textile plants in Gujarat.', icon: 'Award' },
-        { id: '3', title: '24/7 GIDC Express Delivery', description: 'Same day dispatch for Makarpura, Nandesari, Ankleshwar & Panoli industrial estates.', icon: 'Truck' },
+        { id: '3', title: '24/7 Express Delivery', description: 'Same day dispatch for Vadodara, Nandesari, Ankleshwar & Panoli industrial estates.', icon: 'Truck' },
         { id: '4', title: 'Factory Direct Warranties', description: '12 to 24 months full replacement warranty on controllers & pumps.', icon: 'CheckCircle' },
       ],
       counterSection: [
@@ -81,7 +81,7 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
 
     // 4. Seed About Doc
     const aboutData: FirestoreAbout = {
-      companyDescription: 'Madhav Enterprise is a premier manufacturer and technical distributor of industrial water level controllers, stainless steel valves, monoblock pumps, and CPVC piping systems based in Makarpura GIDC, Vadodara.',
+      companyDescription: 'Madhav Enterprise is a premier manufacturer and technical distributor of industrial water level controllers, stainless steel valves, monoblock pumps, and CPVC piping systems based in Vadodara, Gujarat.',
       mission: 'To empower industries and commercial buildings with zero-water-loss automation, superior fluid handling equipment, and uncompromised industrial safety.',
       vision: 'To be India’s most reliable single-source brand for water level logic automation and heavy-duty industrial valve engineering.',
       values: [
@@ -147,7 +147,7 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
       { id: 'g1', title: 'Automatic Water Level Controller Testing Desk', category: 'Controllers', image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80' },
       { id: 'g2', title: 'SS 316 Industrial Flanged Ball Valves', category: 'Valves', image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80' },
       { id: 'g3', title: 'High Head Centrifugal Motor Pump Assembly', category: 'Pumps', image: 'https://images.unsplash.com/photo-1581092281633-53e4ded1b58e?auto=format&fit=crop&w=800&q=80' },
-      { id: 'g4', title: 'Makarpura GIDC Factory Dispatch Center', category: 'Facility', image: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80' },
+      { id: 'g4', title: 'Vadodara Factory Dispatch Center', category: 'Facility', image: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80' },
     ];
     for (const g of galleryItems) {
       await setDoc(doc(db, 'gallery', g.id), g);

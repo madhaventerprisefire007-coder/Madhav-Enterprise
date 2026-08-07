@@ -174,7 +174,7 @@ export const ProductDetailsView: React.FC<ProductDetailsViewProps> = ({
               <div className="p-4 bg-amber-50 rounded-2xl border border-amber-200 text-xs text-amber-900 font-medium flex items-start gap-3">
                 <ShieldCheck className="w-5 h-5 text-[#E86A2D] shrink-0 mt-0.5" />
                 <span>
-                  <strong>Madhav Enterprise Quality Guarantee:</strong> Manufactured & tested under strict quality norms in Makarpura GIDC, Vadodara. Guaranteed performance with complete test certificates.
+                  <strong>Madhav Enterprise Quality Guarantee:</strong> Manufactured & tested under strict quality norms in Vadodara, Gujarat. Guaranteed performance with complete test certificates.
                 </span>
               </div>
             </div>
@@ -382,7 +382,7 @@ export const ProductDetailsView: React.FC<ProductDetailsViewProps> = ({
 
                 <div className="text-[11px] text-neutral-400 pt-2 border-t border-neutral-800 flex items-center gap-2">
                   <MapPin className="w-3.5 h-3.5 text-[#E86A2D] shrink-0" />
-                  <span className="truncate">Plot No 408/B, GIDC Makarpura, Vadodara</span>
+                  <span className="truncate">C-10 Gaurav Park, Diwalipura, Vasna Road, Vadodara</span>
                 </div>
               </div>
 

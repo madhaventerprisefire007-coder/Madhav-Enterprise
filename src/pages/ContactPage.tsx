@@ -257,7 +257,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onPageChange, onOpenQu
                     <option value="Pumps">Motor & Submersible Pumps</option>
                     <option value="Pressure Booster System">Hydro-Pneumatic Pressure Booster</option>
                     <option value="Pipes & Fittings">CPVC / UPVC Pipes & Fittings</option>
-                    <option value="Factory Visit">GIDC Makarpura Factory Visit</option>
+                    <option value="Factory Visit">Vadodara Factory Visit</option>
                   </select>
                 </div>
 

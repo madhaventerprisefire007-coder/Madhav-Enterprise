@@ -514,7 +514,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     name: 'Rajesh Patel',
     role: 'Plant Maintenance Head',
     company: 'Gujarat Chemicals & Resins',
-    location: 'Makarpura GIDC, Vadodara',
+    location: 'Vadodara Industrial Zone, Gujarat',
     comment: 'We installed 12 units of Madhav Enterprise Automatic Water Level Controllers across our chemical batching tanks. The dry-run protection has saved our pumps from burning out multiple times. Fantastic product quality and prompt local service!',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80'
@@ -587,8 +587,8 @@ export const COMPANY_ADVANTAGES = [
     iconName: 'ShieldCheck'
   },
   {
-    title: 'GIDC Vadodara Hub',
-    description: 'Located in Makarpura GIDC ensuring rapid spare parts dispatch and immediate technical on-site visit.',
+    title: 'Vadodara Supply Hub',
+    description: 'Located in Vadodara ensuring rapid spare parts dispatch and immediate technical on-site visit.',
     iconName: 'MapPin'
   },
   {

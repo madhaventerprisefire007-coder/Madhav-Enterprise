@@ -49,7 +49,7 @@ export const PRIMARY_KEYWORDS = [
   'Water Control System',
   'Industrial Valve Manufacturer Gujarat',
   'Water Level Controller Gujarat',
-  'Automatic Overhead Tank Controller Makarpura GIDC',
+  'Automatic Overhead Tank Controller Vadodara',
   'SS 316 Ball Valve Vadodara',
   'Centrifugal Monoblock Pump Supplier Gujarat',
 ];
@@ -71,7 +71,7 @@ export function generateSlug(text: string): string {
  */
 export function buildSEOMetadata(pageName: string, config: SEOPageConfig = {}) {
   const defaultTitle = `${BUSINESS_INFO.name} | Water Level Controller Manufacturer & Industrial Valve Supplier Vadodara`;
-  const defaultDesc = `Madhav Enterprise is Vadodara's leading manufacturer & supplier of Automatic Water Level Controllers, Industrial SS Valves, Centrifugal Motor Pumps, Hydro Booster Pressure Pumps & CPVC Fittings. Located in Diwalipura / Vasna Road & serving GIDC Makarpura.`;
+  const defaultDesc = `Madhav Enterprise is Vadodara's leading manufacturer & supplier of Automatic Water Level Controllers, Industrial SS Valves, Centrifugal Motor Pumps, Hydro Booster Pressure Pumps & CPVC Fittings. Located in Diwalipura / Vasna Road, Vadodara, Gujarat.`;
 
   const title = config.title
     ? `${config.title} | ${BUSINESS_INFO.name} Vadodara`

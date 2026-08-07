@@ -45,7 +45,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       <SEOHead
         pageName="home"
         title="Water Level Controller Manufacturer in Vadodara | Industrial Valve Supplier"
-        description="Madhav Enterprise is Vadodara's leading manufacturer & supplier of Automatic Water Level Controllers, Industrial Valves, Centrifugal Motor Pumps, Hydro Booster Pressure Pumps & CPVC Pipes in Vasna Road, Diwalipura & Makarpura GIDC."
+        description="Madhav Enterprise is Vadodara's leading manufacturer & supplier of Automatic Water Level Controllers, Industrial Valves, Centrifugal Motor Pumps, Hydro Booster Pressure Pumps & CPVC Pipes in Vasna Road & Diwalipura, Vadodara."
         keywords={[
           'Water Level Controller Manufacturer in Vadodara',
           'Industrial Valve Supplier in Vadodara',
@@ -162,7 +162,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-[#E86A2D]" />
-                  <span>GIDC Makarpura Hub</span>
+                  <span>Vadodara Supply Hub</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Award className="w-4 h-4 text-[#E86A2D]" />
@@ -221,8 +221,8 @@ export const HomePage: React.FC<HomePageProps> = ({
                     <Factory className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-xs font-extrabold text-white">Makarpura GIDC, Vadodara</p>
-                    <p className="text-[11px] text-neutral-400">Direct Manufacturing Hub</p>
+                    <p className="text-xs font-extrabold text-white">Vasna Road, Vadodara</p>
+                    <p className="text-[11px] text-neutral-400">Direct Manufacturing Unit</p>
                   </div>
                 </div>
               </div>
@@ -364,7 +364,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               Why Engineers Choose Madhav Enterprise
             </h2>
             <p className="text-xs sm:text-sm text-neutral-600 mt-2">
-              We combine robust mechanical design, electronics testing, and direct factory distribution from GIDC Makarpura.
+              We combine robust mechanical design, electronics testing, and direct factory distribution from Vadodara.
             </p>
           </div>
 
