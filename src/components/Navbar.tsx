@@ -110,7 +110,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </span>
             <span className="flex items-center gap-1.5 text-emerald-400">
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>ISO 9001:2015 Certified Mfr.</span>
+              <span>Quality Assured Manufacturer</span>
             </span>
           </div>
 

@@ -57,7 +57,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
           <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
             <span className="bg-[#111111]/80 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1.5 border border-white/20">
               <ShieldCheck className="w-3.5 h-3.5 text-[#E86A2D]" />
-              ISO 9001 Tested
+              Quality Tested
             </span>
           </div>
 

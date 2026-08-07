@@ -58,7 +58,7 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
       heroImage: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
       aboutPreview: 'Madhav Enterprise has been delivering premium industrial automation, water level logic controllers, and high-pressure fluid valves in Makarpura GIDC, Vadodara since 2008.',
       whyChooseUs: [
-        { id: '1', title: 'ISO 9001:2015 Quality Tested', description: 'Strict quality control & pressure test verification before delivery.', icon: 'ShieldCheck' },
+        { id: '1', title: '100% Quality Tested', description: 'Strict quality control & pressure test verification before delivery.', icon: 'ShieldCheck' },
         { id: '2', title: '16+ Years Industry Expertise', description: 'Trusted by over 1,500+ chemical, pharmaceutical, and textile plants in Gujarat.', icon: 'Award' },
         { id: '3', title: '24/7 GIDC Express Delivery', description: 'Same day dispatch for Makarpura, Nandesari, Ankleshwar & Panoli industrial estates.', icon: 'Truck' },
         { id: '4', title: 'Factory Direct Warranties', description: '12 to 24 months full replacement warranty on controllers & pumps.', icon: 'CheckCircle' },
@@ -67,7 +67,7 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
         { id: '1', value: '16+', label: 'Years Experience', sublabel: 'Since 2008 in Vadodara' },
         { id: '2', value: '1,500+', label: 'GIDC Clients', sublabel: 'Across Gujarat & India' },
         { id: '3', value: '50,000+', label: 'Units Delivered', sublabel: 'Zero Defect Benchmark' },
-        { id: '4', value: '100%', label: 'Quality Assured', sublabel: 'ISO Standard Verification' },
+        { id: '4', value: '100%', label: 'Quality Assured', sublabel: 'Strict Quality Control Verification' },
       ],
       industries: ['Chemical & Pharmaceutical', 'Textile & Dyeing Mills', 'ETP & STP Water Treatment', 'Commercial Real Estate', 'Agriculture & Farms'],
       ctaSection: {

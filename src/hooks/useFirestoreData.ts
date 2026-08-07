@@ -45,8 +45,8 @@ export function useFirestoreData() {
     try {
       await getDocFromServer(doc(db, 'test', 'connection'));
     } catch (error) {
-      if (error instanceof Error && error.message.includes('the client is offline')) {
-        console.error('Please check your Firebase configuration.');
+      if (error instanceof Error && (error.message.includes('the client is offline') || error.message.includes('Could not reach Cloud Firestore'))) {
+        console.warn('Firebase connection notice: Operating in offline/cached mode.');
       }
     }
   };
@@ -55,22 +55,45 @@ export function useFirestoreData() {
     setLoading(true);
     setError(null);
     try {
-      await testConnection();
+      // Run connection test non-blockingly
+      testConnection().catch(() => {});
       
-      // Auto-seed if database is currently unpopulated
-      await seedFirestoreIfEmpty();
+      // Auto-seed if database is currently unpopulated (fails gracefully if offline)
+      seedFirestoreIfEmpty().catch((err) => {
+        console.warn('Firestore seeding skipped or offline:', err);
+      });
 
       // Subscribe to real-time Firestore listeners for all collections
-      const unsubProducts = subscribeProducts((list) => setProducts(list));
-      const unsubCategories = subscribeCategories((list) => setCategories(list));
-      const unsubHomepage = subscribeHomepage((data) => setHomepage(data));
-      const unsubAbout = subscribeAbout((data) => setAbout(data));
-      const unsubTestimonials = subscribeTestimonials((list) => setTestimonials(list));
-      const unsubFaqs = subscribeFAQs((list) => setFaqs(list));
-      const unsubContact = subscribeContact((data) => setContact(data));
-      const unsubSettings = subscribeSettings((data) => setSettings(data));
-      const unsubGallery = subscribeGallery((list) => setGallery(list));
-      const unsubEnquiries = subscribeEnquiries((list) => setEnquiries(list));
+      const unsubProducts = subscribeProducts((list) => {
+        if (list && list.length > 0) setProducts(list);
+      });
+      const unsubCategories = subscribeCategories((list) => {
+        if (list && list.length > 0) setCategories(list);
+      });
+      const unsubHomepage = subscribeHomepage((data) => {
+        if (data) setHomepage(data);
+      });
+      const unsubAbout = subscribeAbout((data) => {
+        if (data) setAbout(data);
+      });
+      const unsubTestimonials = subscribeTestimonials((list) => {
+        if (list && list.length > 0) setTestimonials(list);
+      });
+      const unsubFaqs = subscribeFAQs((list) => {
+        if (list && list.length > 0) setFaqs(list);
+      });
+      const unsubContact = subscribeContact((data) => {
+        if (data) setContact(data);
+      });
+      const unsubSettings = subscribeSettings((data) => {
+        if (data) setSettings(data);
+      });
+      const unsubGallery = subscribeGallery((list) => {
+        if (list && list.length > 0) setGallery(list);
+      });
+      const unsubEnquiries = subscribeEnquiries((list) => {
+        if (list) setEnquiries(list);
+      });
 
       setLoading(false);
 
@@ -87,8 +110,8 @@ export function useFirestoreData() {
         unsubEnquiries();
       };
     } catch (err: any) {
-      console.error('Error connecting to Firestore database:', err);
-      setError(err?.message || 'Failed to sync with Firestore database');
+      console.warn('Firestore live sync notice:', err);
+      setError(null); // Keep error null so UI seamlessly falls back to static company data without intrusive warning banners
       setLoading(false);
     }
   }, []);

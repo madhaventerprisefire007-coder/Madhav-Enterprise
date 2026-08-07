@@ -28,7 +28,7 @@ export const ProductSpecificationTable: React.FC<ProductSpecificationTableProps>
               Technical Specifications Sheet
             </h3>
             <p className="text-xs text-neutral-400">
-              Tested according to ISO & Indian Standards (IS)
+              Tested according to Indian Standards (IS) & Quality Norms
             </p>
           </div>
         </div>

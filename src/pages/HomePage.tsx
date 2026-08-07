@@ -166,7 +166,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </div>
                 <div className="flex items-center gap-2">
                   <Award className="w-4 h-4 text-[#E86A2D]" />
-                  <span>ISO 9001:2015 Certified</span>
+                  <span>MSME Registered Supplier</span>
                 </div>
               </motion.div>
           </div>

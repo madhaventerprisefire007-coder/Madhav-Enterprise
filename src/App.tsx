@@ -9,10 +9,9 @@ import { ContactPage } from './pages/ContactPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { QuoteModal } from './components/QuoteModal';
 import { CallNowModal } from './components/CallNowModal';
-import { ProductDetailModal } from './components/ProductDetailModal';
 import { AdminLoginModal } from './components/auth/AdminLoginModal';
 import { useFirestoreData } from './hooks/useFirestoreData';
-import { COMPANY_INFO, PRODUCTS_DATA } from './data/companyData';
+import { COMPANY_INFO, PRODUCTS_DATA, PRODUCT_DIVISIONS } from './data/companyData';
 import { generateSlug } from './lib/seo';
 import { MessageSquare, Phone, ArrowUp, RefreshCw, AlertTriangle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -39,26 +38,27 @@ export default function App() {
 
   const [selectedDetailProduct, setSelectedDetailProduct] = useState<Product | null>(null);
 
-  // Sync state from URL hash for deep linking, browser back/forward buttons, and standalone product URLs
+  // Sync state from URL hash for deep linking, browser back/forward buttons, and SEO friendly product URLs
   useEffect(() => {
     const syncStateFromHash = () => {
       const hash = window.location.hash || '#/';
 
-      // 1. Individual Product URL: e.g. #/product?id=wlc-9000d or #/product/wlc-9000d
-      if (hash.includes('/product?') || hash.includes('/product/')) {
+      // 1. Individual Product URL: e.g. #/product/automatic-water-level-controller or #/product?id=wlc-auto-pro
+      if (hash.includes('/product/') || hash.includes('/product?')) {
         let targetIdOrSlug = '';
         if (hash.includes('id=')) {
           targetIdOrSlug = new URLSearchParams(hash.split('?')[1] || '').get('id') || '';
         } else if (hash.includes('/product/')) {
-          targetIdOrSlug = hash.split('/product/')[1]?.split('?')[0] || '';
+          targetIdOrSlug = decodeURIComponent(hash.split('/product/')[1]?.split('?')[0] || '');
         }
 
         if (targetIdOrSlug) {
           const found = PRODUCTS_DATA.find(
             (p) =>
               p.id.toLowerCase() === targetIdOrSlug.toLowerCase() ||
-              generateSlug(p.name) === targetIdOrSlug ||
-              p.modelNumber.toLowerCase() === targetIdOrSlug.toLowerCase()
+              generateSlug(p.name) === targetIdOrSlug.toLowerCase() ||
+              p.modelNumber.toLowerCase() === targetIdOrSlug.toLowerCase() ||
+              generateSlug(p.category) === targetIdOrSlug.toLowerCase()
           );
           if (found) {
             setSelectedDetailProduct(found);
@@ -68,16 +68,41 @@ export default function App() {
         }
       }
 
-      // 2. Products Catalog URL: e.g. #/products or #/products?category=Industrial%20Valve
+      // 2. Products Category Catalog URL: e.g. #/products/industrial-valve or #/products?category=Industrial%20Valve
       if (hash.includes('/products')) {
         setCurrentPage('products');
         setSelectedDetailProduct(null);
+        let catParam = '';
         if (hash.includes('category=')) {
-          const cat = new URLSearchParams(hash.split('?')[1] || '').get('category');
-          if (cat) {
-            setSelectedCategory(decodeURIComponent(cat) as ProductCategory);
+          catParam = new URLSearchParams(hash.split('?')[1] || '').get('category') || '';
+        } else if (hash.includes('/products/')) {
+          catParam = decodeURIComponent(hash.split('/products/')[1]?.split('?')[0] || '');
+        }
+
+        if (catParam) {
+          const decodedCat = decodeURIComponent(catParam);
+          const foundDivision = PRODUCT_DIVISIONS.find(
+            (d) =>
+              d.category.toLowerCase() === decodedCat.toLowerCase() ||
+              generateSlug(d.category) === decodedCat.toLowerCase() ||
+              generateSlug(d.shortTitle) === decodedCat.toLowerCase()
+          );
+          if (foundDivision) {
+            setSelectedCategory(foundDivision.category);
           } else {
-            setSelectedCategory('All');
+            const categories: ProductCategory[] = [
+              'All',
+              'Water Level Controller',
+              'Industrial Valve',
+              'Motor Pump',
+              'Pressure Pump',
+              'Submersible Pump',
+              'Pipes & Fittings'
+            ];
+            const directCat = categories.find(
+              (c) => c.toLowerCase() === decodedCat.toLowerCase() || generateSlug(c) === decodedCat.toLowerCase()
+            );
+            setSelectedCategory(directCat || 'All');
           }
         } else {
           setSelectedCategory('All');
@@ -127,9 +152,8 @@ export default function App() {
     setCurrentPage(page);
     setSelectedDetailProduct(null);
     if (page === 'products') {
-      const hashStr = selectedCategory && selectedCategory !== 'All' 
-        ? `#/products?category=${encodeURIComponent(selectedCategory)}` 
-        : '#/products';
+      const catSlug = selectedCategory && selectedCategory !== 'All' ? generateSlug(selectedCategory) : '';
+      const hashStr = catSlug ? `#/products/${catSlug}` : '#/products';
       if (window.location.hash !== hashStr) {
         window.location.hash = hashStr;
       }
@@ -142,23 +166,25 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Select Product handler with URL hash sync
+  // Select Product handler with SEO-friendly URL hash sync
   const handleSelectProduct = (product: Product) => {
     setSelectedDetailProduct(product);
     setCurrentPage('products');
-    const hashStr = `#/product?id=${product.id}`;
+    const seoSlug = generateSlug(product.name);
+    const hashStr = `#/product/${seoSlug}`;
     if (window.location.hash !== hashStr) {
       window.location.hash = hashStr;
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Select Category handler with URL hash sync
+  // Select Category handler with SEO-friendly URL hash sync
   const handleSelectCategory = (cat: ProductCategory) => {
     setSelectedCategory(cat);
     setSelectedDetailProduct(null);
     setCurrentPage('products');
-    const hashStr = cat === 'All' ? '#/products' : `#/products?category=${encodeURIComponent(cat)}`;
+    const catSlug = generateSlug(cat);
+    const hashStr = cat === 'All' ? '#/products' : `#/products/${catSlug}`;
     if (window.location.hash !== hashStr) {
       window.location.hash = hashStr;
     }
@@ -179,23 +205,6 @@ export default function App() {
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
       />
-
-      {/* Firestore Error Alert & Retry Bar if Network/Firebase Delay Occurs */}
-      {firestoreError && (
-        <div className="bg-amber-500 text-neutral-900 px-4 py-2.5 text-xs font-bold flex items-center justify-between border-b border-amber-600">
-          <div className="flex items-center gap-2 max-w-7xl mx-auto w-full">
-            <AlertTriangle className="w-4 h-4 text-neutral-950 shrink-0" />
-            <span>Firestore Connection Warning: {firestoreError}</span>
-            <button
-              onClick={retryFirestore}
-              className="ml-auto bg-neutral-950 hover:bg-neutral-800 text-white px-3 py-1 rounded-full text-[11px] font-bold flex items-center gap-1 transition-colors"
-            >
-              <RefreshCw className="w-3 h-3" />
-              <span>Retry Sync</span>
-            </button>
-          </div>
-        </div>
-      )}
 
       {/* Main Dynamic View with Animated Transitions */}
       <main className="flex-1">
@@ -335,12 +344,6 @@ export default function App() {
       <AdminLoginModal
         isOpen={isAdminModalOpen}
         onClose={() => setIsAdminModalOpen(false)}
-      />
-
-      <ProductDetailModal
-        product={selectedDetailProduct}
-        onClose={() => setSelectedDetailProduct(null)}
-        onOpenQuoteModal={handleOpenQuoteModal}
       />
 
     </div>

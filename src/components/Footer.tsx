@@ -198,7 +198,7 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onSelectCategory, 
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-neutral-400 gap-4">
           <p>© {new Date().getFullYear()} Madhav Enterprise. All Rights Reserved. Vadodara, Gujarat, India.</p>
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-4 gap-y-1">
-            <span className="text-neutral-300">ISO 9001:2015 Certified</span>
+            <span className="text-neutral-300">MSME Registered</span>
             <span className="text-neutral-500">•</span>
             <span className="text-neutral-300">Made in India</span>
             <span className="text-neutral-500">•</span>
