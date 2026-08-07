@@ -50,7 +50,7 @@ export const CallNowModal: React.FC<CallNowModalProps> = ({ isOpen, onClose }) =
           </div>
 
           <div className="p-6 space-y-4">
-            {/* Call Action Card */}
+            {/* Call Action Card Primary */}
             <a
               href={`tel:${COMPANY_INFO.phonePrimary}`}
               className="flex items-center justify-between p-4 bg-[#111111] text-white rounded-2xl hover:bg-neutral-800 transition-all shadow-md group"
@@ -60,9 +60,30 @@ export const CallNowModal: React.FC<CallNowModalProps> = ({ isOpen, onClose }) =
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-xs text-neutral-400 font-medium">Direct Factory Phone</p>
+                  <p className="text-xs text-neutral-400 font-medium">Primary Sales Hotline</p>
                   <p className="text-base font-bold tracking-wide text-white group-hover:text-[#E86A2D] transition-colors">
                     {COMPANY_INFO.phonePrimary}
+                  </p>
+                </div>
+              </div>
+              <span className="text-xs font-bold bg-white/10 group-hover:bg-[#E86A2D] text-white px-3 py-1.5 rounded-full transition-colors">
+                Call Now
+              </span>
+            </a>
+
+            {/* Call Action Card Secondary */}
+            <a
+              href={`tel:${COMPANY_INFO.phoneSecondary}`}
+              className="flex items-center justify-between p-4 bg-[#111111] text-white rounded-2xl hover:bg-neutral-800 transition-all shadow-md group"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-[#E86A2D] flex items-center justify-center text-white shrink-0">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-xs text-neutral-400 font-medium">Secondary Sales Hotline</p>
+                  <p className="text-base font-bold tracking-wide text-white group-hover:text-[#E86A2D] transition-colors">
+                    {COMPANY_INFO.phoneSecondary}
                   </p>
                 </div>
               </div>

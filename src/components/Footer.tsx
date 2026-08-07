@@ -152,9 +152,15 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onSelectCategory, 
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#E86A2D] shrink-0" />
-                <a href={`tel:${COMPANY_INFO.phonePrimary}`} className="hover:text-[#E86A2D] font-bold">
-                  {COMPANY_INFO.phonePrimary}
-                </a>
+                <div className="flex flex-wrap gap-[#E86A2D] gap-x-2">
+                  <a href={`tel:${COMPANY_INFO.phonePrimary}`} className="hover:text-[#E86A2D] font-bold">
+                    {COMPANY_INFO.phonePrimary}
+                  </a>
+                  <span>/</span>
+                  <a href={`tel:${COMPANY_INFO.phoneSecondary}`} className="hover:text-[#E86A2D] font-bold">
+                    {COMPANY_INFO.phoneSecondary}
+                  </a>
+                </div>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#E86A2D] shrink-0" />

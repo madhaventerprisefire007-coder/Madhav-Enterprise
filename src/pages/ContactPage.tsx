@@ -43,7 +43,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onPageChange, onOpenQu
       <SEOHead
         pageName="contact"
         title="Contact Madhav Enterprise Vadodara | Phone, Address & Inquiries"
-        description="Contact Madhav Enterprise at C-10 Gaurav Park, Diwalipura, Vasna Road, Vadodara, Gujarat 390007. Call +91 9924040633 for Water Level Controllers, Valves & Pumps."
+        description="Contact Madhav Enterprise at C-10 Gaurav Park, Diwalipura, Vasna Road, Vadodara, Gujarat 390007. Call +91 70417 72780 / +91 99240 40633 for Water Level Controllers, Valves & Pumps."
         keywords={[
           'Contact Madhav Enterprise Vadodara',
           'Water Level Controller Phone Number Vadodara',
@@ -87,11 +87,14 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onPageChange, onOpenQu
                   <p className="text-xs text-neutral-500">Mon - Sat: 9:00 AM - 7:00 PM</p>
                 </div>
               </div>
-              <p className="text-lg font-bold text-[#111111] pl-15">
-                <a href={`tel:${COMPANY_INFO.phonePrimary}`} className="hover:text-[#E86A2D] transition-colors">
+              <div className="pl-15 space-y-1">
+                <a href={`tel:${COMPANY_INFO.phonePrimary}`} className="block text-lg font-bold text-[#111111] hover:text-[#E86A2D] transition-colors">
                   {COMPANY_INFO.phonePrimary}
                 </a>
-              </p>
+                <a href={`tel:${COMPANY_INFO.phoneSecondary}`} className="block text-lg font-bold text-[#111111] hover:text-[#E86A2D] transition-colors">
+                  {COMPANY_INFO.phoneSecondary}
+                </a>
+              </div>
             </div>
 
             {/* Email Card */}
