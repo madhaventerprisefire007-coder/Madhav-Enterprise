@@ -48,7 +48,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
             <span>Vadodara, Gujarat Manufacturing Legacy</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
-            About Madhav Enterprise
+            About Madhav Enterprise Vadodara
           </h1>
           <p className="text-sm md:text-base text-neutral-300 leading-relaxed">
             Leading manufacturer and supplier of Automatic Water Level Controllers, Heavy Industrial Valves, Motor Pumps, Submersible Systems, and CPVC Piping based in Vadodara, Gujarat.

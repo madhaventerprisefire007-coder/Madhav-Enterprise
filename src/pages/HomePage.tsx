@@ -109,7 +109,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-black text-white leading-[1.1] tracking-tight"
               >
-                Reliable <span className="text-[#E86A2D] underline decoration-[#E86A2D]/40 underline-offset-8">Water Level Controller</span> & Industrial Valve Supplier
+                Reliable <span className="text-[#E86A2D] underline decoration-[#E86A2D]/40 underline-offset-8">Water Level Controller</span> & Industrial Valve Supplier in Vadodara
               </motion.h1>
 
               {/* Subheading */}

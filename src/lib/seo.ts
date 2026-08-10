@@ -8,7 +8,19 @@ export interface SEOPageConfig {
   noIndex?: boolean;
 }
 
-export const BASE_URL = 'https://madhaventerprise.in';
+export const getSiteUrl = (): string => {
+  if (typeof window !== 'undefined' && window.location && window.location.origin && window.location.origin !== 'null') {
+    return window.location.origin;
+  }
+  const metaEnv = (import.meta as any).env || {};
+  return (
+    metaEnv.VITE_SITE_URL ||
+    metaEnv.NEXT_PUBLIC_SITE_URL ||
+    'https://madhaventerprise.in'
+  );
+};
+
+export const BASE_URL = getSiteUrl();
 
 export const BUSINESS_INFO = {
   name: 'Madhav Enterprise',
@@ -25,6 +37,7 @@ export const BUSINESS_INFO = {
   },
   formattedAddress: 'C-10, Gaurav Park, Diwalipura, Vasna Road, Vadodara, Gujarat 390007, India',
   phone: '+91 70417 72780',
+  phoneSecondary: '+91 99240 40633',
   email: 'madhaventerpise02021@gmail.com',
   workingHours: 'Mon - Sat: 09:00 AM - 07:00 PM',
   geo: {
@@ -70,6 +83,7 @@ export function generateSlug(text: string): string {
  * Builds metadata for dynamic SEO tags
  */
 export function buildSEOMetadata(pageName: string, config: SEOPageConfig = {}) {
+  const siteUrl = getSiteUrl();
   const defaultTitle = `${BUSINESS_INFO.name} | Water Level Controller Manufacturer & Industrial Valve Supplier Vadodara`;
   const defaultDesc = `Madhav Enterprise is Vadodara's leading manufacturer & supplier of Automatic Water Level Controllers, Industrial SS Valves, Centrifugal Motor Pumps, Hydro Booster Pressure Pumps & CPVC Fittings. Located in Diwalipura / Vasna Road, Vadodara, Gujarat.`;
 
@@ -78,9 +92,9 @@ export function buildSEOMetadata(pageName: string, config: SEOPageConfig = {}) {
     : defaultTitle;
 
   const description = config.description || defaultDesc;
-  const canonicalUrl = config.canonicalUrl || `${BASE_URL}/${pageName !== 'home' ? pageName : ''}`;
+  const canonicalUrl = config.canonicalUrl || `${siteUrl}/${pageName !== 'home' ? '#/' + pageName : ''}`;
   const keywords = Array.from(new Set([...(config.keywords || []), ...PRIMARY_KEYWORDS])).join(', ');
-  const ogImage = config.ogImage || `${BASE_URL}/logo.png`;
+  const ogImage = config.ogImage || `${siteUrl}/logo.png`;
   const ogType = config.ogType || 'website';
   const robots = config.noIndex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 
@@ -102,17 +116,18 @@ export function buildSEOMetadata(pageName: string, config: SEOPageConfig = {}) {
  */
 export function generateSchemas(pageType: string, extraData?: any) {
   const schemas: any[] = [];
+  const siteUrl = getSiteUrl();
 
   // 1. Organization & Local Business Schema (Always Present for Brand Consistency)
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': `${BASE_URL}/#localbusiness`,
+    '@id': `${siteUrl}/#localbusiness`,
     name: BUSINESS_INFO.name,
     legalName: BUSINESS_INFO.legalName,
-    image: `${BASE_URL}/logo.png`,
-    logo: `${BASE_URL}/logo.png`,
-    url: BASE_URL,
+    image: `${siteUrl}/logo.png`,
+    logo: `${siteUrl}/logo.png`,
+    url: siteUrl,
     telephone: BUSINESS_INFO.phone,
     email: BUSINESS_INFO.email,
     priceRange: BUSINESS_INFO.priceRange,
@@ -154,37 +169,85 @@ export function generateSchemas(pageType: string, extraData?: any) {
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': `${BASE_URL}/#website`,
-    url: BASE_URL,
+    '@id': `${siteUrl}/#website`,
+    url: siteUrl,
     name: BUSINESS_INFO.name,
     description: BUSINESS_INFO.tagline,
     publisher: {
-      '@id': `${BASE_URL}/#localbusiness`,
+      '@id': `${siteUrl}/#localbusiness`,
     },
     potentialAction: {
       '@type': 'SearchAction',
-      target: `${BASE_URL}/products?search={search_term_string}`,
+      target: `${siteUrl}/#/products?search={search_term_string}`,
       'query-input': 'required name=search_term_string',
     },
   };
   schemas.push(websiteSchema);
 
-  // 3. Page Specific Schemas
-  if (pageType === 'product' && extraData) {
+  // 3. BreadcrumbList Schema
+  if (extraData?.breadcrumbs && Array.isArray(extraData.breadcrumbs)) {
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: extraData.breadcrumbs.map((item: { name: string; url?: string }, idx: number) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        name: item.name,
+        item: item.url ? (item.url.startsWith('http') ? item.url : `${siteUrl}${item.url}`) : siteUrl,
+      })),
+    };
+    schemas.push(breadcrumbSchema);
+  } else if (pageType === 'product' && extraData) {
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: `${siteUrl}/#/`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Products',
+          item: `${siteUrl}/#/products`,
+        },
+        ...(extraData.category ? [{
+          '@type': 'ListItem',
+          position: 3,
+          name: extraData.category,
+          item: `${siteUrl}/#/products?category=${encodeURIComponent(extraData.category)}`,
+        }] : []),
+        ...(extraData.name ? [{
+          '@type': 'ListItem',
+          position: extraData.category ? 4 : 3,
+          name: extraData.name,
+          item: `${siteUrl}/#/product/${generateSlug(extraData.name)}`,
+        }] : []),
+      ],
+    };
+    schemas.push(breadcrumbSchema);
+  }
+
+  // 4. Page Specific Schemas
+  if (pageType === 'product' && extraData && extraData.name) {
     const productSchema = {
       '@context': 'https://schema.org',
       '@type': 'Product',
       name: extraData.name || extraData.title,
-      image: extraData.image || (extraData.images && extraData.images[0]) || `${BASE_URL}/logo.png`,
+      image: extraData.image || (extraData.images && extraData.images[0]) || `${siteUrl}/logo.png`,
       description: extraData.description || extraData.shortDescription,
-      sku: extraData.id || extraData.slug,
+      sku: extraData.modelNumber || extraData.id || extraData.slug,
+      mpn: extraData.modelNumber || extraData.id,
       brand: {
         '@type': 'Brand',
         name: BUSINESS_INFO.name,
       },
       offers: {
         '@type': 'Offer',
-        url: `${BASE_URL}/products/${extraData.slug || generateSlug(extraData.name || extraData.title || '')}`,
+        url: `${siteUrl}/#/product/${generateSlug(extraData.name || extraData.title || '')}`,
         priceCurrency: 'INR',
         price: extraData.price || '0.00',
         priceValidUntil: '2027-12-31',
@@ -197,7 +260,7 @@ export function generateSchemas(pageType: string, extraData?: any) {
       },
       aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: '4.9',
+        ratingValue: extraData.rating ? String(extraData.rating) : '4.9',
         reviewCount: '42',
       },
     };
@@ -210,7 +273,7 @@ export function generateSchemas(pageType: string, extraData?: any) {
       '@type': 'ContactPage',
       name: `Contact ${BUSINESS_INFO.name}`,
       description: `Get in touch with Madhav Enterprise Vadodara for sales enquiries, quotes, and product technical specifications.`,
-      url: `${BASE_URL}/contact`,
+      url: `${siteUrl}/#/contact`,
       mainEntity: {
         '@type': 'Organization',
         name: BUSINESS_INFO.name,

@@ -61,7 +61,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onPageChange, onOpenQu
             <span>Vadodara, Gujarat Head Office</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
-            Contact Madhav Enterprise
+            Contact Madhav Enterprise Vadodara
           </h1>
           <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
             Get in touch with our team at Diwalipura, Vasna Road, Vadodara. We provide immediate technical consultations, product inquiries, quotes, and customer support.

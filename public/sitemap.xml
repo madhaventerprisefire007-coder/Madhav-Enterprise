@@ -72,8 +72,69 @@
     </url>
     <url>
         <loc>https://madhaventerprise.in/products/pipes-fittings</loc>
-        <lastmod>2026-07-27</lastmod>
+        <lastmod>2026-08-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
+    </url>
+    <!-- Individual Products -->
+    <url>
+        <loc>https://madhaventerprise.in/product/automatic-water-level-controller</loc>
+        <lastmod>2026-08-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://madhaventerprise.in/product/3-phase-industrial-pump-control-panel</loc>
+        <lastmod>2026-08-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://madhaventerprise.in/product/heavy-duty-stainless-steel-ball-valve</loc>
+        <lastmod>2026-08-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://madhaventerprise.in/product/cast-iron-wafer-type-butterfly-valve</loc>
+        <lastmod>2026-08-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://madhaventerprise.in/product/high-flow-industrial-monoblock-motor-pump</loc>
+        <lastmod>2026-08-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://madhaventerprise.in/product/automatic-hydro-pneumatic-pressure-booster-pump</loc>
+        <lastmod>2026-08-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://madhaventerprise.in/product/v6-v8-stainless-steel-borewell-submersible-pump</loc>
+        <lastmod>2026-08-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://madhaventerprise.in/product/industrial-dewatering-sewage-submersible-pump</loc>
+        <lastmod>2026-08-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://madhaventerprise.in/product/industrial-heavy-duty-cpvc-upvc-pipes</loc>
+        <lastmod>2026-08-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://madhaventerprise.in/product/stainless-steel-forged-steel-flanges-fittings</loc>
+        <lastmod>2026-08-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
 </urlset>
