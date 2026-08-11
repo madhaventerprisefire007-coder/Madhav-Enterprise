@@ -3,7 +3,7 @@ export type PageType = 'home' | 'about' | 'products' | 'contact' | '404';
 export type ProductCategory = 
   | 'All'
   | 'Water Level Controller'
-  | 'Industrial Valve'
+  | 'Butterfly Valve'
   | 'Motor Pump'
   | 'Pressure Pump'
   | 'Submersible Pump'

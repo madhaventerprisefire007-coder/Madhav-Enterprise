@@ -28,7 +28,7 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = ({
 
   const topCategories: { category: ProductCategory; label: string; icon: React.ElementType; desc: string }[] = [
     { category: 'Water Level Controller', label: 'Water Level Controller', icon: Cpu, desc: 'Automatic overhead tank & sump logic panels' },
-    { category: 'Industrial Valve', label: 'Industrial Valve', icon: CircleDot, desc: 'SS 316 Ball valves, Butterfly & Non-Return Check valves' },
+    { category: 'Butterfly Valve', label: 'Butterfly Valve', icon: CircleDot, desc: 'Cast Iron Wafer & SS Butterfly valves' },
     { category: 'Motor Pump', label: 'Motor Pump', icon: Zap, desc: 'Centrifugal monoblock & open-well induction pumps' },
     { category: 'Pressure Pump', label: 'Pressure Pump', icon: Gauge, desc: 'Hydro-pneumatic pressure booster pumps' },
   ];

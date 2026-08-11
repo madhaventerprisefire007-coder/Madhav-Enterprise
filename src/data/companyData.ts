@@ -2,7 +2,7 @@ import { Product, Industry, Testimonial, FAQItem, ProductCategory } from '../typ
 
 export const COMPANY_INFO = {
   name: 'Madhav Enterprise',
-  tagline: 'Reliable Water Level Controller & Industrial Valve Supplier',
+  tagline: 'Reliable Water Level Controller & Butterfly Valve Supplier',
   subheading: 'Trusted Manufacturer & Supplier in Vadodara, Gujarat',
   location: 'Vadodara, Gujarat, India',
   fullAddress: 'C-10, Gaurav Park, Diwalipura, Vasna Road, Vadodara- 390007, Gujarat, India',
@@ -40,10 +40,10 @@ export const PRODUCT_DIVISIONS: ProductDivision[] = [
   },
   {
     id: 'valves',
-    category: 'Industrial Valve',
-    displayName: 'All Type of Industrial Valve supplier in vadodara',
-    shortTitle: 'Industrial Valves',
-    description: 'Heavy duty SS 316 ball valves, butterfly valves, check valves, and flanged valves for chemical & water lines.',
+    category: 'Butterfly Valve',
+    displayName: 'Butterfly Valve supplier in vadodara',
+    shortTitle: 'Butterfly Valves',
+    description: 'Heavy duty SS 316 ball valves, wafer butterfly valves, check valves, and flanged valves for chemical & water lines.',
     iconName: 'CircleDot',
     image: 'https://lh3.googleusercontent.com/d/1XaAIg7Zjs4R1u8HJ4IDyHEnqSSUOYOB0',
   },
@@ -88,7 +88,7 @@ export const PRODUCT_DIVISIONS: ProductDivision[] = [
 export const PRODUCTS_DATA: Product[] = [
   {
     id: 'wlc-auto-pro',
-    name: 'Automatic Water Level Controller',
+    name: 'Panel with Sensor',
     category: 'Water Level Controller',
     subtitle: 'Microprocessor Based Overhead & Sump Dual Tank Controller',
     description: 'Advanced digital water level controller with micro-controller logic designed to automatically control single/three phase pumps. Features dry-run protection, high/low voltage cutoff, and LED digital indicator.',
@@ -166,7 +166,7 @@ export const PRODUCTS_DATA: Product[] = [
   {
     id: 'valv-ball-ss',
     name: 'Heavy Duty Stainless Steel Ball Valve',
-    category: 'Industrial Valve',
+    category: 'Butterfly Valve',
     subtitle: '3-Piece Full Port SS 316 / SS 304 Screwed & Flanged Ball Valve',
     description: 'High pressure precision engineered SS 316 ball valve designed for harsh chemical, steam, and water applications. Provides leak-proof quarter-turn shutoff.',
     image: 'https://lh3.googleusercontent.com/d/1XaAIg7Zjs4R1u8HJ4IDyHEnqSSUOYOB0',
@@ -204,7 +204,7 @@ export const PRODUCTS_DATA: Product[] = [
   {
     id: 'valv-butterfly-ci',
     name: 'Cast Iron Wafer Type Butterfly Valve',
-    category: 'Industrial Valve',
+    category: 'Butterfly Valve',
     subtitle: 'EPDM / Nitrile Lined Wafer Butterfly Valve with Lever / Gear',
     description: 'Cost-effective high-flow butterfly valve featuring a ductile iron disc and replaceable EPDM seat. Ideal for large water supply lines and HVAC systems.',
     image: 'https://lh3.googleusercontent.com/d/1_O3r0CGBcH9cvjJl8VX667vX9TZnp3tw',
@@ -442,7 +442,7 @@ export const PRODUCTS_DATA: Product[] = [
       'Accompanied by Material Test Certificates (TC)'
     ],
     benefits: [
-      'Precise dimensions guarantee perfect alignment with industrial valves',
+      'Precise dimensions guarantee perfect alignment with butterfly valves',
       'Forged steel grain structure provides high burst strength',
       '100% material traceability with test certificates for auditor compliance',
       'Resists severe pressure surges and thermal expansion forces'
@@ -488,7 +488,7 @@ export const INDUSTRIES_SERVED: Industry[] = [
     description: 'Hydro-pneumatic booster pumps for multi-story pressure balancing and automatic dual tank controllers eliminating overflow in residential societies.',
     iconName: 'Building2',
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80',
-    popularProducts: ['Hydro-Pneumatic Booster Pump', 'Automatic Water Level Controller', 'CPVC Fittings']
+    popularProducts: ['Hydro-Pneumatic Booster Pump', 'Panel with Sensor', 'CPVC Fittings']
   },
   {
     id: 'agriculture-irrigation',
@@ -556,7 +556,7 @@ export const FAQ_DATA: FAQItem[] = [
   },
   {
     id: 'faq-3',
-    question: 'What materials are used in Madhav Enterprise industrial valves?',
+    question: 'What materials are used in Madhav Enterprise butterfly valves?',
     answer: 'We manufacture and supply valves in various grades including Stainless Steel SS 316 / CF8M, SS 304, Cast Iron (CI), Ductile Iron (DI), WCB Carbon Steel, and PVC/CPVC. All valves undergo hydrostatic pressure testing and seating integrity checks before dispatch.',
     category: 'Valves'
   },

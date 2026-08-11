@@ -93,16 +93,20 @@ export default function App() {
             const categories: ProductCategory[] = [
               'All',
               'Water Level Controller',
-              'Industrial Valve',
+              'Butterfly Valve',
               'Motor Pump',
               'Pressure Pump',
               'Submersible Pump',
               'Pipes & Fittings'
             ];
-            const directCat = categories.find(
-              (c) => c.toLowerCase() === decodedCat.toLowerCase() || generateSlug(c) === decodedCat.toLowerCase()
-            );
-            setSelectedCategory(directCat || 'All');
+            if (decodedCat.toLowerCase() === 'industrial-valve' || decodedCat.toLowerCase() === 'industrial valve') {
+              setSelectedCategory('Butterfly Valve');
+            } else {
+              const directCat = categories.find(
+                (c) => c.toLowerCase() === decodedCat.toLowerCase() || generateSlug(c) === decodedCat.toLowerCase()
+              );
+              setSelectedCategory(directCat || 'All');
+            }
           }
         } else {
           setSelectedCategory('All');

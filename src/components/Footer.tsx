@@ -36,7 +36,7 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onSelectCategory, 
               <Logo variant="dark" showTagline={true} />
             </div>
             <p className="text-xs text-neutral-400 leading-relaxed max-w-sm mt-3">
-              Madhav Enterprise is a premier manufacturer and supplier of Automatic Water Level Controllers, Industrial Valves, Motor Pumps, Submersible Pumps, and High Pressure Piping Systems based in Diwalipura, Vasna Road, Vadodara, Gujarat.
+              Madhav Enterprise is a premier manufacturer and supplier of Automatic Water Level Controllers, Butterfly Valves, Motor Pumps, Submersible Pumps, and High Pressure Piping Systems based in Diwalipura, Vasna Road, Vadodara, Gujarat.
             </p>
 
             <div className="flex flex-wrap gap-2 pt-2">

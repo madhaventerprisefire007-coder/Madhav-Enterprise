@@ -87,7 +87,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
     ? `${internalSelectedProduct.description.slice(0, 155)}... Buy ${internalSelectedProduct.name} directly from Madhav Enterprise Vadodara.`
     : currentDivision
     ? `Explore premier ${currentDivision.displayName} manufactured and supplied by Madhav Enterprise in Vadodara, Gujarat. Get instant industrial quotes & specs.`
-    : 'Complete catalog of Automatic Water Level Controllers, SS Industrial Valves, Centrifugal Motor Pumps & CPVC Fittings manufactured in Vadodara.';
+    : 'Complete catalog of Automatic Water Level Controllers, Butterfly Valves, Centrifugal Motor Pumps & CPVC Fittings manufactured in Vadodara.';
 
   const canonicalPath = isDetail
     ? `${BASE_URL}/products/${generateSlug(internalSelectedProduct.name)}`
@@ -109,7 +109,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
             internalSelectedProduct.category,
             internalSelectedProduct.modelNumber,
             'Water Level Controller Manufacturer in Vadodara',
-            'Industrial Valve Supplier in Vadodara',
+            'Butterfly Valve Supplier in Vadodara',
             'Motor Pump Supplier',
             'Pressure Pump Supplier',
             'Submersible Pump Supplier',
@@ -139,7 +139,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
         canonicalUrl={canonicalPath}
         keywords={[
           'Water Level Controller Manufacturer in Vadodara',
-          'Industrial Valve Supplier in Vadodara',
+          'Butterfly Valve Supplier in Vadodara',
           'Motor Pump Supplier',
           'Pressure Pump Supplier',
           'Submersible Pump Supplier',

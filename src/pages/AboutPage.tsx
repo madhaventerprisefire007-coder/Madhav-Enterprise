@@ -30,12 +30,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
       <SEOHead
         pageName="about"
         title="About Madhav Enterprise | Industrial Equipment Manufacturer Vadodara"
-        description="Learn about Madhav Enterprise - Vadodara's benchmark manufacturer & supplier of Automatic Water Level Controllers, SS Industrial Valves & Pumps located at Diwalipura / Vasna Road, Vadodara."
+        description="Learn about Madhav Enterprise - Vadodara's benchmark manufacturer & supplier of Automatic Water Level Controllers, Butterfly Valves & Pumps located at Diwalipura / Vasna Road, Vadodara."
         keywords={[
           'About Madhav Enterprise Vadodara',
           'Industrial Equipment Manufacturer Gujarat',
           'Water Level Controller Factory Vadodara',
-          'Industrial Valve Supplier Diwalipura'
+          'Butterfly Valve Supplier Diwalipura'
         ]}
       />
       
@@ -51,7 +51,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
             About Madhav Enterprise Vadodara
           </h1>
           <p className="text-sm md:text-base text-neutral-300 leading-relaxed">
-            Leading manufacturer and supplier of Automatic Water Level Controllers, Heavy Industrial Valves, Motor Pumps, Submersible Systems, and CPVC Piping based in Vadodara, Gujarat.
+            Leading manufacturer and supplier of Automatic Water Level Controllers, Butterfly Valves, Motor Pumps, Submersible Systems, and CPVC Piping based in Vadodara, Gujarat.
           </p>
         </div>
       </section>
@@ -124,7 +124,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
               </div>
               <h3 className="text-xl font-display font-bold text-neutral-900">Our Mission</h3>
               <p className="text-xs text-neutral-600 leading-relaxed">
-                To deliver uncompromising quality, energy-efficient water level controllers and industrial valves that safeguard pump investments, eliminate water wastage, and streamline plant operations for industries across Gujarat and India.
+                To deliver uncompromising quality, energy-efficient water level controllers and butterfly valves that safeguard pump investments, eliminate water wastage, and streamline plant operations for industries across Gujarat and India.
               </p>
             </div>
 
@@ -174,7 +174,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
             <div className="bg-neutral-50 p-6 rounded-3xl border border-neutral-200 space-y-3">
               <span className="text-[#E86A2D] font-mono font-bold text-lg">03</span>
               <h3 className="text-base font-bold text-neutral-900">Hydrostatic Pressure Test</h3>
-              <p className="text-xs text-neutral-600">Industrial valves are hydro-tested at 1.5x nominal pressure rating to ensure zero bubble-tight leakage.</p>
+              <p className="text-xs text-neutral-600">Butterfly valves are hydro-tested at 1.5x nominal pressure rating to ensure zero bubble-tight leakage.</p>
             </div>
 
             <div className="bg-neutral-50 p-6 rounded-3xl border border-neutral-200 space-y-3">

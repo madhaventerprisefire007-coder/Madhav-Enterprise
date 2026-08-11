@@ -44,18 +44,18 @@ export const HomePage: React.FC<HomePageProps> = ({
     <div className="min-h-screen bg-white font-sans text-neutral-900 overflow-x-hidden">
       <SEOHead
         pageName="home"
-        title="Water Level Controller Manufacturer in Vadodara | Industrial Valve Supplier"
-        description="Madhav Enterprise is Vadodara's leading manufacturer & supplier of Automatic Water Level Controllers, Industrial Valves, Centrifugal Motor Pumps, Hydro Booster Pressure Pumps & CPVC Pipes in Vasna Road & Diwalipura, Vadodara."
+        title="Water Level Controller Manufacturer in Vadodara | Butterfly Valve Supplier"
+        description="Madhav Enterprise is Vadodara's leading manufacturer & supplier of Automatic Water Level Controllers, Butterfly Valves, Centrifugal Motor Pumps, Hydro Booster Pressure Pumps & CPVC Pipes in Vasna Road & Diwalipura, Vadodara."
         keywords={[
           'Water Level Controller Manufacturer in Vadodara',
-          'Industrial Valve Supplier in Vadodara',
+          'Butterfly Valve Supplier in Vadodara',
           'Motor Pump Supplier',
           'Pressure Pump Supplier',
           'Submersible Pump Supplier',
           'Pipes and Fittings Supplier',
           'Industrial Equipment Supplier',
           'Water Control System',
-          'Industrial Valve Manufacturer Gujarat',
+          'Butterfly Valve Supplier Gujarat',
           'Water Level Controller Gujarat'
         ]}
         extraSchemaData={{ faqs: FAQ_DATA }}
@@ -109,7 +109,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-black text-white leading-[1.1] tracking-tight"
               >
-                Reliable <span className="text-[#E86A2D] underline decoration-[#E86A2D]/40 underline-offset-8">Water Level Controller</span> & Industrial Valve Supplier in Vadodara
+                Reliable <span className="text-[#E86A2D] underline decoration-[#E86A2D]/40 underline-offset-8">Water Level Controller</span> & Butterfly Valve Supplier in Vadodara
               </motion.h1>
 
               {/* Subheading */}
@@ -240,7 +240,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               </h2>
 
               <p className="text-sm text-neutral-600 leading-relaxed">
-                Established in 2008 in Vadodara, Gujarat, <strong>Madhav Enterprise</strong> has grown into a trusted manufacturer and supplier of automatic water level controllers, industrial valves, motor pumps, submersible pumps, and CPVC/UPVC piping systems.
+                Established in 2008 in Vadodara, Gujarat, <strong>Madhav Enterprise</strong> has grown into a trusted manufacturer and supplier of automatic water level controllers, butterfly valves, motor pumps, submersible pumps, and CPVC/UPVC piping systems.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-semibold text-neutral-800 pt-2">

@@ -47,7 +47,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onPageChange, onOpenQu
         keywords={[
           'Contact Madhav Enterprise Vadodara',
           'Water Level Controller Phone Number Vadodara',
-          'Industrial Valve Supplier Address Diwalipura',
+          'Butterfly Valve Supplier Address Diwalipura',
           'Madhav Enterprise Email Vasna Road'
         ]}
       />
@@ -256,7 +256,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onPageChange, onOpenQu
                     className="w-full bg-neutral-50 border border-neutral-300 rounded-xl px-3.5 py-2.5 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-[#E86A2D]"
                   >
                     <option value="Water Level Controller">Water Level Controller Requirement</option>
-                    <option value="Industrial Valves">Industrial Valves (SS 316 / Butterfly / Ball)</option>
+                    <option value="Butterfly Valves">Butterfly Valves (Wafer / Cast Iron / SS)</option>
                     <option value="Pumps">Motor & Submersible Pumps</option>
                     <option value="Pressure Booster System">Hydro-Pneumatic Pressure Booster</option>
                     <option value="Pipes & Fittings">CPVC / UPVC Pipes & Fittings</option>

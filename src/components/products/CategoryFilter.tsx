@@ -28,7 +28,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
   const categoriesList: ProductCategory[] = [
     'All',
     'Water Level Controller',
-    'Industrial Valve',
+    'Butterfly Valve',
     'Motor Pump',
     'Pipes & Fittings',
     'Pressure Pump',

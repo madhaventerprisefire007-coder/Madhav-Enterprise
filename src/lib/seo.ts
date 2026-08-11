@@ -27,7 +27,7 @@ export const BUSINESS_INFO = {
   legalName: 'Madhav Enterprise Industrial Equipment',
   founder: 'Madhav Enterprise Engineering Desk',
   role: 'Manufacturer & Supplier',
-  tagline: 'Vadodara’s Premier Water Level Controller & Industrial Valve Manufacturer',
+  tagline: 'Vadodara’s Premier Water Level Controller & Butterfly Valve Manufacturer',
   address: {
     streetAddress: 'C-10, Gaurav Park, Diwalipura, Vasna Road',
     addressLocality: 'Vadodara',
@@ -53,17 +53,17 @@ export const BUSINESS_INFO = {
 
 export const PRIMARY_KEYWORDS = [
   'Water Level Controller Manufacturer in Vadodara',
-  'Industrial Valve Supplier in Vadodara',
+  'Butterfly Valve Supplier in Vadodara',
   'Motor Pump Supplier',
   'Pressure Pump Supplier',
   'Submersible Pump Supplier',
   'Pipes and Fittings Supplier',
   'Industrial Equipment Supplier',
   'Water Control System',
-  'Industrial Valve Manufacturer Gujarat',
+  'Butterfly Valve Supplier Gujarat',
   'Water Level Controller Gujarat',
   'Automatic Overhead Tank Controller Vadodara',
-  'SS 316 Ball Valve Vadodara',
+  'Cast Iron Wafer Butterfly Valve Vadodara',
   'Centrifugal Monoblock Pump Supplier Gujarat',
 ];
 
@@ -84,8 +84,8 @@ export function generateSlug(text: string): string {
  */
 export function buildSEOMetadata(pageName: string, config: SEOPageConfig = {}) {
   const siteUrl = getSiteUrl();
-  const defaultTitle = `${BUSINESS_INFO.name} | Water Level Controller Manufacturer & Industrial Valve Supplier Vadodara`;
-  const defaultDesc = `Madhav Enterprise is Vadodara's leading manufacturer & supplier of Automatic Water Level Controllers, Industrial SS Valves, Centrifugal Motor Pumps, Hydro Booster Pressure Pumps & CPVC Fittings. Located in Diwalipura / Vasna Road, Vadodara, Gujarat.`;
+  const defaultTitle = `${BUSINESS_INFO.name} | Water Level Controller Manufacturer & Butterfly Valve Supplier Vadodara`;
+  const defaultDesc = `Madhav Enterprise is Vadodara's leading manufacturer & supplier of Automatic Water Level Controllers, Butterfly Valves, Centrifugal Motor Pumps, Hydro Booster Pressure Pumps & CPVC Fittings. Located in Diwalipura / Vasna Road, Vadodara, Gujarat.`;
 
   const title = config.title
     ? `${config.title} | ${BUSINESS_INFO.name} Vadodara`
