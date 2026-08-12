@@ -62,7 +62,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-full object-cover opacity-80"
+              className="w-full h-full object-contain p-4 opacity-95"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/40 to-transparent" />
 

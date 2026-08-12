@@ -8,7 +8,17 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
     // Check if products collection exists and has data
     const productsSnap = await getDocs(collection(db, 'products'));
     if (!productsSnap.empty) {
-      console.log('Firestore already seeded with products.');
+      // Sync/update product images in Firestore if existing
+      for (const p of PRODUCTS_DATA) {
+        const pRef = doc(db, 'products', p.id);
+        const pSnap = await getDoc(pRef);
+        if (pSnap.exists()) {
+          await setDoc(pRef, {
+            images: [p.image, ...(p.galleryImages || [])],
+            updatedAt: new Date().toISOString(),
+          }, { merge: true });
+        }
+      }
       return false;
     }
 

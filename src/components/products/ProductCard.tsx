@@ -24,12 +24,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     >
       <div>
         {/* Card Header & Image */}
-        <div className="relative h-52 sm:h-56 bg-neutral-100 overflow-hidden cursor-pointer" onClick={() => onSelectProduct(product)}>
+        <div className="relative h-52 sm:h-56 bg-neutral-900 overflow-hidden cursor-pointer" onClick={() => onSelectProduct(product)}>
           <img
             src={product.image}
             alt={product.name}
             referrerPolicy="no-referrer"
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500"
             loading="lazy"
             onError={(e) => {
               e.currentTarget.src = "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80";

@@ -37,7 +37,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
             src={currentImage}
             alt={`${productName} view ${selectedImageIndex + 1}`}
             referrerPolicy="no-referrer"
-            className={`w-full h-full object-cover transition-transform duration-500 ${
+            className={`w-full h-full object-contain p-2 sm:p-4 transition-transform duration-500 ${
               isZoomed ? 'scale-125 origin-center' : 'scale-100'
             }`}
             onError={(e) => {
@@ -93,7 +93,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
                 src={img}
                 alt={`Thumbnail ${idx + 1}`}
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain p-1 bg-neutral-900"
                 onError={(e) => {
                   e.currentTarget.src = "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80";
                 }}

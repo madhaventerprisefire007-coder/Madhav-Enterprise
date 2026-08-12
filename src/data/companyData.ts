@@ -72,7 +72,7 @@ export const PRODUCT_DIVISIONS: ProductDivision[] = [
     shortTitle: 'Pressure Pump',
     description: 'Automatic hydro-pneumatic multi-stage booster pressure pumps for constant pressure in tall towers.',
     iconName: 'Gauge',
-    image: 'https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=800&q=80',
+    image: 'https://lh3.googleusercontent.com/d/1oNlm_PgkpAR_FLkHXVkL_l_SDDSTSIpn',
   },
   {
     id: 'submersible-pumps',
@@ -94,8 +94,7 @@ export const PRODUCTS_DATA: Product[] = [
     description: 'Advanced digital water level controller with micro-controller logic designed to automatically control single/three phase pumps. Features dry-run protection, high/low voltage cutoff, and LED digital indicator.',
     image: 'https://lh3.googleusercontent.com/d/1VNt-UEeGupP1i_ghqByTydYKuWhIR4YI',
     galleryImages: [
-      'https://lh3.googleusercontent.com/d/1VNt-UEeGupP1i_ghqByTydYKuWhIR4YI',
-      'https://lh3.googleusercontent.com/d/1oHPPcPzvsKka2tTQ4f719INOWdK8wnKb'
+      'https://lh3.googleusercontent.com/d/1VNt-UEeGupP1i_ghqByTydYKuWhIR4YI'
     ],
     videoEmbedUrl: 'https://drive.google.com/file/d/1ucp8xmzAyysXDPACRQMZV70r6yr4TSrC/preview',
     wiringDiagramUrl: 'https://lh3.googleusercontent.com/d/14T77b0NTyy2I8vvH8jNNerXrdG9Pj0TO',
@@ -132,9 +131,8 @@ export const PRODUCTS_DATA: Product[] = [
     category: 'Water Level Controller',
     subtitle: 'Automated Starter Panel with Water Level Sensing & Phase Preventer',
     description: 'Heavy-duty industrial control panel engineered for high-capacity 3-phase submersible and centrifugal pumps. Includes star-delta starter integration and automatic water level logic.',
-    image: 'https://lh3.googleusercontent.com/d/1oHPPcPzvsKka2tTQ4f719INOWdK8wnKb',
+    image: 'https://lh3.googleusercontent.com/d/1VNt-UEeGupP1i_ghqByTydYKuWhIR4YI',
     galleryImages: [
-      'https://lh3.googleusercontent.com/d/1oHPPcPzvsKka2tTQ4f719INOWdK8wnKb',
       'https://lh3.googleusercontent.com/d/1VNt-UEeGupP1i_ghqByTydYKuWhIR4YI'
     ],
     wiringDiagramUrl: 'https://lh3.googleusercontent.com/d/14T77b0NTyy2I8vvH8jNNerXrdG9Pj0TO',
@@ -268,8 +266,7 @@ export const PRODUCTS_DATA: Product[] = [
       'IE2/IE3 high efficiency energy saving copper motor'
     ],
     specs: [
-      { label: 'Power Rating', value: '1.0 HP to 15.0 HP' },
-      { label: 'Max Head', value: 'Up to 65 Meters' },
+      { label: 'Power Rating', value: '1 HP to 40 HP' },
       { label: 'Discharge Capacity', value: 'Up to 2400 Liters / Minute' },
       { label: 'Speed', value: '2880 RPM (2-Pole)' }
     ],
@@ -282,11 +279,9 @@ export const PRODUCTS_DATA: Product[] = [
     category: 'Pressure Pump',
     subtitle: 'Multi-stage SS Pressure Booster System with Pressure Switch & Tank',
     description: 'Maintains constant water pressure across multiple outlets in commercial buildings, hotels, and luxury residences. Automatically turns on/off based on tap usage.',
-    image: 'https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=800&q=80',
+    image: 'https://lh3.googleusercontent.com/d/1oNlm_PgkpAR_FLkHXVkL_l_SDDSTSIpn',
     galleryImages: [
-      'https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80'
+      'https://lh3.googleusercontent.com/d/1oNlm_PgkpAR_FLkHXVkL_l_SDDSTSIpn'
     ],
     featured: true,
     modelNumber: 'ME-HPN-PRESS',
