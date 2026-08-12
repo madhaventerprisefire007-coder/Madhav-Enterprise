@@ -78,15 +78,19 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
   // Calculate dynamic SEO parameters
   const isDetail = !!internalSelectedProduct;
   const currentTitle = isDetail
-    ? `${internalSelectedProduct.name} - ${internalSelectedProduct.category} Manufacturer & Supplier Vadodara`
+    ? `${internalSelectedProduct.name} - ${internalSelectedProduct.category === 'Butterfly Valve' ? 'Butterfly Valve Supplier' : internalSelectedProduct.category + ' Manufacturer & Supplier'} Vadodara`
     : currentDivision
-    ? `${currentDivision.displayName} Manufacturer & Supplier in Vadodara | Madhav Enterprise`
+    ? (currentDivision.category === 'Butterfly Valve'
+        ? `Butterfly Valve Supplier in Vadodara | Madhav Enterprise`
+        : `${currentDivision.displayName} Manufacturer & Supplier in Vadodara | Madhav Enterprise`)
     : 'Industrial Water Level Controllers, Valves & Pumps Catalog Vadodara';
 
   const currentDesc = isDetail
     ? `${internalSelectedProduct.description.slice(0, 155)}... Buy ${internalSelectedProduct.name} directly from Madhav Enterprise Vadodara.`
     : currentDivision
-    ? `Explore premier ${currentDivision.displayName} manufactured and supplied by Madhav Enterprise in Vadodara, Gujarat. Get instant industrial quotes & specs.`
+    ? (currentDivision.category === 'Butterfly Valve'
+        ? `Explore premier ${currentDivision.displayName} supplied by Madhav Enterprise in Vadodara, Gujarat. Get instant industrial quotes & specs.`
+        : `Explore premier ${currentDivision.displayName} manufactured and supplied by Madhav Enterprise in Vadodara, Gujarat. Get instant industrial quotes & specs.`)
     : 'Complete catalog of Automatic Water Level Controllers, Butterfly Valves, Centrifugal Motor Pumps & CPVC Fittings manufactured in Vadodara.';
 
   const canonicalPath = isDetail
@@ -156,7 +160,11 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
             <span>{currentDivision ? currentDivision.shortTitle : 'Industrial Range Catalog'}</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
-            {currentDivision ? `${currentDivision.displayName} Manufacturer & Supplier in Vadodara` : 'Products & Industrial Equipment Range in Vadodara'}
+            {currentDivision 
+              ? (currentDivision.category === 'Butterfly Valve' 
+                  ? 'Butterfly Valve Supplier in Vadodara' 
+                  : `${currentDivision.displayName} Manufacturer & Supplier in Vadodara`) 
+              : 'Products & Industrial Equipment Range in Vadodara'}
           </h1>
           <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
             {currentDivision ? currentDivision.description : 'High precision Automatic Water Level Controllers, Heavy Duty Industrial SS Valves, Centrifugal Motor Pumps, Hydro-Pneumatic Boosters, Borewell Submersibles, and CPVC Pressure Pipes manufactured in Vadodara, Gujarat.'}

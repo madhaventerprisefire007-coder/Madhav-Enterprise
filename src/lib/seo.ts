@@ -27,7 +27,7 @@ export const BUSINESS_INFO = {
   legalName: 'Madhav Enterprise Industrial Equipment',
   founder: 'Madhav Enterprise Engineering Desk',
   role: 'Manufacturer & Supplier',
-  tagline: 'Vadodara’s Premier Water Level Controller & Butterfly Valve Manufacturer',
+  tagline: 'Vadodara’s Premier Water Level Controller Manufacturer & Butterfly Valve Supplier',
   address: {
     streetAddress: 'C-10, Gaurav Park, Diwalipura, Vasna Road',
     addressLocality: 'Vadodara',
