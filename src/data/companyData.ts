@@ -32,7 +32,7 @@ export const PRODUCT_DIVISIONS: ProductDivision[] = [
   {
     id: 'wlc',
     category: 'Water Level Controller',
-    displayName: 'Water level controller Manufacturer',
+    displayName: 'Water Level Controller',
     shortTitle: 'Water Level Controller',
     description: 'Automated microprocessor digital overhead tank & sump water level controllers with dry-run protection.',
     iconName: 'Cpu',
@@ -41,8 +41,8 @@ export const PRODUCT_DIVISIONS: ProductDivision[] = [
   {
     id: 'valves',
     category: 'Butterfly Valve',
-    displayName: 'Butterfly Valve supplier in vadodara',
-    shortTitle: 'Butterfly Valves',
+    displayName: 'Butterfly Valve',
+    shortTitle: 'Butterfly Valve',
     description: 'Heavy duty SS 316 ball valves, wafer butterfly valves, check valves, and flanged valves for chemical & water lines.',
     iconName: 'CircleDot',
     image: 'https://lh3.googleusercontent.com/d/1XaAIg7Zjs4R1u8HJ4IDyHEnqSSUOYOB0',
@@ -50,8 +50,8 @@ export const PRODUCT_DIVISIONS: ProductDivision[] = [
   {
     id: 'motor-pumps',
     category: 'Motor Pump',
-    displayName: 'Motor Pump supplier in Vadodara',
-    shortTitle: 'Motor Pumps',
+    displayName: 'Motor Pump',
+    shortTitle: 'Motor Pump',
     description: 'High flow centrifugal monoblock motor pumps and heavy duty industrial water transfer pump sets.',
     iconName: 'Zap',
     image: 'https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=800&q=80',
@@ -59,8 +59,8 @@ export const PRODUCT_DIVISIONS: ProductDivision[] = [
   {
     id: 'pipes-fittings',
     category: 'Pipes & Fittings',
-    displayName: 'Pipe and Fitting in Vadodara',
-    shortTitle: 'Pipe & Fittings',
+    displayName: 'Pipes & Fittings',
+    shortTitle: 'Pipes & Fittings',
     description: 'SCH 40 / SCH 80 CPVC, UPVC pressure pipes, SS forged flanges and heavy industrial pipe fittings.',
     iconName: 'Layers',
     image: 'https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=800&q=80',
@@ -68,8 +68,8 @@ export const PRODUCT_DIVISIONS: ProductDivision[] = [
   {
     id: 'pressure-pumps',
     category: 'Pressure Pump',
-    displayName: 'Pressure Pump supplier in vadodara',
-    shortTitle: 'Pressure Pumps',
+    displayName: 'Pressure Pump',
+    shortTitle: 'Pressure Pump',
     description: 'Automatic hydro-pneumatic multi-stage booster pressure pumps for constant pressure in tall towers.',
     iconName: 'Gauge',
     image: 'https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=800&q=80',
@@ -77,8 +77,8 @@ export const PRODUCT_DIVISIONS: ProductDivision[] = [
   {
     id: 'submersible-pumps',
     category: 'Submersible Pump',
-    displayName: 'Submersible Pump supplier in vadodara',
-    shortTitle: 'Submersible Pumps',
+    displayName: 'Submersible Pump',
+    shortTitle: 'Submersible Pump',
     description: 'Deep borewell stainless steel submersibles and heavy duty non-clog sewage dewatering pumps.',
     iconName: 'Droplets',
     image: 'https://lh3.googleusercontent.com/d/1s3LE7sLg3nABRXZWKKiXHDEjqfeEo5uv',

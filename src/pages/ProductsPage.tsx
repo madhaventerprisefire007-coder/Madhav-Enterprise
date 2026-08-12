@@ -78,9 +78,9 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
   // Calculate dynamic SEO parameters
   const isDetail = !!internalSelectedProduct;
   const currentTitle = isDetail
-    ? `${internalSelectedProduct.name} - ${internalSelectedProduct.category} Manufacturer Vadodara`
+    ? `${internalSelectedProduct.name} - ${internalSelectedProduct.category} Manufacturer & Supplier Vadodara`
     : currentDivision
-    ? `${currentDivision.displayName} | Madhav Enterprise Vadodara`
+    ? `${currentDivision.displayName} Manufacturer & Supplier in Vadodara | Madhav Enterprise`
     : 'Industrial Water Level Controllers, Valves & Pumps Catalog Vadodara';
 
   const currentDesc = isDetail
@@ -156,7 +156,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
             <span>{currentDivision ? currentDivision.shortTitle : 'Industrial Range Catalog'}</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
-            {currentDivision ? `${currentDivision.displayName} in Vadodara` : 'Products & Industrial Equipment Range in Vadodara'}
+            {currentDivision ? `${currentDivision.displayName} Manufacturer & Supplier in Vadodara` : 'Products & Industrial Equipment Range in Vadodara'}
           </h1>
           <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
             {currentDivision ? currentDivision.description : 'High precision Automatic Water Level Controllers, Heavy Duty Industrial SS Valves, Centrifugal Motor Pumps, Hydro-Pneumatic Boosters, Borewell Submersibles, and CPVC Pressure Pipes manufactured in Vadodara, Gujarat.'}
