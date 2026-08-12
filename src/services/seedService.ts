@@ -59,10 +59,9 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
     const categoriesList = [
       { id: 'cat-wlc', title: 'Water Level Controller', slug: 'water-level-controller', description: 'Automated digital overhead tank and sump water level logic controllers', icon: 'Cpu', image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80', status: 'active', createdAt: new Date().toISOString() },
       { id: 'cat-valves', title: 'Butterfly Valve', slug: 'butterfly-valve', description: 'Cast Iron and Stainless Steel wafer butterfly valves with EPDM/Nitrile seats', icon: 'CircleDot', image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80', status: 'active', createdAt: new Date().toISOString() },
-      { id: 'cat-motors', title: 'Motor Pump', slug: 'motor-pump', description: 'Centrifugal monoblock and open-well induction motor pumps', icon: 'Zap', image: 'https://images.unsplash.com/photo-1581092281633-53e4ded1b58e?auto=format&fit=crop&w=800&q=80', status: 'active', createdAt: new Date().toISOString() },
+      { id: 'cat-sewage', title: 'Sewage Pump', slug: 'sewage-pump', description: 'Heavy duty non-clog sewage & dewatering pumps (1HP to 5HP)', icon: 'Zap', image: 'https://lh3.googleusercontent.com/d/1nCTshHXYHThd-nwSPdrKnjc2Irotp6SV', status: 'active', createdAt: new Date().toISOString() },
       { id: 'cat-pressure', title: 'Pressure Pump', slug: 'pressure-pump', description: 'Hydro-pneumatic pressure booster pumps for multi-story buildings', icon: 'Gauge', image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80', status: 'active', createdAt: new Date().toISOString() },
       { id: 'cat-submersible', title: 'Submersible Pump', slug: 'submersible-pump', description: 'Borewell submersibles & heavy-duty industrial dewatering pumps', icon: 'Droplets', image: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80', status: 'active', createdAt: new Date().toISOString() },
-      { id: 'cat-pipes', title: 'Pipes & Fittings', slug: 'pipes-fittings', description: 'CPVC, UPVC pressure pipes and heavy industrial pipe fittings', icon: 'Layers', image: 'https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=800&q=80', status: 'active', createdAt: new Date().toISOString() },
     ];
 
     for (const cat of categoriesList) {
@@ -72,7 +71,7 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
     // 3. Seed Homepage Doc
     const homepageData: FirestoreHomepage = {
       heroTitle: 'Industrial Water Level Controllers & Butterfly Valves',
-      heroSubtitle: 'Vadodara’s Leading Manufacturer & Supplier of Precision Flow Controls, Centrifugal Motor Pumps, and Hydro-Pneumatic Pressure Boosters.',
+      heroSubtitle: 'Vadodara’s Leading Manufacturer & Supplier of Precision Flow Controls, Sewage Dewatering Pumps, and Hydro-Pneumatic Pressure Boosters.',
       heroImage: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
       aboutPreview: 'Madhav Enterprise has been delivering premium industrial automation, water level logic controllers, and high-pressure fluid valves in Vadodara, Gujarat since 2008.',
       whyChooseUs: [

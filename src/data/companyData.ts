@@ -48,22 +48,13 @@ export const PRODUCT_DIVISIONS: ProductDivision[] = [
     image: 'https://lh3.googleusercontent.com/d/1XaAIg7Zjs4R1u8HJ4IDyHEnqSSUOYOB0',
   },
   {
-    id: 'motor-pumps',
-    category: 'Motor Pump',
-    displayName: 'Motor Pump',
-    shortTitle: 'Motor Pump',
-    description: 'High flow centrifugal monoblock motor pumps and heavy duty industrial water transfer pump sets.',
+    id: 'sewage-pumps',
+    category: 'Sewage Pump',
+    displayName: 'Sewage Pump',
+    shortTitle: 'Sewage Pump',
+    description: 'Heavy duty non-clog sewage pumps, cutter pumps, and industrial wastewater dewatering sets.',
     iconName: 'Zap',
-    image: 'https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 'pipes-fittings',
-    category: 'Pipes & Fittings',
-    displayName: 'Pipes & Fittings',
-    shortTitle: 'Pipes & Fittings',
-    description: 'SCH 40 / SCH 80 CPVC, UPVC pressure pipes, SS forged flanges and heavy industrial pipe fittings.',
-    iconName: 'Layers',
-    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=800&q=80',
+    image: 'https://lh3.googleusercontent.com/d/1nCTshHXYHThd-nwSPdrKnjc2Irotp6SV',
   },
   {
     id: 'pressure-pumps',
@@ -197,40 +188,37 @@ export const PRODUCTS_DATA: Product[] = [
     industries: []
   },
   {
-    id: 'pump-centrifugal-mono',
-    name: 'High Flow Industrial Monoblock Motor Pump',
-    category: 'Motor Pump',
-    subtitle: 'Heavy Duty Cast Iron Centrifugal Monoblock Pump',
-    description: 'Designed for high volumetric water transfer in manufacturing plants, farms, and boiler feed systems. Features dynamically balanced bronze impeller.',
-    image: 'https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=800&q=80',
+    id: 'pump-sewage-submersible',
+    name: 'Sewage Pump in Vadodara',
+    category: 'Sewage Pump',
+    subtitle: 'Heavy Duty Non-Clog Sewage Dewatering Pump',
+    description: 'Heavy duty cast iron sewage submersible pump designed for wastewater management, industrial slurry transfer, and basement dewatering in Vadodara.',
+    image: 'https://lh3.googleusercontent.com/d/1nCTshHXYHThd-nwSPdrKnjc2Irotp6SV',
     galleryImages: [
-      'https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80'
+      'https://lh3.googleusercontent.com/d/1nCTshHXYHThd-nwSPdrKnjc2Irotp6SV'
     ],
     featured: true,
-    modelNumber: 'ME-CPM-750',
-    material: 'Cast Iron Casing & Bronze Impeller',
+    modelNumber: 'ME-SEW-5HP',
+    material: 'Cast Iron Frame & Alloy Steel Shaft',
     rating: '4.8/5',
     keyFeatures: [
-      'High efficiency TEFC 100% copper motor',
-      'Mechanical seal preventing shaft leakage',
-      'Wide voltage operating band (180V-240V for 1-phase / 350V-440V for 3-phase)',
-      'Low noise and minimal vibration during continuous run'
+      'Non-clogging open channel impeller design',
+      'Double mechanical seal with oil chamber',
+      'Includes auto float switch for level control',
+      'Heavy duty lifting handle and cast iron base'
     ],
     benefits: [
-      'Delivers steady continuous water discharge with minimal maintenance',
-      'Heavy duty cast iron casing handles hydraulic shocks',
-      'Dynamically balanced rotor ensures smooth quiet operation',
-      'IE2/IE3 high efficiency energy saving copper motor'
+      'Pumps muddy, fibrous slurry without choking or clogging',
+      'Submersible rating allows complete under-water operation in deep pits',
+      'Substantially reduces manual pit cleaning downtime'
     ],
     specs: [
-      { label: 'Power Rating', value: '1 HP to 40 HP' },
-      { label: 'Discharge Capacity', value: 'Up to 2400 Liters / Minute' },
-      { label: 'Speed', value: '2880 RPM (2-Pole)' }
+      { label: 'Power Rating', value: '1HP to 5HP' },
+      { label: 'Solid Handling Size', value: 'Up to 50mm particle diameter' },
+      { label: 'Submersion Depth', value: 'Up to 15 Meters' }
     ],
-    applications: ['Boiler Feed Systems', 'Industrial Water Circulation', 'Dairy Processing Units', 'Commercial Washing Stations'],
-    industries: ['Textile & Dyeing Mills', 'Food & Dairy Processing', 'Agriculture & Farm Irrigation']
+    applications: ['Effluent Treatment Plants (ETP/STP)', 'Basement Dewatering', 'Construction Site Pit Pumping', 'Chemical Slurry Transfer'],
+    industries: ['Water & Effluent Treatment (ETP/STP)', 'Chemical & Pharmaceutical', 'Textile & Dyeing Mills']
   },
   {
     id: 'pump-pressure-booster',
@@ -318,85 +306,12 @@ export const PRODUCTS_DATA: Product[] = [
       'Dual seal technology protects motor from slurry ingress'
     ],
     specs: [
-      { label: 'Power Rating', value: '1.0 HP to 10.0 HP' },
+      { label: 'Power Rating', value: '1HP to 5HP' },
       { label: 'Solid Handling Size', value: 'Up to 50mm particle diameter' },
       { label: 'Submersion Depth', value: 'Up to 15 Meters' }
     ],
     applications: ['Effluent Treatment Plants (ETP/STP)', 'Basement Dewatering', 'Construction Site Pit Pumping', 'Chemical Slurry Transfer'],
     industries: ['Water & Effluent Treatment (ETP/STP)', 'Chemical & Pharmaceutical', 'Textile & Dyeing Mills']
-  },
-  {
-    id: 'pipes-cpvc-industrial',
-    name: 'Industrial Heavy Duty CPVC & UPVC Pipes',
-    category: 'Pipes & Fittings',
-    subtitle: 'SDR 11 / SCH 40 / SCH 80 High Pressure Chemical Pipes',
-    description: 'Corrosion resistant CPVC and UPVC pipes manufactured according to IS 15778 / ASTM F441 standards for transporting hot & cold water, acids, and chemicals.',
-    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=800&q=80',
-    galleryImages: [
-      'https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80'
-    ],
-    featured: true,
-    modelNumber: 'ME-PIPE-CPVC-S80',
-    material: 'Chlorinated Polyvinyl Chloride (CPVC)',
-    rating: '4.9/5',
-    keyFeatures: [
-      'Handles fluids up to 93°C (200°F)',
-      '100% chemical corrosion resistant & scale free',
-      'Smooth inner surface minimizes frictional pressure drop',
-      'Fire resistant with low flame spread index'
-    ],
-    benefits: [
-      'Zero corrosion or rusting compared to traditional metal pipes',
-      'Lightweight and quick solvent weld jointing reduces installation labor',
-      'Resists mineral scaling and bio-film buildup inside pipe walls',
-      'Excellent thermal insulation reduces heat loss in hot water lines'
-    ],
-    specs: [
-      { label: 'Size Diameter', value: '1/2" to 12" (15mm to 300mm)' },
-      { label: 'Pressure Class', value: 'SCH 40 / SCH 80 / SDR 11 / SDR 13.5' },
-      { label: 'Standard Length', value: '3 Meters / 5 Meters per length' },
-      { label: 'Compliant Standards', value: 'ASTM D1785 / IS 4985 / ASTM F441' }
-    ],
-    applications: ['Chemical Processing Lines', 'Hot Water Boiler Feed Lines', 'Plating & Anodizing Plants', 'Commercial Plumbing'],
-    industries: ['Chemical & Pharmaceutical', 'Commercial Real Estate & Towers', 'Food & Dairy Processing']
-  },
-  {
-    id: 'fittings-industrial-flanges',
-    name: 'Stainless Steel & Forged Steel Flanges & Fittings',
-    category: 'Pipes & Fittings',
-    subtitle: 'ANSI B16.5 Weld Neck, Slip-On, Blind & Socket Weld Flanges',
-    description: 'Precision machined heavy industrial pipe fittings, elbows, tees, reducers, and flanges in SS 304, SS 316, and Carbon Steel for high pressure pipelines.',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
-    galleryImages: [
-      'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=800&q=80'
-    ],
-    featured: false,
-    modelNumber: 'ME-FIT-FLG-150',
-    material: 'Forged SS 304 / SS 316 / A105 Carbon Steel',
-    rating: '4.8/5',
-    keyFeatures: [
-      'CNC precision machined sealing face',
-      'Hydrostatically pressure batch tested',
-      'Available in Raised Face (RF) and Flat Face (FF)',
-      'Accompanied by Material Test Certificates (TC)'
-    ],
-    benefits: [
-      'Precise dimensions guarantee perfect alignment with butterfly valves',
-      'Forged steel grain structure provides high burst strength',
-      '100% material traceability with test certificates for auditor compliance',
-      'Resists severe pressure surges and thermal expansion forces'
-    ],
-    specs: [
-      { label: 'Size Range', value: '1/2" to 24" NB' },
-      { label: 'Pressure Rating', value: '150#, 300#, 600#, PN10, PN16, PN40' },
-      { label: 'Manufacturing Standard', value: 'ANSI B16.5 / BS 10 Table D/E/F / DIN' }
-    ],
-    applications: ['Process Piping Lines', 'Petroleum & Gas Mains', 'Industrial Water Distribution', 'Factory Equipment Connections'],
-    industries: ['Chemical & Pharmaceutical', 'Water & Effluent Treatment (ETP/STP)', 'Textile & Dyeing Mills']
   }
 ];
 

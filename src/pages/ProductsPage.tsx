@@ -78,20 +78,28 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
   // Calculate dynamic SEO parameters
   const isDetail = !!internalSelectedProduct;
   const currentTitle = isDetail
-    ? `${internalSelectedProduct.name} - ${internalSelectedProduct.category === 'Butterfly Valve' ? 'Butterfly Valve Supplier' : internalSelectedProduct.category + ' Manufacturer & Supplier'} Vadodara`
+    ? `${internalSelectedProduct.name} - ${
+        internalSelectedProduct.category === 'Butterfly Valve'
+          ? 'Butterfly Valve Supplier'
+          : internalSelectedProduct.category === 'Sewage Pump'
+          ? 'Sewage Pump Supplier'
+          : internalSelectedProduct.category + ' Manufacturer & Supplier'
+      } Vadodara`
     : currentDivision
     ? (currentDivision.category === 'Butterfly Valve'
         ? `Butterfly Valve Supplier in Vadodara | Madhav Enterprise`
+        : currentDivision.category === 'Sewage Pump'
+        ? `Sewage Pump Supplier in Vadodara | Madhav Enterprise`
         : `${currentDivision.displayName} Manufacturer & Supplier in Vadodara | Madhav Enterprise`)
     : 'Industrial Water Level Controllers, Valves & Pumps Catalog Vadodara';
 
   const currentDesc = isDetail
     ? `${internalSelectedProduct.description.slice(0, 155)}... Buy ${internalSelectedProduct.name} directly from Madhav Enterprise Vadodara.`
     : currentDivision
-    ? (currentDivision.category === 'Butterfly Valve'
+    ? (currentDivision.category === 'Butterfly Valve' || currentDivision.category === 'Sewage Pump'
         ? `Explore premier ${currentDivision.displayName} supplied by Madhav Enterprise in Vadodara, Gujarat. Get instant industrial quotes & specs.`
         : `Explore premier ${currentDivision.displayName} manufactured and supplied by Madhav Enterprise in Vadodara, Gujarat. Get instant industrial quotes & specs.`)
-    : 'Complete catalog of Automatic Water Level Controllers, Butterfly Valves, Centrifugal Motor Pumps & CPVC Fittings manufactured in Vadodara.';
+    : 'Complete catalog of Automatic Water Level Controllers, Butterfly Valves, Sewage Pumps & Booster Systems in Vadodara.';
 
   const canonicalPath = isDetail
     ? `${BASE_URL}/products/${generateSlug(internalSelectedProduct.name)}`
@@ -114,10 +122,9 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
             internalSelectedProduct.modelNumber,
             'Water Level Controller Manufacturer in Vadodara',
             'Butterfly Valve Supplier in Vadodara',
-            'Motor Pump Supplier',
+            'Sewage Pump Supplier in Vadodara',
             'Pressure Pump Supplier',
-            'Submersible Pump Supplier',
-            'Pipes and Fittings Supplier'
+            'Submersible Pump Supplier'
           ]}
           extraSchemaData={internalSelectedProduct}
         />
@@ -144,10 +151,9 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
         keywords={[
           'Water Level Controller Manufacturer in Vadodara',
           'Butterfly Valve Supplier in Vadodara',
-          'Motor Pump Supplier',
+          'Sewage Pump Supplier in Vadodara',
           'Pressure Pump Supplier',
-          'Submersible Pump Supplier',
-          'Pipes and Fittings Supplier'
+          'Submersible Pump Supplier'
         ]}
       />
       
@@ -163,11 +169,13 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
             {currentDivision 
               ? (currentDivision.category === 'Butterfly Valve' 
                   ? 'Butterfly Valve Supplier in Vadodara' 
+                  : currentDivision.category === 'Sewage Pump'
+                  ? 'Sewage Pump Supplier in Vadodara'
                   : `${currentDivision.displayName} Manufacturer & Supplier in Vadodara`) 
               : 'Products & Industrial Equipment Range in Vadodara'}
           </h1>
           <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
-            {currentDivision ? currentDivision.description : 'High precision Automatic Water Level Controllers, Heavy Duty Industrial SS Valves, Centrifugal Motor Pumps, Hydro-Pneumatic Boosters, Borewell Submersibles, and CPVC Pressure Pipes manufactured in Vadodara, Gujarat.'}
+            {currentDivision ? currentDivision.description : 'High precision Automatic Water Level Controllers, Heavy Duty Industrial Valves, Sewage Dewatering Pumps, Hydro-Pneumatic Boosters, and Borewell Submersibles in Vadodara, Gujarat.'}
           </p>
         </div>
       </section>

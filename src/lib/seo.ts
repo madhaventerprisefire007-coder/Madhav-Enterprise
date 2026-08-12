@@ -54,17 +54,16 @@ export const BUSINESS_INFO = {
 export const PRIMARY_KEYWORDS = [
   'Water Level Controller Manufacturer in Vadodara',
   'Butterfly Valve Supplier in Vadodara',
-  'Motor Pump Supplier',
+  'Sewage Pump Supplier in Vadodara',
   'Pressure Pump Supplier',
   'Submersible Pump Supplier',
-  'Pipes and Fittings Supplier',
   'Industrial Equipment Supplier',
   'Water Control System',
   'Butterfly Valve Supplier Gujarat',
   'Water Level Controller Gujarat',
   'Automatic Overhead Tank Controller Vadodara',
   'Cast Iron Wafer Butterfly Valve Vadodara',
-  'Centrifugal Monoblock Pump Supplier Gujarat',
+  'Sewage Dewatering Pump Supplier Gujarat',
 ];
 
 /**
@@ -85,7 +84,7 @@ export function generateSlug(text: string): string {
 export function buildSEOMetadata(pageName: string, config: SEOPageConfig = {}) {
   const siteUrl = getSiteUrl();
   const defaultTitle = `${BUSINESS_INFO.name} | Water Level Controller Manufacturer & Butterfly Valve Supplier Vadodara`;
-  const defaultDesc = `Madhav Enterprise is Vadodara's leading manufacturer & supplier of Automatic Water Level Controllers, Butterfly Valves, Centrifugal Motor Pumps, Hydro Booster Pressure Pumps & CPVC Fittings. Located in Diwalipura / Vasna Road, Vadodara, Gujarat.`;
+  const defaultDesc = `Madhav Enterprise is Vadodara's leading manufacturer & supplier of Automatic Water Level Controllers, Butterfly Valves, Sewage Dewatering Pumps & Hydro Booster Pressure Pumps. Located in Diwalipura / Vasna Road, Vadodara, Gujarat.`;
 
   const title = config.title
     ? `${config.title} | ${BUSINESS_INFO.name} Vadodara`

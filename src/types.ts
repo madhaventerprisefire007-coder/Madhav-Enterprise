@@ -4,10 +4,9 @@ export type ProductCategory =
   | 'All'
   | 'Water Level Controller'
   | 'Butterfly Valve'
-  | 'Motor Pump'
+  | 'Sewage Pump'
   | 'Pressure Pump'
-  | 'Submersible Pump'
-  | 'Pipes & Fittings';
+  | 'Submersible Pump';
 
 export interface TechnicalSpec {
   label: string;

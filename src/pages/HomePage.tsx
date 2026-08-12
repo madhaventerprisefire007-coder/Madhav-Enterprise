@@ -45,14 +45,13 @@ export const HomePage: React.FC<HomePageProps> = ({
       <SEOHead
         pageName="home"
         title="Water Level Controller Manufacturer in Vadodara | Butterfly Valve Supplier"
-        description="Madhav Enterprise is Vadodara's leading manufacturer & supplier of Automatic Water Level Controllers, Butterfly Valves, Centrifugal Motor Pumps, Hydro Booster Pressure Pumps & CPVC Pipes in Vasna Road & Diwalipura, Vadodara."
+        description="Madhav Enterprise is Vadodara's leading manufacturer & supplier of Automatic Water Level Controllers, Butterfly Valves, Sewage Dewatering Pumps & Hydro Booster Pressure Pumps in Vasna Road & Diwalipura, Vadodara."
         keywords={[
           'Water Level Controller Manufacturer in Vadodara',
           'Butterfly Valve Supplier in Vadodara',
-          'Motor Pump Supplier',
+          'Sewage Pump Supplier in Vadodara',
           'Pressure Pump Supplier',
           'Submersible Pump Supplier',
-          'Pipes and Fittings Supplier',
           'Industrial Equipment Supplier',
           'Water Control System',
           'Butterfly Valve Supplier Gujarat',

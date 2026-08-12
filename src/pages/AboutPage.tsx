@@ -51,7 +51,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
             About Madhav Enterprise Vadodara
           </h1>
           <p className="text-sm md:text-base text-neutral-300 leading-relaxed">
-            Leading manufacturer and supplier of Automatic Water Level Controllers, Butterfly Valves, Motor Pumps, Submersible Systems, and CPVC Piping based in Vadodara, Gujarat.
+            Leading manufacturer and supplier of Automatic Water Level Controllers, Butterfly Valves, Sewage Dewatering Pumps, Submersible Systems, and Hydro Boosters based in Vadodara, Gujarat.
           </p>
         </div>
       </section>

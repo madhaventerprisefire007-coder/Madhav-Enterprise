@@ -29,8 +29,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
     'All',
     'Water Level Controller',
     'Butterfly Valve',
-    'Motor Pump',
-    'Pipes & Fittings',
+    'Sewage Pump',
     'Pressure Pump',
     'Submersible Pump',
   ];

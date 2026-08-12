@@ -257,9 +257,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onPageChange, onOpenQu
                   >
                     <option value="Water Level Controller">Water Level Controller Requirement</option>
                     <option value="Butterfly Valves">Butterfly Valves (Wafer / Cast Iron / SS)</option>
-                    <option value="Pumps">Motor & Submersible Pumps</option>
-                    <option value="Pressure Booster System">Hydro-Pneumatic Pressure Booster</option>
-                    <option value="Pipes & Fittings">CPVC / UPVC Pipes & Fittings</option>
+                    <option value="Sewage Pumps">Sewage Dewatering Pumps (1HP - 5HP)</option>
+                    <option value="Pumps">Submersible & Booster Pumps</option>
                     <option value="Factory Visit">Vadodara Factory Visit</option>
                   </select>
                 </div>

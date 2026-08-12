@@ -105,10 +105,9 @@ export default function App() {
               'All',
               'Water Level Controller',
               'Butterfly Valve',
-              'Motor Pump',
+              'Sewage Pump',
               'Pressure Pump',
-              'Submersible Pump',
-              'Pipes & Fittings'
+              'Submersible Pump'
             ];
             if (decodedCat.toLowerCase() === 'industrial-valve' || decodedCat.toLowerCase() === 'industrial valve') {
               setSelectedCategory('Butterfly Valve');
