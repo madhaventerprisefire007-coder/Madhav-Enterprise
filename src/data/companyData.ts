@@ -90,7 +90,7 @@ export const PRODUCTS_DATA: Product[] = [
     id: 'wlc-auto-pro',
     name: 'Single Phase Panel with Sensor Water Level Controller',
     category: 'Water Level Controller',
-    subtitle: 'Single Phase Automatic Water Level Controller with PPC Float Switch Sensors',
+    subtitle: 'Single Phase Automatic Water Level Controller with PVC Float Switch Sensors',
     description: 'Single phase digital panel with sensor water level controller designed to automatically control single phase pumps with dry-run protection and sensor cutoff.',
     image: 'https://lh3.googleusercontent.com/d/1VNt-UEeGupP1i_ghqByTydYKuWhIR4YI',
     galleryImages: [
@@ -100,17 +100,17 @@ export const PRODUCTS_DATA: Product[] = [
     wiringDiagramUrl: 'https://lh3.googleusercontent.com/d/14T77b0NTyy2I8vvH8jNNerXrdG9Pj0TO',
     featured: true,
     modelNumber: 'ME-WLC-9000D',
-    material: 'Flame Retardant ABS Body & PPC Float Switch Sensors',
+    material: 'Flame Retardant ABS Body & PVC Float Switch Sensors',
     rating: '4.9/5',
     keyFeatures: [],
     benefits: [],
     specs: [
-      { label: 'Operating Voltage', value: '180V' },
+      { label: 'Operating Voltage', value: '180V to 250V' },
       { label: 'Compatible Motor', value: '0.5 HP to 2 HP' },
-      { label: 'Sensor Type', value: 'PPC Float Switch' },
+      { label: 'Sensor Type', value: 'PVC Float Switch' },
       { label: 'Sensor Wire Distance', value: '30 to 60 Meters' }
     ],
-    applications: ['Chemical Plants'],
+    applications: [],
     industries: []
   },
   {
