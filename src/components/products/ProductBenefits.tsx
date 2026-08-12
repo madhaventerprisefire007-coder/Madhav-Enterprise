@@ -6,14 +6,7 @@ interface ProductBenefitsProps {
 }
 
 export const ProductBenefits: React.FC<ProductBenefitsProps> = ({ benefits = [] }) => {
-  const defaultBenefits = [
-    'Substantially lowers operational downtime and maintenance expenses',
-    'Increases hydraulic efficiency and prevents energy loss',
-    'Backed by Madhav Enterprise 12 to 24 Months Warranty',
-    'Direct factory replacement parts readily available in Vadodara'
-  ];
-
-  const displayBenefits = benefits.length > 0 ? benefits : defaultBenefits;
+  if (!benefits || benefits.length === 0) return null;
 
   return (
     <div className="bg-gradient-to-br from-[#111111] via-neutral-900 to-black text-white p-6 sm:p-8 rounded-3xl shadow-lg relative overflow-hidden space-y-5">
@@ -34,7 +27,7 @@ export const ProductBenefits: React.FC<ProductBenefitsProps> = ({ benefits = [] 
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 relative z-10">
-        {displayBenefits.map((benefit, idx) => (
+        {benefits.map((benefit, idx) => (
           <div
             key={idx}
             className="flex items-start gap-3 p-4 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm"

@@ -5,7 +5,9 @@ interface ProductFeaturesProps {
   features: string[];
 }
 
-export const ProductFeatures: React.FC<ProductFeaturesProps> = ({ features }) => {
+export const ProductFeatures: React.FC<ProductFeaturesProps> = ({ features = [] }) => {
+  if (!features || features.length === 0) return null;
+
   return (
     <div className="bg-white p-6 sm:p-8 rounded-3xl border border-neutral-200 shadow-sm space-y-4">
       <div className="flex items-center gap-2">

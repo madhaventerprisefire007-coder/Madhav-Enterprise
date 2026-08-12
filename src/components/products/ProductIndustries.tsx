@@ -6,15 +6,7 @@ interface ProductIndustriesProps {
 }
 
 export const ProductIndustries: React.FC<ProductIndustriesProps> = ({ industries = [] }) => {
-  const defaultIndustries = [
-    'Chemical & Pharmaceutical',
-    'Textile & Dyeing Mills',
-    'Water & Effluent Treatment (ETP/STP)',
-    'Commercial Real Estate & Towers',
-    'Agriculture & Farm Irrigation'
-  ];
-
-  const displayIndustries = industries.length > 0 ? industries : defaultIndustries;
+  if (!industries || industries.length === 0) return null;
 
   return (
     <div className="bg-neutral-50 p-6 sm:p-8 rounded-3xl border border-neutral-200 shadow-sm space-y-4">
@@ -28,7 +20,7 @@ export const ProductIndustries: React.FC<ProductIndustriesProps> = ({ industries
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 pt-1">
-        {displayIndustries.map((ind, idx) => (
+        {industries.map((ind, idx) => (
           <div
             key={idx}
             className="bg-white p-3.5 rounded-2xl border border-neutral-200 text-center space-y-1 shadow-2xs hover:border-[#E86A2D] transition-colors"

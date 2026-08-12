@@ -19,6 +19,10 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
             images: [p.image, ...(p.galleryImages || [])],
             specs: p.specs,
             material: p.material,
+            keyFeatures: p.keyFeatures || [],
+            benefits: p.benefits || [],
+            applications: p.applications || [],
+            industries: p.industries || [],
             updatedAt: new Date().toISOString(),
           }, { merge: true });
         }

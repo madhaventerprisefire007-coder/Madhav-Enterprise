@@ -285,28 +285,16 @@ export const PRODUCTS_DATA: Product[] = [
     ],
     featured: true,
     modelNumber: 'ME-HPN-PRESS',
-    material: 'Stainless Steel SS 304 Impellers & Pressure Tank',
+    material: 'Stainless Steel SS 304 Impellers and SS bowl',
     rating: '4.9/5',
-    keyFeatures: [
-      'Multi-stage silent pump design with zero pulsation',
-      'Food-grade EPDM pressure diaphragm tank',
-      'Preset pressure switch & brass pressure gauge included',
-      'Protects against dry running & high temperature'
-    ],
-    benefits: [
-      'Guarantees uniform water pressure across all upper and lower floor taps',
-      'Silent operation suitable for indoor equipment rooms',
-      'Reduces frequent pump starts, extending motor switchgear life',
-      'Plug-and-play complete skid packaged unit'
-    ],
+    keyFeatures: [],
+    benefits: [],
     specs: [
-      { label: 'Power Capacity', value: '0.75 HP to 5.0 HP' },
-      { label: 'Pressure Range', value: '1.5 Bar to 7.0 Bar' },
-      { label: 'Tank Capacity', value: '24L / 50L / 100L Expansion Vessel' },
-      { label: 'Max Outlets', value: 'Up to 12 Bathrooms simultaneously' }
+      { label: 'Power Capacity', value: '0.50 HP to 1.50 HP' },
+      { label: 'Tank Capacity', value: '24L / 60L / 100L Expansion Vessel' }
     ],
-    applications: ['Luxury Villas & Resorts', 'Commercial Malls & Hotels', 'Car Wash Systems', 'Pharma Cleanroom Washing'],
-    industries: ['Commercial Real Estate & Towers', 'Chemical & Pharmaceutical', 'Food & Dairy Processing']
+    applications: ['Luxury Villas & Resorts', 'Commercial Malls & Hotels'],
+    industries: []
   },
   {
     id: 'pump-submersible-bore',

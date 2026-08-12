@@ -5,7 +5,9 @@ interface ProductApplicationsProps {
   applications: string[];
 }
 
-export const ProductApplications: React.FC<ProductApplicationsProps> = ({ applications }) => {
+export const ProductApplications: React.FC<ProductApplicationsProps> = ({ applications = [] }) => {
+  if (!applications || applications.length === 0) return null;
+
   return (
     <div className="bg-white p-6 sm:p-8 rounded-3xl border border-neutral-200 shadow-sm space-y-4">
       <div className="flex items-center gap-2">
