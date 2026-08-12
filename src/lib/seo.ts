@@ -92,7 +92,7 @@ export function buildSEOMetadata(pageName: string, config: SEOPageConfig = {}) {
     : defaultTitle;
 
   const description = config.description || defaultDesc;
-  const canonicalUrl = config.canonicalUrl || `${siteUrl}/${pageName !== 'home' ? '#/' + pageName : ''}`;
+  const canonicalUrl = config.canonicalUrl || `${siteUrl}${pageName !== 'home' ? '/' + pageName : ''}`;
   const keywords = Array.from(new Set([...(config.keywords || []), ...PRIMARY_KEYWORDS])).join(', ');
   const ogImage = config.ogImage || `${siteUrl}/logo.png`;
   const ogType = config.ogType || 'website';
@@ -178,7 +178,7 @@ export function generateSchemas(pageType: string, extraData?: any) {
     },
     potentialAction: {
       '@type': 'SearchAction',
-      target: `${siteUrl}/#/products?search={search_term_string}`,
+      target: `${siteUrl}/products?search={search_term_string}`,
       'query-input': 'required name=search_term_string',
     },
   };
@@ -206,25 +206,25 @@ export function generateSchemas(pageType: string, extraData?: any) {
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: `${siteUrl}/#/`,
+          item: `${siteUrl}/`,
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Products',
-          item: `${siteUrl}/#/products`,
+          item: `${siteUrl}/products`,
         },
         ...(extraData.category ? [{
           '@type': 'ListItem',
           position: 3,
           name: extraData.category,
-          item: `${siteUrl}/#/products?category=${encodeURIComponent(extraData.category)}`,
+          item: `${siteUrl}/products?category=${encodeURIComponent(extraData.category)}`,
         }] : []),
         ...(extraData.name ? [{
           '@type': 'ListItem',
           position: extraData.category ? 4 : 3,
           name: extraData.name,
-          item: `${siteUrl}/#/product/${generateSlug(extraData.name)}`,
+          item: `${siteUrl}/product/${generateSlug(extraData.name)}`,
         }] : []),
       ],
     };
@@ -247,7 +247,7 @@ export function generateSchemas(pageType: string, extraData?: any) {
       },
       offers: {
         '@type': 'Offer',
-        url: `${siteUrl}/#/product/${generateSlug(extraData.name || extraData.title || '')}`,
+        url: `${siteUrl}/product/${generateSlug(extraData.name || extraData.title || '')}`,
         priceCurrency: 'INR',
         price: extraData.price || '0.00',
         priceValidUntil: '2027-12-31',
@@ -273,7 +273,7 @@ export function generateSchemas(pageType: string, extraData?: any) {
       '@type': 'ContactPage',
       name: `Contact ${BUSINESS_INFO.name}`,
       description: `Get in touch with Madhav Enterprise Vadodara for sales enquiries, quotes, and product technical specifications.`,
-      url: `${siteUrl}/#/contact`,
+      url: `${siteUrl}/contact`,
       mainEntity: {
         '@type': 'Organization',
         name: BUSINESS_INFO.name,

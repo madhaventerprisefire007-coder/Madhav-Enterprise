@@ -38,18 +38,29 @@ export default function App() {
 
   const [selectedDetailProduct, setSelectedDetailProduct] = useState<Product | null>(null);
 
-  // Sync state from URL hash for deep linking, browser back/forward buttons, and SEO friendly product URLs
+  // Sync state from clean URLs for deep linking, browser back/forward buttons, and SEO friendly product URLs
   useEffect(() => {
-    const syncStateFromHash = () => {
-      const hash = window.location.hash || '#/';
+    const syncStateFromUrl = () => {
+      const hash = window.location.hash;
+      const pathname = window.location.pathname;
+      
+      // Determine the route path (if hash exists from an old link, clean it up and replace state)
+      let routeStr = pathname;
+      if (hash && hash.length > 1) {
+        routeStr = hash.replace('#', '');
+        // Clean up hash from browser address bar
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState({}, '', routeStr || '/');
+        }
+      }
 
-      // 1. Individual Product URL: e.g. #/product/automatic-water-level-controller or #/product?id=wlc-auto-pro
-      if (hash.includes('/product/') || hash.includes('/product?')) {
+      // 1. Individual Product URL: e.g. /product/panel-with-sensor
+      if (routeStr.includes('/product/') || routeStr.includes('/product?')) {
         let targetIdOrSlug = '';
-        if (hash.includes('id=')) {
-          targetIdOrSlug = new URLSearchParams(hash.split('?')[1] || '').get('id') || '';
-        } else if (hash.includes('/product/')) {
-          targetIdOrSlug = decodeURIComponent(hash.split('/product/')[1]?.split('?')[0] || '');
+        if (routeStr.includes('id=')) {
+          targetIdOrSlug = new URLSearchParams(routeStr.split('?')[1] || '').get('id') || '';
+        } else if (routeStr.includes('/product/')) {
+          targetIdOrSlug = decodeURIComponent(routeStr.split('/product/')[1]?.split('?')[0] || '');
         }
 
         if (targetIdOrSlug) {
@@ -68,15 +79,15 @@ export default function App() {
         }
       }
 
-      // 2. Products Category Catalog URL: e.g. #/products/industrial-valve or #/products?category=Industrial%20Valve
-      if (hash.includes('/products')) {
+      // 2. Products Category Catalog URL: e.g. /products/water-level-controller
+      if (routeStr.includes('/products')) {
         setCurrentPage('products');
         setSelectedDetailProduct(null);
         let catParam = '';
-        if (hash.includes('category=')) {
-          catParam = new URLSearchParams(hash.split('?')[1] || '').get('category') || '';
-        } else if (hash.includes('/products/')) {
-          catParam = decodeURIComponent(hash.split('/products/')[1]?.split('?')[0] || '');
+        if (routeStr.includes('category=')) {
+          catParam = new URLSearchParams(routeStr.split('?')[1] || '').get('category') || '';
+        } else if (routeStr.includes('/products/')) {
+          catParam = decodeURIComponent(routeStr.split('/products/')[1]?.split('?')[0] || '');
         }
 
         if (catParam) {
@@ -114,31 +125,35 @@ export default function App() {
         return;
       }
 
-      // 3. About Page URL: #/about
-      if (hash.includes('/about')) {
+      // 3. About Page URL: /about
+      if (routeStr.includes('/about')) {
         setCurrentPage('about');
         setSelectedDetailProduct(null);
         return;
       }
 
-      // 4. Contact Page URL: #/contact
-      if (hash.includes('/contact')) {
+      // 4. Contact Page URL: /contact
+      if (routeStr.includes('/contact')) {
         setCurrentPage('contact');
         setSelectedDetailProduct(null);
         return;
       }
 
-      // 5. Default Home Page URL: #/ or #/home
-      if (hash.includes('/home') || hash === '#/' || hash === '#' || hash === '') {
+      // 5. Default Home Page URL: / or /home
+      if (routeStr.includes('/home') || routeStr === '/' || routeStr === '') {
         setCurrentPage('home');
         setSelectedDetailProduct(null);
         return;
       }
     };
 
-    syncStateFromHash();
-    window.addEventListener('hashchange', syncStateFromHash);
-    return () => window.removeEventListener('hashchange', syncStateFromHash);
+    syncStateFromUrl();
+    window.addEventListener('hashchange', syncStateFromUrl);
+    window.addEventListener('popstate', syncStateFromUrl);
+    return () => {
+      window.removeEventListener('hashchange', syncStateFromUrl);
+      window.removeEventListener('popstate', syncStateFromUrl);
+    };
   }, []);
 
   // Modal handlers
@@ -151,46 +166,45 @@ export default function App() {
     setIsCallModalOpen(true);
   };
 
-  // Central page change handler
+  // Central page change handler (uses Clean URLs with pushState)
   const handlePageChange = (page: PageType) => {
     setCurrentPage(page);
     setSelectedDetailProduct(null);
+    let pathStr = '/';
     if (page === 'products') {
       const catSlug = selectedCategory && selectedCategory !== 'All' ? generateSlug(selectedCategory) : '';
-      const hashStr = catSlug ? `#/products/${catSlug}` : '#/products';
-      if (window.location.hash !== hashStr) {
-        window.location.hash = hashStr;
-      }
-    } else {
-      const hashStr = page === 'home' ? '#/' : `#/${page}`;
-      if (window.location.hash !== hashStr) {
-        window.location.hash = hashStr;
-      }
+      pathStr = catSlug ? `/products/${catSlug}` : '/products';
+    } else if (page !== 'home') {
+      pathStr = `/${page}`;
+    }
+
+    if (window.location.pathname !== pathStr) {
+      window.history.pushState({}, '', pathStr);
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Select Product handler with SEO-friendly URL hash sync
+  // Select Product handler with Clean URL pushState
   const handleSelectProduct = (product: Product) => {
     setSelectedDetailProduct(product);
     setCurrentPage('products');
     const seoSlug = generateSlug(product.name);
-    const hashStr = `#/product/${seoSlug}`;
-    if (window.location.hash !== hashStr) {
-      window.location.hash = hashStr;
+    const pathStr = `/product/${seoSlug}`;
+    if (window.location.pathname !== pathStr) {
+      window.history.pushState({}, '', pathStr);
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Select Category handler with SEO-friendly URL hash sync
+  // Select Category handler with Clean URL pushState
   const handleSelectCategory = (cat: ProductCategory) => {
     setSelectedCategory(cat);
     setSelectedDetailProduct(null);
     setCurrentPage('products');
     const catSlug = generateSlug(cat);
-    const hashStr = cat === 'All' ? '#/products' : `#/products/${catSlug}`;
-    if (window.location.hash !== hashStr) {
-      window.location.hash = hashStr;
+    const pathStr = cat === 'All' ? '/products' : `/products/${catSlug}`;
+    if (window.location.pathname !== pathStr) {
+      window.history.pushState({}, '', pathStr);
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
