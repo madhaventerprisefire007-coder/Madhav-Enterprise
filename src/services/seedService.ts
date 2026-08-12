@@ -14,6 +14,8 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
         const pSnap = await getDoc(pRef);
         if (pSnap.exists()) {
           await setDoc(pRef, {
+            name: p.name,
+            modelNumber: p.modelNumber,
             images: [p.image, ...(p.galleryImages || [])],
             specs: p.specs,
             material: p.material,

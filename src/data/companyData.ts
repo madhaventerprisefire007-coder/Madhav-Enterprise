@@ -310,7 +310,7 @@ export const PRODUCTS_DATA: Product[] = [
   },
   {
     id: 'pump-submersible-bore',
-    name: 'V6 / V8 Stainless Steel Borewell Submersible Pump',
+    name: 'V3 / V7 Stainless Steel Borewell Submersible Pump',
     category: 'Submersible Pump',
     subtitle: 'Water Filled / Oil Filled Heavy Duty Borewell Submersible Pump Set',
     description: 'Engineered for deep borewell extraction in agriculture and GIDC industrial estates. Features Noryl / SS impellers for high sand resistance and long life.',
@@ -319,7 +319,7 @@ export const PRODUCTS_DATA: Product[] = [
       'https://lh3.googleusercontent.com/d/1s3LE7sLg3nABRXZWKKiXHDEjqfeEo5uv'
     ],
     featured: true,
-    modelNumber: 'ME-SUB-V6',
+    modelNumber: 'ME-SUB-V3',
     material: 'SS body and copper rotor (single phase and 3 phase available)',
     rating: '4.9/5',
     keyFeatures: [
@@ -489,10 +489,10 @@ export const INDUSTRIES_SERVED: Industry[] = [
   {
     id: 'agriculture-irrigation',
     name: 'Agriculture & Farm Irrigation',
-    description: 'High depth V6/V8 borewell submersible pumps and HDPE pressure pipes built to supply deep groundwater across agricultural belts of Gujarat.',
+    description: 'High depth V3/V7 borewell submersible pumps and HDPE pressure pipes built to supply deep groundwater across agricultural belts of Gujarat.',
     iconName: 'Sprout',
     image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80',
-    popularProducts: ['V6 Borewell Submersible Pump', '3-Phase Control Panel', 'HDPE Pipes']
+    popularProducts: ['V3 Borewell Submersible Pump', '3-Phase Control Panel', 'HDPE Pipes']
   },
   {
     id: 'food-beverage',
