@@ -151,10 +151,10 @@ export const PRODUCTS_DATA: Product[] = [
   },
   {
     id: 'valv-ball-ss',
-    name: 'Heavy Duty Stainless Steel Ball Valve',
+    name: 'Butterfly Valve',
     category: 'Butterfly Valve',
-    subtitle: '3-Piece Full Port SS 316 / SS 304 Screwed & Flanged Ball Valve',
-    description: 'High pressure precision engineered SS 316 ball valve designed for harsh chemical, steam, and water applications. Provides leak-proof quarter-turn shutoff.',
+    subtitle: 'Precision Engineered Stainless Steel Butterfly Valve',
+    description: 'High precision stainless steel butterfly valve designed for water and chemical flow control applications.',
     image: 'https://lh3.googleusercontent.com/d/1XaAIg7Zjs4R1u8HJ4IDyHEnqSSUOYOB0',
     galleryImages: [
       'https://lh3.googleusercontent.com/d/1XaAIg7Zjs4R1u8HJ4IDyHEnqSSUOYOB0',
@@ -166,26 +166,13 @@ export const PRODUCTS_DATA: Product[] = [
     modelNumber: 'ME-BV-316FP',
     material: 'Stainless Steel SS 316 / CF8M',
     rating: '4.9/5',
-    keyFeatures: [
-      'Blowout-proof stem design for maximum safety',
-      'PTFE / R-PTFE seat rings for smooth operation',
-      'Tested up to 1000 PSI water, oil, and gas pressure',
-      'ISO 5211 mounting pad for easy actuator integration'
-    ],
-    benefits: [
-      'Extreme corrosion resistance against aggressive chemical media',
-      'Low operating torque ensures extended actuator life',
-      'Zero bubble-tight sealing guarantees zero leakage',
-      '3-Piece design allows easy online maintenance without removing body from pipeline'
-    ],
+    keyFeatures: [],
+    benefits: [],
     specs: [
-      { label: 'Size Range', value: '1/2" to 6" (DN15 to DN150)' },
-      { label: 'Pressure Rating', value: 'PN16 / PN25 / PN40 / Class 150/300' },
-      { label: 'End Connections', value: 'BSP Screwed / NPT / ANSI Flanged' },
-      { label: 'Temperature Range', value: '-20°C to +220°C' }
+      { label: 'Size Range', value: '1/2" to 6" (DN15 to DN150)' }
     ],
-    applications: ['Pharma & Chemical Plants', 'Steam Distribution Pipelines', 'Water Purification Plants', 'Petrochemical Refineries'],
-    industries: ['Chemical & Pharmaceutical', 'Food & Dairy Processing', 'Water & Effluent Treatment (ETP/STP)']
+    applications: [],
+    industries: []
   },
   {
     id: 'valv-butterfly-ci',
