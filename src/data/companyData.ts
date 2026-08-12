@@ -176,41 +176,26 @@ export const PRODUCTS_DATA: Product[] = [
   },
   {
     id: 'valv-butterfly-ci',
-    name: 'Cast Iron Wafer Type Butterfly Valve',
+    name: 'Ball Valve',
     category: 'Butterfly Valve',
-    subtitle: 'EPDM / Nitrile Lined Wafer Butterfly Valve with Lever / Gear',
-    description: 'Cost-effective high-flow butterfly valve featuring a ductile iron disc and replaceable EPDM seat. Ideal for large water supply lines and HVAC systems.',
+    subtitle: 'High Performance Ball Valve with Hand Lever Operation',
+    description: 'High performance ball valve designed for smooth water and chemical flow control with leak-proof hand lever operation.',
     image: 'https://lh3.googleusercontent.com/d/1_O3r0CGBcH9cvjJl8VX667vX9TZnp3tw',
     galleryImages: [
-      'https://lh3.googleusercontent.com/d/1_O3r0CGBcH9cvjJl8VX667vX9TZnp3tw',
-      'https://lh3.googleusercontent.com/d/1VlbcOfozFvwJZ6DjDhxwyrGi6Kzn5CSr',
-      'https://lh3.googleusercontent.com/d/17vLFbMPM8c4W1rhS0xUDhuYPQ4_ol0bQ',
-      'https://lh3.googleusercontent.com/d/1XaAIg7Zjs4R1u8HJ4IDyHEnqSSUOYOB0'
+      'https://lh3.googleusercontent.com/d/1_O3r0CGBcH9cvjJl8VX667vX9TZnp3tw'
     ],
     featured: true,
-    modelNumber: 'ME-BFV-WAF',
-    material: 'CI / DI Body with Ductile Iron or SS Disc',
+    modelNumber: 'ME-BV-CI',
+    material: 'Cast Iron / Stainless Steel Body',
     rating: '4.8/5',
-    keyFeatures: [
-      'Wafer design fits compactly between PN10/16 flanges',
-      'Bi-directional zero bubble-tight shutoff',
-      'Low torque operation reduces actuator sizing requirement',
-      'Epoxy coated body for anti-corrosion longevity'
-    ],
-    benefits: [
-      'Ultra compact face-to-face dimensions save piping space',
-      'Low cost and high flow capability for large diameter lines',
-      'Replaceable elastomeric liner acts as gasket during installation',
-      'Suitable for both throttling flow control and tight isolation'
-    ],
+    keyFeatures: [],
+    benefits: [],
     specs: [
       { label: 'Size Range', value: '2" to 24" (DN50 to DN600)' },
-      { label: 'Pressure Class', value: 'PN10 / PN16' },
-      { label: 'Operation', value: 'Hand Lever / Worm Gear Box / Pneumatic Actuator' },
-      { label: 'Seat Material', value: 'EPDM / Nitrile / Viton / PTFE' }
+      { label: 'Operation', value: 'Hand Lever' }
     ],
-    applications: ['Effluent Treatment Plants (ETP)', 'HVAC Cooling Water', 'Firefighting Water Lines', 'Sugar & Paper Industries'],
-    industries: ['Water & Effluent Treatment (ETP/STP)', 'Textile & Dyeing Mills', 'Commercial Real Estate & Towers']
+    applications: [],
+    industries: []
   },
   {
     id: 'pump-centrifugal-mono',
