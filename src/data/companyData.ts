@@ -88,10 +88,10 @@ export const PRODUCT_DIVISIONS: ProductDivision[] = [
 export const PRODUCTS_DATA: Product[] = [
   {
     id: 'wlc-auto-pro',
-    name: 'Panel with Sensor',
+    name: 'Single Phase Panel with Sensor Water Level Controller',
     category: 'Water Level Controller',
-    subtitle: 'Microprocessor Based Overhead & Sump Dual Tank Controller',
-    description: 'Advanced digital water level controller with micro-controller logic designed to automatically control single/three phase pumps. Features dry-run protection, high/low voltage cutoff, and LED digital indicator.',
+    subtitle: 'Single Phase Automatic Water Level Controller with PPC Float Switch Sensors',
+    description: 'Single phase digital panel with sensor water level controller designed to automatically control single phase pumps with dry-run protection and sensor cutoff.',
     image: 'https://lh3.googleusercontent.com/d/1VNt-UEeGupP1i_ghqByTydYKuWhIR4YI',
     galleryImages: [
       'https://lh3.googleusercontent.com/d/1VNt-UEeGupP1i_ghqByTydYKuWhIR4YI'
@@ -100,30 +100,18 @@ export const PRODUCTS_DATA: Product[] = [
     wiringDiagramUrl: 'https://lh3.googleusercontent.com/d/14T77b0NTyy2I8vvH8jNNerXrdG9Pj0TO',
     featured: true,
     modelNumber: 'ME-WLC-9000D',
-    material: 'Flame Retardant ABS Body & SS Sensors',
+    material: 'Flame Retardant ABS Body & PPC Float Switch Sensors',
     rating: '4.9/5',
-    keyFeatures: [
-      'Dual tank management (Overhead Tank & Sump Tank)',
-      'Built-in dry-run protection prevents pump burnout',
-      'High/Low line voltage surge suppressor',
-      'Maintenance-free Magnetic & SS Float Sensors',
-      'Manual override toggle switch for emergency operation'
-    ],
-    benefits: [
-      'Eliminates 100% of water tank overflow and wastage',
-      'Saves up to 18% monthly electricity costs by optimizing pump run cycles',
-      'Extends motor pump life by preventing dry running',
-      '24/7 automated unattended water level monitoring'
-    ],
+    keyFeatures: [],
+    benefits: [],
     specs: [
-      { label: 'Operating Voltage', value: '180V - 270V AC, 50Hz' },
-      { label: 'Compatible Motor', value: '0.5 HP to 15 HP (1-Phase & 3-Phase)' },
-      { label: 'Sensor Type', value: 'Magnetic Reed / Stainless Steel Electrodes' },
-      { label: 'Sensor Wire Distance', value: 'Up to 500 Meters without signal drop' },
-      { label: 'Enclosure Rating', value: 'IP-65 Dust & Moisture Resistant' }
+      { label: 'Operating Voltage', value: '180V' },
+      { label: 'Compatible Motor', value: '0.5 HP to 2 HP' },
+      { label: 'Sensor Type', value: 'PPC Float Switch' },
+      { label: 'Sensor Wire Distance', value: '30 to 60 Meters' }
     ],
-    applications: ['Industrial Chemical Plants', 'Commercial High-Rises', 'Housing Societies', 'Textile Processing Units', 'Municipal Water Pumping'],
-    industries: ['Chemical & Pharmaceutical', 'Commercial Real Estate & Towers', 'Textile & Dyeing Mills', 'Water & Effluent Treatment (ETP/STP)']
+    applications: ['Chemical Plants'],
+    industries: []
   },
   {
     id: 'wlc-panel-3ph',
