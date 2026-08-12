@@ -58,13 +58,13 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           </button>
 
           {/* Modal Header Image Banner */}
-          <div className="relative h-64 md:h-80 w-full overflow-hidden bg-neutral-900">
+          <div className="relative h-64 md:h-80 w-full overflow-hidden bg-white border-b border-neutral-100 flex items-center justify-center">
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-full object-contain p-4 opacity-95"
+              className="w-full h-full object-contain p-4"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent" />
 
             <div className="absolute bottom-6 left-6 right-6 text-white">
               <div className="flex flex-wrap items-center gap-2 mb-2">

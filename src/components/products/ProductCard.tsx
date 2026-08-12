@@ -24,47 +24,46 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     >
       <div>
         {/* Card Header & Image */}
-        <div className="relative h-52 sm:h-56 bg-neutral-900 overflow-hidden cursor-pointer" onClick={() => onSelectProduct(product)}>
+        <div className="relative h-52 sm:h-56 bg-white border-b border-neutral-100 overflow-hidden cursor-pointer flex items-center justify-center p-3" onClick={() => onSelectProduct(product)}>
           <img
             src={product.image}
             alt={product.name}
             referrerPolicy="no-referrer"
-            className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
             loading="lazy"
             onError={(e) => {
               e.currentTarget.src = "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80";
             }}
           />
-          
-          {/* Subtle dark gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
           {/* Top Badges */}
-          <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2 z-10">
-            <span className="bg-[#111111]/90 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-white/20">
+          <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2 z-10 pointer-events-none">
+            <span className="bg-[#E86A2D]/10 backdrop-blur-md text-[#E86A2D] text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-[#E86A2D]/20 shadow-xs">
               {product.category}
             </span>
             {product.rating && (
-              <span className="bg-amber-500 text-white text-[11px] font-extrabold px-2.5 py-0.5 rounded-full flex items-center gap-1 shadow-sm">
+              <span className="bg-amber-500 text-white text-[11px] font-extrabold px-2.5 py-0.5 rounded-full flex items-center gap-1 shadow-xs">
                 <Star className="w-3 h-3 fill-current" />
                 <span>{product.rating}</span>
               </span>
             )}
           </div>
-
-          {/* Bottom Overlay Info inside Image */}
-          <div className="absolute bottom-3 left-3 right-3 z-10 text-white space-y-0.5">
-            <span className="text-[10px] font-mono text-neutral-300 uppercase tracking-widest block">
-              Model: {product.modelNumber}
-            </span>
-            <h3 className="text-base font-display font-extrabold text-white leading-tight drop-shadow-sm group-hover:text-[#E86A2D] transition-colors line-clamp-1">
-              {product.name}
-            </h3>
-          </div>
         </div>
 
         {/* Card Body */}
-        <div className="p-5 sm:p-6 space-y-4">
+        <div className="p-5 sm:p-6 space-y-3">
+          {/* Title & Model */}
+          <div>
+            <span className="text-[10px] font-mono text-[#E86A2D] font-bold uppercase tracking-wider block mb-0.5">
+              MODEL: {product.modelNumber}
+            </span>
+            <h3 
+              onClick={() => onSelectProduct(product)}
+              className="text-base font-display font-extrabold text-neutral-900 leading-snug cursor-pointer hover:text-[#E86A2D] transition-colors line-clamp-1"
+            >
+              {product.name}
+            </h3>
+          </div>
           
           {/* Subtitle / Short Description */}
           <p className="text-xs text-neutral-600 line-clamp-2 leading-relaxed">

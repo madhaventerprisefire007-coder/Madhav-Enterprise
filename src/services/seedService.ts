@@ -15,6 +15,8 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
         if (pSnap.exists()) {
           await setDoc(pRef, {
             images: [p.image, ...(p.galleryImages || [])],
+            specs: p.specs,
+            material: p.material,
             updatedAt: new Date().toISOString(),
           }, { merge: true });
         }

@@ -320,7 +320,7 @@ export const PRODUCTS_DATA: Product[] = [
     ],
     featured: true,
     modelNumber: 'ME-SUB-V6',
-    material: 'SS 304 Outer Shell & Bronze Bushes',
+    material: 'SS body and copper rotor (single phase and 3 phase available)',
     rating: '4.9/5',
     keyFeatures: [
       'High efficiency electrical design reduces power consumption by 15%',
@@ -335,7 +335,8 @@ export const PRODUCTS_DATA: Product[] = [
       'Low thermal rise winding allows continuous 24-hour operation'
     ],
     specs: [
-      { label: 'Power Rating', value: '3.0 HP to 35.0 HP' },
+      { label: 'Construction Material', value: 'SS body and copper rotor (single phase and 3 phase available)' },
+      { label: 'Power Rating', value: '1 HP to 10 HP' },
       { label: 'Head Range', value: '20 Meters to 350 Meters' },
       { label: 'Discharge Flow', value: 'Up to 1800 LPM' },
       { label: 'Outlet Diameter', value: '50mm to 100mm (2" to 4")' }

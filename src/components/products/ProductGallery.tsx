@@ -24,7 +24,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
   return (
     <div className="space-y-4">
       {/* Main Image Container */}
-      <div className="relative rounded-3xl overflow-hidden border border-neutral-200 bg-neutral-900 shadow-md group">
+      <div className="relative rounded-3xl overflow-hidden border border-neutral-200 bg-white shadow-xs group">
         
         {/* Main Display Image */}
         <div
@@ -46,8 +46,8 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
           />
 
           {/* Hover Overlay Hint */}
-          <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-            <span className="bg-white/90 text-neutral-900 text-xs font-bold px-4 py-2 rounded-full flex items-center gap-2 shadow-lg">
+          <div className="absolute inset-0 bg-neutral-900/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+            <span className="bg-white/95 text-neutral-900 text-xs font-bold px-4 py-2 rounded-full flex items-center gap-2 shadow-lg border border-neutral-200">
               <ZoomIn className="w-4 h-4 text-[#E86A2D]" />
               Click to Expand Full Resolution
             </span>
@@ -55,7 +55,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
 
           {/* Top Floating Badge */}
           <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
-            <span className="bg-[#111111]/80 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1.5 border border-white/20">
+            <span className="bg-white/90 backdrop-blur-md text-neutral-800 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1.5 border border-neutral-200 shadow-xs">
               <ShieldCheck className="w-3.5 h-3.5 text-[#E86A2D]" />
               Quality Tested
             </span>
@@ -67,7 +67,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
               e.stopPropagation();
               setIsLightboxOpen(true);
             }}
-            className="absolute bottom-4 right-4 bg-black/60 hover:bg-black/80 text-white p-2.5 rounded-2xl backdrop-blur-md transition-colors"
+            className="absolute bottom-4 right-4 bg-white/90 hover:bg-white text-neutral-800 p-2.5 rounded-2xl border border-neutral-200 shadow-md backdrop-blur-md transition-colors"
             title="Full Screen Lightbox"
           >
             <Maximize2 className="w-4 h-4" />
@@ -93,7 +93,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = ({
                 src={img}
                 alt={`Thumbnail ${idx + 1}`}
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-contain p-1 bg-neutral-900"
+                className="w-full h-full object-contain p-1 bg-slate-50"
                 onError={(e) => {
                   e.currentTarget.src = "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80";
                 }}
