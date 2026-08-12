@@ -251,7 +251,9 @@ export const PRODUCTS_DATA: Product[] = [
     description: 'Engineered for deep borewell extraction in agriculture and GIDC industrial estates. Features Noryl / SS impellers for high sand resistance and long life.',
     image: 'https://lh3.googleusercontent.com/d/1s3LE7sLg3nABRXZWKKiXHDEjqfeEo5uv',
     galleryImages: [
-      'https://lh3.googleusercontent.com/d/1s3LE7sLg3nABRXZWKKiXHDEjqfeEo5uv'
+      'https://lh3.googleusercontent.com/d/1s3LE7sLg3nABRXZWKKiXHDEjqfeEo5uv',
+      'https://lh3.googleusercontent.com/d/1I0mj1tLVMtdYxCib4fwE4DfxxmmJTK4z',
+      'https://lh3.googleusercontent.com/d/1J5GpKxS-49pyxHyamjmCJtoW_HQ5Y7_h'
     ],
     featured: true,
     modelNumber: 'ME-SUB-V3',
@@ -278,40 +280,6 @@ export const PRODUCTS_DATA: Product[] = [
     ],
     applications: ['Borewell Groundwater Pumping', 'GIDC Factory Bulk Water Supply', 'Agricultural Irrigation', 'Municipal Water Schemes'],
     industries: ['Agriculture & Farm Irrigation', 'Chemical & Pharmaceutical', 'Water & Effluent Treatment (ETP/STP)']
-  },
-  {
-    id: 'pump-submersible-sewage',
-    name: 'Industrial Dewatering & Sewage Submersible Pump',
-    category: 'Submersible Pump',
-    subtitle: 'Cutter / Non-Clog Impeller Submersible Pump for Slurry & Wastewater',
-    description: 'Heavy duty cast iron submersible pump for handling dirty water, industrial sludge, sewage, and effluent with solids up to 50mm diameter.',
-    image: 'https://lh3.googleusercontent.com/d/1s3LE7sLg3nABRXZWKKiXHDEjqfeEo5uv',
-    galleryImages: [
-      'https://lh3.googleusercontent.com/d/1s3LE7sLg3nABRXZWKKiXHDEjqfeEo5uv'
-    ],
-    featured: false,
-    modelNumber: 'ME-SEW-75',
-    material: 'Cast Iron Heavy Frame & Alloy Steel Shaft',
-    rating: '4.7/5',
-    keyFeatures: [
-      'Non-clogging open channel impeller design',
-      'Double mechanical seal with oil chamber',
-      'Includes auto float switch for level control',
-      'Heavy duty lifting handle and cast iron base'
-    ],
-    benefits: [
-      'Pumps muddy, fibrous slurry without choking or clogging',
-      'Submersible rating allows complete under-water operation in deep pits',
-      'Substantially reduces manual pit cleaning downtime',
-      'Dual seal technology protects motor from slurry ingress'
-    ],
-    specs: [
-      { label: 'Power Rating', value: '1HP to 5HP' },
-      { label: 'Solid Handling Size', value: 'Up to 50mm particle diameter' },
-      { label: 'Submersion Depth', value: 'Up to 15 Meters' }
-    ],
-    applications: ['Effluent Treatment Plants (ETP/STP)', 'Basement Dewatering', 'Construction Site Pit Pumping', 'Chemical Slurry Transfer'],
-    industries: ['Water & Effluent Treatment (ETP/STP)', 'Chemical & Pharmaceutical', 'Textile & Dyeing Mills']
   }
 ];
 
