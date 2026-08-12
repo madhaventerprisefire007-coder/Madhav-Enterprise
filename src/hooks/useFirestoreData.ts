@@ -44,10 +44,9 @@ export function useFirestoreData() {
   const testConnection = async () => {
     try {
       await getDocFromServer(doc(db, 'test', 'connection'));
-    } catch (error) {
-      if (error instanceof Error && (error.message.includes('the client is offline') || error.message.includes('Could not reach Cloud Firestore'))) {
-        console.warn('Firebase connection notice: Operating in offline/cached mode.');
-      }
+    } catch (error: any) {
+      // Gracefully capture offline / unreachable connection notices
+      console.warn('Firestore connection check:', error?.message || 'Operating in offline/cached mode');
     }
   };
 

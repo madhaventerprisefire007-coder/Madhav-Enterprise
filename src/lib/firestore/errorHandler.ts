@@ -44,6 +44,19 @@ export function handleFirestoreError(error: unknown, operationType: OperationTyp
     operationType,
     path
   };
-  console.error('Firestore Error: ', JSON.stringify(errInfo));
+
+  const isOfflineOrUnavailable =
+    (error as any)?.code === 'unavailable' ||
+    (error instanceof Error && (
+      error.message.includes('unavailable') ||
+      error.message.includes('Could not reach Cloud Firestore') ||
+      error.message.includes('the client is offline')
+    ));
+
+  if (isOfflineOrUnavailable) {
+    console.warn(`Firestore operating in offline/cached mode for [${operationType}] at ${path}`);
+  } else {
+    console.error('Firestore Error: ', JSON.stringify(errInfo));
+  }
   return new Error(JSON.stringify(errInfo));
 }
