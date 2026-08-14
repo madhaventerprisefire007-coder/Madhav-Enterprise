@@ -78,13 +78,19 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
   // Calculate dynamic SEO parameters
   const isDetail = !!internalSelectedProduct;
   const currentTitle = isDetail
-    ? `${internalSelectedProduct.name} - ${
-        internalSelectedProduct.category === 'Butterfly Valve'
-          ? 'Butterfly Valve Supplier'
-          : internalSelectedProduct.category === 'Sewage Pump'
-          ? 'Sewage Pump Supplier'
-          : internalSelectedProduct.category + ' Manufacturer & Supplier'
-      } Vadodara`
+    ? (internalSelectedProduct.slug === 'fire-material-supplier-vadodara'
+        ? `Fire Material Supplier in Vadodara | Madhav Enterprise`
+        : internalSelectedProduct.slug === 'reliable-water-pumping-system-vadodara'
+        ? `Reliable Water Pumping System in Vadodara | Madhav Enterprise`
+        : `${internalSelectedProduct.name} - ${
+            internalSelectedProduct.category === 'Butterfly Valve'
+              ? 'Butterfly Valve Supplier'
+              : internalSelectedProduct.category === 'Sewage Pump'
+              ? 'Sewage Pump Supplier'
+              : internalSelectedProduct.category === 'Fire Material'
+              ? 'Fire Fighting Material Supplier'
+              : internalSelectedProduct.category + ' Manufacturer & Supplier'
+          } Vadodara`)
     : currentDivision
     ? (currentDivision.category === 'Butterfly Valve'
         ? `Butterfly Valve Supplier in Vadodara | Madhav Enterprise`
@@ -102,7 +108,9 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
     : 'Complete catalog of Automatic Water Level Controllers, Butterfly Valves, Sewage Pumps & Booster Systems in Vadodara.';
 
   const canonicalPath = isDetail
-    ? `${BASE_URL}/product/${internalSelectedProduct.slug || generateSlug(internalSelectedProduct.name)}`
+    ? (internalSelectedProduct.slug
+        ? `${BASE_URL}/${internalSelectedProduct.slug}`
+        : `${BASE_URL}/product/${generateSlug(internalSelectedProduct.name)}`)
     : activeCategory !== 'All'
     ? `${BASE_URL}/products/${generateSlug(activeCategory)}`
     : `${BASE_URL}/products`;

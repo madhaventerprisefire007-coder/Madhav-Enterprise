@@ -205,7 +205,7 @@ export default function App() {
     setSelectedDetailProduct(product);
     setCurrentPage('products');
     const seoSlug = product.slug || generateSlug(product.name);
-    const pathStr = `/product/${seoSlug}`;
+    const pathStr = product.slug ? `/${product.slug}` : `/product/${seoSlug}`;
     if (window.location.pathname !== pathStr) {
       window.history.pushState({}, '', pathStr);
     }
@@ -340,6 +340,7 @@ export default function App() {
       <Footer
         onPageChange={handlePageChange}
         onSelectCategory={handleSelectCategory}
+        onSelectProduct={handleSelectProduct}
         onOpenQuoteModal={handleOpenQuoteModal}
       />
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import { PageType, ProductCategory } from '../types';
-import { COMPANY_INFO, PRODUCT_DIVISIONS } from '../data/companyData';
+import { PageType, ProductCategory, Product } from '../types';
+import { COMPANY_INFO, PRODUCT_DIVISIONS, PRODUCTS_DATA } from '../data/companyData';
 import { Logo } from './Logo';
 import { 
   Phone, 
@@ -12,16 +12,28 @@ import {
   MessageSquare, 
   Send,
   ExternalLink,
-  Award
+  Award,
+  Sparkles,
+  Flame
 } from 'lucide-react';
 
 interface FooterProps {
   onPageChange: (page: PageType) => void;
   onSelectCategory?: (category: ProductCategory) => void;
+  onSelectProduct?: (product: Product) => void;
   onOpenQuoteModal: (productName?: string) => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onPageChange, onSelectCategory, onOpenQuoteModal }) => {
+export const Footer: React.FC<FooterProps> = ({ onPageChange, onSelectCategory, onSelectProduct, onOpenQuoteModal }) => {
+  const handleOpenProductBySlug = (slug: string) => {
+    const found = PRODUCTS_DATA.find((p) => p.id === slug || p.slug === slug);
+    if (found && onSelectProduct) {
+      onSelectProduct(found);
+    } else {
+      onPageChange('products');
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <footer className="bg-[#111111] text-white pt-16 pb-12 font-sans border-t border-white/10 relative overflow-hidden">
       {/* Background Accent Grid */}
@@ -108,6 +120,24 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onSelectCategory, 
                   className="hover:text-white transition-colors flex items-center gap-1"
                 >
                   <span>Contact Vadodara Hub</span>
+                </button>
+              </li>
+              <li className="pt-2 border-t border-white/10">
+                <button 
+                  onClick={() => handleOpenProductBySlug('fire-material-supplier-vadodara')}
+                  className="text-red-400 hover:text-red-300 transition-colors flex items-center gap-1.5 font-bold"
+                >
+                  <Flame className="w-3.5 h-3.5 text-red-500" />
+                  <span>Fire Material Supplier (Vadodara)</span>
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => handleOpenProductBySlug('reliable-water-pumping-system-vadodara')}
+                  className="text-[#E86A2D] hover:text-orange-300 transition-colors flex items-center gap-1.5 font-bold"
+                >
+                  <Sparkles className="w-3.5 h-3.5 text-[#E86A2D]" />
+                  <span>Water Pumping System (Vadodara)</span>
                 </button>
               </li>
             </ul>

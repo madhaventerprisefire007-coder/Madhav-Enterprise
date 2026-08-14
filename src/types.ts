@@ -6,7 +6,8 @@ export type ProductCategory =
   | 'Butterfly Valve'
   | 'Sewage Pump'
   | 'Pressure Pump'
-  | 'Submersible Pump';
+  | 'Submersible Pump'
+  | 'Fire Material';
 
 export interface TechnicalSpec {
   label: string;

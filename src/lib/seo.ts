@@ -52,6 +52,9 @@ export const BUSINESS_INFO = {
 };
 
 export const PRIMARY_KEYWORDS = [
+  'Fire Material Supplier in Vadodara',
+  'Fire Fighting Equipment Supplier Vadodara',
+  'Fire Hydrant Valve Supplier in Vadodara',
   'Water Level Controller Manufacturer in Vadodara',
   'Butterfly Valve Supplier in Vadodara',
   'Sewage Pump Supplier in Vadodara',

@@ -22,7 +22,8 @@ import {
   Zap,
   Gauge,
   Droplets,
-  Sparkles
+  Sparkles,
+  Flame
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -59,9 +60,24 @@ export const Navbar: React.FC<NavbarProps> = ({
     (p) => p.id === 'reliable-water-pumping-system-vadodara' || p.slug === 'reliable-water-pumping-system-vadodara'
   );
 
+  const fireMaterialProduct = PRODUCTS_DATA.find(
+    (p) => p.id === 'fire-material-supplier-vadodara' || p.slug === 'fire-material-supplier-vadodara'
+  );
+
   const handleOpenPumpingSystem = () => {
     if (reliablePumpingProduct && onSelectProduct) {
       onSelectProduct(reliablePumpingProduct);
+    } else {
+      onPageChange('products');
+    }
+    setMobileMenuOpen(false);
+    setProductsDropdownOpen(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleOpenFireMaterial = () => {
+    if (fireMaterialProduct && onSelectProduct) {
+      onSelectProduct(fireMaterialProduct);
     } else {
       onPageChange('products');
     }
@@ -225,6 +241,29 @@ export const Navbar: React.FC<NavbarProps> = ({
                           </div>
 
                           <div className="space-y-1">
+                            {/* Fire Material Supplier in Vadodara (Specialized Solution Page) */}
+                            <button
+                              onClick={handleOpenFireMaterial}
+                              className="w-full text-left px-3 py-2.5 rounded-xl hover:bg-orange-50/90 transition-colors flex items-start gap-3 group border border-transparent hover:border-orange-200"
+                            >
+                              <div className="w-8 h-8 rounded-lg bg-red-500/15 text-red-600 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                                <Flame className="w-4 h-4" />
+                              </div>
+                              <div className="space-y-0.5 flex-1">
+                                <div className="flex items-center justify-between">
+                                  <p className="text-xs font-bold text-neutral-900 group-hover:text-[#E86A2D] transition-colors leading-tight">
+                                    Fire Material Supplier
+                                  </p>
+                                  <span className="text-[9px] bg-red-100 text-red-600 font-bold px-1.5 py-0.5 rounded">
+                                    Vadodara
+                                  </span>
+                                </div>
+                                <p className="text-[10px] text-neutral-500 line-clamp-1">
+                                  ISI marked hydrant valves, sprinklers, hose reels & fire safety material.
+                                </p>
+                              </div>
+                            </button>
+
                             {/* Reliable Water Pumping System in Vadodara (Specialized Solution Page) */}
                             <button
                               onClick={handleOpenPumpingSystem}
@@ -455,7 +494,20 @@ export const Navbar: React.FC<NavbarProps> = ({
                     {/* Sub-list of product pages when item is products */}
                     {item.id === 'products' && (
                       <div className="pl-3 pr-1 py-2 space-y-1 bg-neutral-50 rounded-xl border border-neutral-200/60 my-1">
-                        {/* Special Featured Page in Mobile */}
+                        {/* Special Featured Pages in Mobile */}
+                        <button
+                          onClick={handleOpenFireMaterial}
+                          className="w-full text-left p-2 rounded-lg bg-red-50 hover:bg-red-100/70 border border-red-200 transition-colors flex items-center justify-between text-red-600 font-bold text-xs mb-1"
+                        >
+                          <span className="flex items-center gap-1.5 line-clamp-1">
+                            <Flame className="w-3.5 h-3.5 text-red-600 shrink-0" />
+                            <span>Fire Material Supplier (Vadodara)</span>
+                          </span>
+                          <span className="text-[9px] bg-red-600 text-white px-1.5 py-0.5 rounded font-bold shrink-0">
+                            Vadodara
+                          </span>
+                        </button>
+
                         <button
                           onClick={handleOpenPumpingSystem}
                           className="w-full text-left p-2 rounded-lg bg-orange-50 hover:bg-orange-100/70 border border-[#E86A2D]/30 transition-colors flex items-center justify-between text-[#E86A2D] font-bold text-xs mb-1"

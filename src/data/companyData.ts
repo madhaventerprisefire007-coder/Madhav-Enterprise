@@ -390,6 +390,136 @@ Get in touch with Madhav Enterprise today to receive technical sizing assistance
         answer: 'Yes, we provide supply, sizing consultation, and prompt local support across Makarpura GIDC, Savli GIDC, Nandesari GIDC, Por GIDC, Waghodia GIDC, Halol, and all across Vadodara district.'
       }
     ]
+  },
+  {
+    id: 'fire-material-supplier-vadodara',
+    slug: 'fire-material-supplier-vadodara',
+    name: 'Fire Material Supplier in Vadodara',
+    category: 'Fire Material',
+    subtitle: 'Authorized Supplier of ISI Marked Fire Fighting Materials, Hydrant Landing Valves, Fire Sprinklers, Hose Reels & Safety Equipment in Vadodara',
+    description: 'Looking for a certified Fire Material Supplier in Vadodara? Madhav Enterprise is a trusted supplier of ISI certified fire fighting equipment, fire hydrant landing valves, fire safety butterfly valves, sprinkler heads, fire hose reels, fire booster pumps, and industrial fire protection piping across Vadodara and Gujarat.',
+    longDescription: `### Premier Fire Material Supplier in Vadodara by Madhav Enterprise
+
+Madhav Enterprise is a premier **Fire Material Supplier in Vadodara**, delivering certified, heavy-duty, and ISI-marked fire safety and fire fighting solutions to commercial complexes, residential high-rise towers, industrial factories, and EPC contractors throughout Vadodara, Gujarat.
+
+Fire safety systems demand zero compromise on material integrity, pressure handling, and regulatory compliance. We supply a complete range of certified fire fighting equipment engineered to withstand extreme pressures and deliver foolproof reliability in emergency fire containment situations.
+
+---
+
+### Complete Inventory of Fire Fighting Materials & Equipment
+
+1. **Fire Hydrant Landing Valves & Branch Pipes**: ISI marked (IS:5290) single and double outlet landing valves in Gunmetal (LTB2) and Stainless Steel (SS 304 / SS 316), complete with instantaneous coupling branch pipes and fog nozzles.
+2. **Fire Sprinkler System Components**: Pendent, upright, and sidewall sprinkler heads (68°C / 79°C / 93°C temperature ratings) with UL/FM certified glass bulbs, flexible sprinkler droppers, and alarm check valve stations.
+3. **Fire Fighting Butterfly Valves & Check Valves**: Wafer type and lug type gear-operated fire butterfly valves with supervisory tamper switches, dual-plate check valves, and resilient seated sluice valves tested up to 25 kg/cm².
+4. **Fire Hose Reels & Heavy-Duty Cabinets**: 19mm / 25mm thermoplastic and swinging type fire hose reels (IS:884), 30-meter non-kinking fire hoses, and powder-coated MS/SS weather-proof fire extinguisher cabinets.
+5. **Fire Booster Pumps & Multi-Pump Control Panels**: Main electric fire pumps, diesel engine backup pumps, and jockey booster pumps integrated with automated starter panels and pressure switch transducers.
+6. **Heavy-Duty Fire Piping & Grooved Fittings**: Heavy 'C' class MS ERW fire lines, seamless GI pipes, grooved couplings, mechanical tees, flanged adaptors, and fire line pipe support clamps.
+7. **Portable Fire Extinguishers & Accessories**: ABC Dry Chemical Powder, CO2 gas, Mechanical Foam (AFFF), and Clean Agent fire extinguishers with wall mounting brackets.
+
+---
+
+### Strict Regulatory Compliance & Industry Standards
+
+All fire materials supplied by Madhav Enterprise comply strictly with national and international fire safety norms:
+- **IS 5290**: Landing valves and fire hydrant fittings.
+- **IS 903**: Fire hose delivery couplings, branch pipes, and nozzles.
+- **IS 884**: First-aid fire hose reels for building safety.
+- **IS 3844 / IS 13039**: Code of practice for installation and maintenance of internal fire hydrants and hose reel systems.
+- **National Building Code of India (NBC 2016)** & Gujarat State Fire Safety Act guidelines.
+
+---
+
+### Areas & Industrial Belts Served Across Vadodara
+
+We provide rapid dispatch, technical sizing support, and direct delivery across all major commercial centers and GIDC industrial zones in Vadodara:
+- **GIDC Makarpura & GIDC Por**: Chemical plants, manufacturing workshops, and engineering units.
+- **GIDC Savli & GIDC Manjusar**: Heavy machinery, automobile, and electrical equipment plants.
+- **GIDC Nandesari & GIDC Waghodia**: Petrochemical, specialty chemical, and bulk drug manufacturing plants.
+- **Vadodara City & Commercial Towers (Alkapuri, Gotri, Vasna Road, Diwalipura, Sayajigunj, Akota)**: High-rise commercial offices, shopping malls, hospitals, and educational institutions.
+- **Residential Societies & High-Rise Townships (Bhayli, Vasna-Bhayli Road, Sevasi, Waghodia Road)**: Comprehensive residential fire hydrant systems and overhead riser equipment.
+- **Halol & Central Gujarat Industrial Zones**: Automobile manufacturing corridors and logistics parks.
+
+---
+
+### Why Madhav Enterprise is the Preferred Fire Material Supplier in Vadodara
+
+- **Extensive Ready Stock in Vadodara**: Located at Diwalipura, Vasna Road with immediate inventory for swift site dispatches.
+- **Direct Factory Pricing & MTC Test Certificates**: Genuine rates with complete Mill Test Certificates (MTC) and hydrostatic inspection reports to facilitate hassle-free Fire NOC approval.
+- **Complete End-to-End Solutions**: From fire line pipes, valves, and hydrants to automated booster panels and sensors, get everything under one roof.
+- **Local Engineering Expertise**: Experienced technical guidance for Bill of Quantities (BOQ) optimization, piping pressure drop sizing, and valve selection.
+
+Get in touch with Madhav Enterprise today for instant factory quotes, product datasheets, and swift on-site supply for your fire fighting projects in Vadodara.`,
+    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1200&q=80',
+    galleryImages: [
+      'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1599818814766-3d23f77df230?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80'
+    ],
+    featured: true,
+    modelNumber: 'ME-FIRE-VADODARA',
+    material: 'Gunmetal (LTB2) / Stainless Steel (SS 304/316) / Cast Iron / Forged Brass / Heavy MS',
+    rating: '4.9/5',
+    keyFeatures: [
+      'ISI Marked & NBC 2016 Compliant Fire Fighting Materials & Equipment',
+      'Comprehensive Inventory: Hydrant Valves, Branch Pipes, Hose Reels, Sprinklers & Fire Butterfly Valves',
+      'Heavy-Duty Corrosion Resistant Gunmetal, Cast Steel & Stainless Steel Construction',
+      'High Pressure Hydrostatic Tested up to 25 kg/cm² for Zero-Leakage Reliability',
+      'Direct Factory Supply with Mill Test Certificates (MTC) & Warranty',
+      'Fast On-Site Delivery across GIDC Makarpura, Savli, Nandesari, Waghodia, Por & Vadodara'
+    ],
+    benefits: [
+      '100% Fire Safety & Regulatory Compliance: Pass local fire department NOC inspections and factory safety audits with certified materials.',
+      'Heavy-Duty Endurance under Extreme Temperatures: Built to perform without fail during critical fire emergency conditions.',
+      'One-Stop Sourcing Hub in Vadodara: Eliminate multi-vendor hassles by sourcing complete fire piping, valves, hydrants, and pumping systems from one trusted vendor.',
+      'Instant Local Availability & Engineering Support: Ready stock for emergency replacements and large-scale EPC project dispatches from Vasna Road, Diwalipura.'
+    ],
+    specs: [
+      { label: 'Supply Category', value: 'Complete Fire Fighting Materials & Equipment' },
+      { label: 'Standard Compliance', value: 'IS 5290, IS 903, IS 884, IS 3844, NBC 2016 Guidelines' },
+      { label: 'Material Grades', value: 'Gunmetal (IS:318 LTB2), Stainless Steel (SS 304/316), Cast Iron (CI)' },
+      { label: 'Hydrant Valve Size', value: '63mm (2.5") Single & Double Outlet Landing Valves' },
+      { label: 'Fire Butterfly Valves', value: '50mm (2") to 300mm (12") Wafer / Lug Type with Tamper Switch' },
+      { label: 'Fire Sprinkler Rating', value: '68°C (Red Bulb) / 79°C (Yellow Bulb) / 93°C (Green Bulb)' },
+      { label: 'Test Pressure', value: 'Hydrostatic Test up to 25 kg/cm² (350 PSI)' },
+      { label: 'Service Location', value: 'Vadodara, GIDC Industrial Estates & Across Gujarat' }
+    ],
+    applications: [
+      'GIDC Industrial Estates (Makarpura, Nandesari, Savli, Waghodia, Por, Halol)',
+      'Chemical, Petrochemical & Pharmaceutical Plants',
+      'Commercial High-Rise Towers, Malls & Corporate Offices in Vadodara',
+      'Residential Multi-Story Societies & Apartment Townships',
+      'Warehouses, Logistics Hubs & Manufacturing Facilities',
+      'Hospitals, Educational Campuses & Public Infrastructure'
+    ],
+    industries: [
+      'Commercial Real Estate & Towers',
+      'Water & Effluent Treatment (ETP/STP)',
+      'Agriculture & Farm Irrigation'
+    ],
+    seoKeywords: [
+      'fire material supplier in vadodara',
+      'fire material supplier vadodara',
+      'fire fighting equipment supplier vadodara',
+      'fire hydrant valve supplier in vadodara',
+      'fire safety materials vadodara',
+      'fire fighting pipes and valves vadodara',
+      'fire sprinkler supplier in vadodara',
+      'GIDC fire equipment supplier'
+    ],
+    faqs: [
+      {
+        question: 'Why choose Madhav Enterprise as your fire material supplier in Vadodara?',
+        answer: 'Madhav Enterprise provides genuine ISI marked, NBC 2016 compliant fire materials with Mill Test Certificates (MTC), backed by 16+ years of engineering experience, ready local stock in Diwalipura/Vasna Road, and swift delivery across Vadodara and Gujarat.'
+      },
+      {
+        question: 'Are the fire hydrant valves and landing valves ISI certified?',
+        answer: 'Yes, all our fire hydrant landing valves strictly comply with IS 5290 and IS 903 standards with hydrostatic pressure testing certificates suitable for Fire Department NOC compliance.'
+      },
+      {
+        question: 'Do you supply fire materials to GIDC industrial estates in and around Vadodara?',
+        answer: 'Yes, we regularly supply fire fighting materials, butterfly valves, fire hydrant lines, and booster pump systems to chemical, pharmaceutical, and engineering plants across GIDC Makarpura, GIDC Savli, GIDC Nandesari, GIDC Waghodia, GIDC Por, and Halol.'
+      }
+    ]
   }
 ];
 
