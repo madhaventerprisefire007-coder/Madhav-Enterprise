@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 import { Product, PageType, ProductCategory } from '../../types';
 import { Breadcrumb } from './Breadcrumb';
 import { ProductGallery } from './ProductGallery';
@@ -297,6 +298,54 @@ export const ProductDetailsView: React.FC<ProductDetailsViewProps> = ({
 
             {/* Industries Using This Product */}
             <ProductIndustries industries={product.industries} />
+
+            {/* Extended SEO & Technical Description */}
+            {product.longDescription && (
+              <div className="bg-white p-6 sm:p-8 rounded-3xl border border-neutral-200 shadow-sm space-y-4">
+                <h3 className="text-xl font-display font-extrabold text-neutral-900 flex items-center gap-2">
+                  <span className="w-2 h-6 bg-[#E86A2D] rounded-full" />
+                  Engineering Details & Industrial Insights
+                </h3>
+                <div className="text-sm text-neutral-700 leading-relaxed space-y-3 prose prose-neutral max-w-none">
+                  <ReactMarkdown
+                    components={{
+                      h3: ({ node, ...props }) => <h3 className="text-base sm:text-lg font-bold text-neutral-900 mt-6 mb-2 flex items-center gap-2 border-b border-neutral-100 pb-2" {...props} />,
+                      p: ({ node, ...props }) => <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed mb-3" {...props} />,
+                      ul: ({ node, ...props }) => <ul className="space-y-2 my-3 pl-4 list-disc text-neutral-700 text-xs sm:text-sm" {...props} />,
+                      ol: ({ node, ...props }) => <ol className="space-y-2 my-3 pl-4 list-decimal text-neutral-700 text-xs sm:text-sm" {...props} />,
+                      li: ({ node, ...props }) => <li className="leading-relaxed" {...props} />,
+                      hr: () => <hr className="my-6 border-neutral-200" />,
+                      strong: ({ node, ...props }) => <strong className="font-bold text-neutral-900" {...props} />
+                    }}
+                  >
+                    {product.longDescription}
+                  </ReactMarkdown>
+                </div>
+              </div>
+            )}
+
+            {/* Product Specific FAQs */}
+            {product.faqs && product.faqs.length > 0 && (
+              <div className="bg-white p-6 sm:p-8 rounded-3xl border border-neutral-200 shadow-sm space-y-4">
+                <h3 className="text-xl font-display font-extrabold text-neutral-900 flex items-center gap-2">
+                  <span className="w-2 h-6 bg-[#E86A2D] rounded-full" />
+                  Frequently Asked Questions (Vadodara)
+                </h3>
+                <div className="space-y-3 pt-2">
+                  {product.faqs.map((faq, idx) => (
+                    <div key={idx} className="p-4 sm:p-5 bg-neutral-50 rounded-2xl border border-neutral-200 space-y-1.5">
+                      <h4 className="text-xs sm:text-sm font-bold text-neutral-900 flex items-start gap-2">
+                        <span className="text-[#E86A2D] font-mono shrink-0">Q{idx + 1}.</span>
+                        <span>{faq.question}</span>
+                      </h4>
+                      <p className="text-xs text-neutral-600 leading-relaxed pl-6">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Why Choose Madhav Enterprise */}
             <div className="bg-white p-6 sm:p-8 rounded-3xl border border-neutral-200 shadow-sm space-y-6">

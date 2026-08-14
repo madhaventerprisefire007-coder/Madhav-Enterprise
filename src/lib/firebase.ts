@@ -52,6 +52,7 @@ const dbId = configJson.firestoreDatabaseId && configJson.firestoreDatabaseId !=
 let firestoreInstance;
 try {
   firestoreInstance = initializeFirestore(app, {
+    experimentalForceLongPolling: true,
     localCache: persistentLocalCache({
       tabManager: persistentMultipleTabManager()
     })

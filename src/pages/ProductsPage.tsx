@@ -102,7 +102,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
     : 'Complete catalog of Automatic Water Level Controllers, Butterfly Valves, Sewage Pumps & Booster Systems in Vadodara.';
 
   const canonicalPath = isDetail
-    ? `${BASE_URL}/products/${generateSlug(internalSelectedProduct.name)}`
+    ? `${BASE_URL}/product/${internalSelectedProduct.slug || generateSlug(internalSelectedProduct.name)}`
     : activeCategory !== 'All'
     ? `${BASE_URL}/products/${generateSlug(activeCategory)}`
     : `${BASE_URL}/products`;
@@ -120,6 +120,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
             internalSelectedProduct.name,
             internalSelectedProduct.category,
             internalSelectedProduct.modelNumber,
+            ...(internalSelectedProduct.seoKeywords || []),
             'Water Level Controller Manufacturer in Vadodara',
             'Butterfly Valve Supplier in Vadodara',
             'Sewage Pump Supplier in Vadodara',

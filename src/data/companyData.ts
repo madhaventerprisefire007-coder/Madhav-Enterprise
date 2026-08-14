@@ -138,7 +138,7 @@ export const PRODUCTS_DATA: Product[] = [
       { label: 'Protection Grade', value: 'IP-55 Industrial Grade' }
     ],
     applications: ['GIDC Industrial Plants', 'Agriculture & Irrigation', 'Dewatering Sump Systems', 'Cooling Tower Water Panels'],
-    industries: ['Chemical & Pharmaceutical', 'Agriculture & Farm Irrigation', 'Textile & Dyeing Mills']
+    industries: ['Agriculture & Farm Irrigation']
   },
   {
     id: 'valv-ball-ss',
@@ -218,7 +218,7 @@ export const PRODUCTS_DATA: Product[] = [
       { label: 'Submersion Depth', value: 'Up to 15 Meters' }
     ],
     applications: ['Effluent Treatment Plants (ETP/STP)', 'Basement Dewatering', 'Construction Site Pit Pumping', 'Chemical Slurry Transfer'],
-    industries: ['Water & Effluent Treatment (ETP/STP)', 'Chemical & Pharmaceutical', 'Textile & Dyeing Mills']
+    industries: ['Water & Effluent Treatment (ETP/STP)']
   },
   {
     id: 'pump-pressure-booster',
@@ -279,27 +279,122 @@ export const PRODUCTS_DATA: Product[] = [
       { label: 'Outlet Diameter', value: '50mm to 100mm (2" to 4")' }
     ],
     applications: ['Borewell Groundwater Pumping', 'GIDC Factory Bulk Water Supply', 'Agricultural Irrigation', 'Municipal Water Schemes'],
-    industries: ['Agriculture & Farm Irrigation', 'Chemical & Pharmaceutical', 'Water & Effluent Treatment (ETP/STP)']
+    industries: ['Agriculture & Farm Irrigation', 'Water & Effluent Treatment (ETP/STP)']
+  },
+  {
+    id: 'reliable-water-pumping-system-vadodara',
+    slug: 'reliable-water-pumping-system-vadodara',
+    name: 'reliable water pumping system in vadodara',
+    category: 'Pressure Pump',
+    subtitle: 'High-Performance Commercial, Industrial & Residential Water Pumping Systems with Smart Automation',
+    description: 'Looking for a reliable water pumping system in Vadodara? Madhav Enterprise delivers high-efficiency, durable, and energy-saving water pumping solutions engineered for uninterrupted water flow across residential high-rises, commercial buildings, and industrial plants across Vadodara and Gujarat.',
+    longDescription: `### Premier Reliable Water Pumping System in Vadodara by Madhav Enterprise
+
+When looking for a **reliable water pumping system in Vadodara**, efficiency, endurance, and seamless automation are critical. At Madhav Enterprise, we engineer and supply state-of-the-art water pumping systems tailored to address the demanding fluid transfer challenges of residential societies, commercial high-rise towers, municipal facilities, and heavy industrial plants across Vadodara, Gujarat.
+
+Water supply disruptions can halt industrial manufacturing lines, disrupt commercial premises, and cause severe inconvenience in residential complexes. Our heavy-duty pumping systems are built with precision-balanced impellers, 100% pure electrolytic copper winding motors, and anti-corrosion stainless steel (SS 304 / SS 316) fluid pathways to guarantee consistent water delivery, high head pressure, and decades of trouble-free operation.
+
+---
+
+### Key Engineering Advantages of Our Vadodara Water Pumping Systems
+
+1. **High Hydraulic Efficiency & Energy Conservation**: Engineered with advanced CFD hydrodynamic flow profiles, our pumps deliver maximum liters-per-minute (LPM) discharge while cutting electricity consumption by up to 25% compared to conventional pump systems.
+2. **Heavy-Duty Construction for Gujarat Water Conditions**: Fitted with corrosion-resistant stainless steel shafts, high-grade cast iron or SS bodies, and premium carbon-ceramic mechanical seals that withstand hard water, suspended sediments, and fluctuating operational temperatures.
+3. **Seamless Smart Automation Integration**: Completely compatible with Madhav Enterprise digital Automatic Water Level Controllers (WLC), dry-run protection sensors, and float switch logic—ensuring zero water overflow, dry-run burn prevention, and totally automated pump starts/stops.
+4. **Thermal Overload & Voltage Protection**: Equipped with Class F insulation and internal thermal overload relays capable of handling standard Indian industrial voltage fluctuations (180V to 440V).
+
+---
+
+### Applications Across Vadodara & Gujarat Industrial Belts
+
+Our water pumping systems are actively deployed across prominent GIDC industrial estates and urban centers in Vadodara, including:
+- **GIDC Makarpura & GIDC Por**: Continuous process water transfer, cooling tower circulation, and plant utility supply.
+- **GIDC Nandesari & GIDC Savli**: Industrial effluent management, raw water intake, and heavy-duty transfer pumping.
+- **GIDC Waghodia & Manjusar**: High-capacity industrial water lifting and boiler feed water boosting.
+- **Commercial Complexes & High-Rise Apartments (Vasna Road, Diwalipura, Gotri, Alkapuri)**: Multi-story hydro-pneumatic pressure boosting, rooftop overhead tank filling, and underground sump water circulation.
+- **Agricultural & Farm Irrigation**: Deep borewell extraction, micro-sprinkler feeding, and canal water irrigation networks.
+
+---
+
+### Why Choose Madhav Enterprise in Vadodara?
+
+- **Local Technical Engineering Desk**: Situated conveniently at Vasna Road / Diwalipura in Vadodara, providing instant consultation, sizing calculations, and prompt site assistance.
+- **Direct Factory Pricing & Complete Warranty**: Genuine manufacturer direct rates with comprehensive test certificates, spare parts availability, and guaranteed performance.
+- **Tailored Multi-Stage & Booster Customization**: From compact 0.5 HP domestic pressure boosters to heavy 25 HP industrial multi-pump booster skids, we design and deliver exact turnkey configurations.
+
+Get in touch with Madhav Enterprise today to receive technical sizing assistance, CAD drawings, and an instant direct quote for your reliable water pumping system in Vadodara.`,
+    image: 'https://lh3.googleusercontent.com/d/1yb2c1H4cKZEiuqOT1v7ECb4_za9YbUyo',
+    galleryImages: [
+      'https://lh3.googleusercontent.com/d/1yb2c1H4cKZEiuqOT1v7ECb4_za9YbUyo'
+    ],
+    featured: true,
+    modelNumber: 'ME-WPS-VADODARA',
+    material: 'SS 304 / SS 316 Impeller, Heavy Cast Iron / SS Shell & 100% Copper Winding',
+    rating: '4.9/5',
+    keyFeatures: [
+      'High-Efficiency Hydraulic Design for Maximum Water Discharge with Low Power Consumption',
+      'Built-in Compatibility with Automatic Water Level Controllers & Dry-Run Sensors',
+      'Heavy-Duty Stainless Steel (SS 304/316) & Cast Iron Anti-Corrosive Construction',
+      'Continuous Duty Rating (S1) for 24/7 Demanding Industrial GIDC & Commercial Operations',
+      'Thermal Overload Protector & Voltage Fluctuation Safety Integration',
+      'Dynamically Balanced High-Grade Rotor with Ceramic-Carbon Mechanical Seal'
+    ],
+    benefits: [
+      'Ensures Uninterrupted Water Supply: Eliminates unexpected water supply downtime across domestic societies, high-rise buildings, and industrial plants in Vadodara.',
+      'Saves Up to 25% Electricity: High-efficiency energy-saving motor reduces utility bills while delivering consistent flow pressure.',
+      'Zero Maintenance Hassle: Robust mechanical seals and anti-rust coatings guarantee long operational lifespan even in hard water conditions.',
+      'Turnkey Local Support in Vadodara: Prompt on-site assistance, spare parts availability, and engineering sizing support from Vasna Road, Diwalipura.'
+    ],
+    specs: [
+      { label: 'System Type', value: 'Reliable Water Pumping System' },
+      { label: 'Power Range', value: '0.5 HP to 25 HP (Single Phase 220V & 3 Phase 415V)' },
+      { label: 'Head Range', value: '10 Meters to 280 Meters' },
+      { label: 'Flow Capacity', value: '50 LPM to 3,500 LPM' },
+      { label: 'Motor Rating', value: 'Class F Insulation / IP-55 Enclosure' },
+      { label: 'Automation Support', value: 'Compatible with Digital WLC Panels & Float Switches' },
+      { label: 'Inlet / Outlet Size', value: '25mm (1") to 150mm (6") Flanged / Screwed' },
+      { label: 'Service Location', value: 'Vadodara & Across Gujarat Industrial Belts' }
+    ],
+    applications: [
+      'Commercial High-Rise Complexes & Towers in Vadodara',
+      'GIDC Industrial Estates (Makarpura, Nandesari, Savli, Waghodia, Por)',
+      'Residential Societies, Bungalows & Farmhouses',
+      'Overhead Tank & Underground Sump Water Transfer',
+      'Agriculture & Farm Irrigation Systems',
+      'Water & Effluent Treatment Plants (ETP / STP)'
+    ],
+    industries: [
+      'Commercial Real Estate & Towers',
+      'Water & Effluent Treatment (ETP/STP)',
+      'Agriculture & Farm Irrigation'
+    ],
+    seoKeywords: [
+      'reliable water pumping system in vadodara',
+      'water pumping system in vadodara',
+      'industrial water pump vadodara',
+      'water pump supplier vadodara',
+      'pressure booster pump vadodara',
+      'commercial water pumping system vadodara',
+      'GIDC makarpura water pump supplier'
+    ],
+    faqs: [
+      {
+        question: 'Why is Madhav Enterprise considered the most reliable water pumping system provider in Vadodara?',
+        answer: 'Madhav Enterprise combines 16+ years of specialized engineering experience in Vadodara with heavy-duty SS/Cast Iron manufacturing, 100% copper motors, and integrated automated water level controls to ensure zero water failure and maximum energy efficiency.'
+      },
+      {
+        question: 'Can this water pumping system be integrated with automatic water level controllers?',
+        answer: 'Yes, all our water pumping systems are 100% compatible with our single-phase and three-phase digital water level controllers with dry-run protection float sensors.'
+      },
+      {
+        question: 'Do you deliver and support industrial GIDC estates around Vadodara?',
+        answer: 'Yes, we provide supply, sizing consultation, and prompt local support across Makarpura GIDC, Savli GIDC, Nandesari GIDC, Por GIDC, Waghodia GIDC, Halol, and all across Vadodara district.'
+      }
+    ]
   }
 ];
 
 export const INDUSTRIES_SERVED: Industry[] = [
-  {
-    id: 'chemical-pharma',
-    name: 'Chemical & Pharmaceutical',
-    description: 'Corrosion resistant SS 316 valves, automatic fluid controllers, and SCH 80 CPVC piping for acid and solvent transport in Vadodara, Nandesari, and Ankleshwar hubs.',
-    iconName: 'FlaskConical',
-    image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80',
-    popularProducts: ['SS 316 Ball Valve', 'CPVC Industrial Pipes', 'Level Controllers']
-  },
-  {
-    id: 'textile-processing',
-    name: 'Textile & Dyeing Mills',
-    description: 'High-volume centrifugal motor pumps and wafer butterfly valves designed for continuous water treatment, wash process circulation, and boiler feed lines.',
-    iconName: 'Shirt',
-    image: 'https://images.unsplash.com/photo-1606744888344-493238951221?auto=format&fit=crop&w=800&q=80',
-    popularProducts: ['Centrifugal Monoblock Pump', 'Cast Iron Butterfly Valve', 'Water Level Automation']
-  },
   {
     id: 'water-treatment',
     name: 'Water & Effluent Treatment (ETP/STP)',
@@ -323,14 +418,6 @@ export const INDUSTRIES_SERVED: Industry[] = [
     iconName: 'Sprout',
     image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80',
     popularProducts: ['V3 Borewell Submersible Pump', '3-Phase Control Panel', 'HDPE Pipes']
-  },
-  {
-    id: 'food-beverage',
-    name: 'Food & Dairy Processing',
-    description: 'Sanitary grade stainless steel pumps, valves, and level indicators compliant with food processing hygienic standards for milk plants and bottling units.',
-    iconName: 'Utensils',
-    image: 'https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=800&q=80',
-    popularProducts: ['Sanitary SS Valves', 'Multi-stage Pressure Pump', 'Digital Controllers']
   }
 ];
 

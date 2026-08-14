@@ -16,9 +16,11 @@ export interface TechnicalSpec {
 export interface Product {
   id: string;
   name: string;
+  slug?: string;
   category: ProductCategory;
   subtitle: string;
   description: string;
+  longDescription?: string;
   image: string;
   galleryImages?: string[];
   videoEmbedUrl?: string;
@@ -32,6 +34,8 @@ export interface Product {
   specs: TechnicalSpec[];
   applications: string[];
   industries?: string[];
+  seoKeywords?: string[];
+  faqs?: { question: string; answer: string; }[];
 }
 
 export interface Industry {

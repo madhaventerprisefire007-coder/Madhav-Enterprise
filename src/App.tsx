@@ -54,7 +54,7 @@ export default function App() {
         }
       }
 
-      // 1. Individual Product URL: e.g. /product/panel-with-sensor
+      // 1. Individual Product URL: e.g. /product/panel-with-sensor or /product/reliable-water-pumping-system-vadodara
       if (routeStr.includes('/product/') || routeStr.includes('/product?')) {
         let targetIdOrSlug = '';
         if (routeStr.includes('id=')) {
@@ -67,6 +67,7 @@ export default function App() {
           const found = PRODUCTS_DATA.find(
             (p) =>
               p.id.toLowerCase() === targetIdOrSlug.toLowerCase() ||
+              (p.slug && p.slug.toLowerCase() === targetIdOrSlug.toLowerCase()) ||
               generateSlug(p.name) === targetIdOrSlug.toLowerCase() ||
               p.modelNumber.toLowerCase() === targetIdOrSlug.toLowerCase() ||
               generateSlug(p.category) === targetIdOrSlug.toLowerCase()
@@ -76,6 +77,22 @@ export default function App() {
             setCurrentPage('products');
             return;
           }
+        }
+      }
+
+      // 1b. Direct clean product slug URL (e.g. /reliable-water-pumping-system-vadodara)
+      const cleanSlug = routeStr.replace(/^\//, '').split('?')[0].toLowerCase();
+      if (cleanSlug && !['home', 'about', 'products', 'contact', '404'].includes(cleanSlug)) {
+        const foundByDirectSlug = PRODUCTS_DATA.find(
+          (p) =>
+            p.id.toLowerCase() === cleanSlug ||
+            (p.slug && p.slug.toLowerCase() === cleanSlug) ||
+            generateSlug(p.name) === cleanSlug
+        );
+        if (foundByDirectSlug) {
+          setSelectedDetailProduct(foundByDirectSlug);
+          setCurrentPage('products');
+          return;
         }
       }
 
@@ -187,7 +204,7 @@ export default function App() {
   const handleSelectProduct = (product: Product) => {
     setSelectedDetailProduct(product);
     setCurrentPage('products');
-    const seoSlug = generateSlug(product.name);
+    const seoSlug = product.slug || generateSlug(product.name);
     const pathStr = `/product/${seoSlug}`;
     if (window.location.pathname !== pathStr) {
       window.history.pushState({}, '', pathStr);
@@ -216,6 +233,7 @@ export default function App() {
         currentPage={currentPage}
         onPageChange={handlePageChange}
         onSelectCategory={handleSelectCategory}
+        onSelectProduct={handleSelectProduct}
         onOpenQuoteModal={handleOpenQuoteModal}
         onOpenCallModal={handleOpenCallModal}
         onOpenAdminModal={() => setIsAdminModalOpen(true)}

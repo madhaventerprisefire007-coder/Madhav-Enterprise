@@ -86,7 +86,7 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
         { id: '3', value: '50,000+', label: 'Units Delivered', sublabel: 'Zero Defect Benchmark' },
         { id: '4', value: '100%', label: 'Quality Assured', sublabel: 'Strict Quality Control Verification' },
       ],
-      industries: ['Chemical & Pharmaceutical', 'Textile & Dyeing Mills', 'ETP & STP Water Treatment', 'Commercial Real Estate', 'Agriculture & Farms'],
+      industries: ['ETP & STP Water Treatment', 'Commercial Real Estate', 'Agriculture & Farms'],
       ctaSection: {
         title: 'Need Custom Industrial Sizing or Bulk RFQ Quotation?',
         subtitle: 'Get direct tax invoice quotes and engineering specifications from our Vadodara technical desk.',
