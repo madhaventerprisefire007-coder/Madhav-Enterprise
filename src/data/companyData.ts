@@ -83,12 +83,11 @@ export const PRODUCTS_DATA: Product[] = [
     category: 'Water Level Controller',
     subtitle: 'Single Phase Automatic Water Level Controller with PVC Float Switch Sensors',
     description: 'Single phase digital panel with sensor water level controller designed to automatically control single phase pumps with dry-run protection and sensor cutoff.',
-    image: 'https://lh3.googleusercontent.com/d/1jur4M5LT75X3_bVSOtEi8wN725kRIwe7',
+    image: 'https://lh3.googleusercontent.com/d/1OiBDxbRxjeLVXI3bLiBHy9_3ixZ6Cf5d',
     galleryImages: [
-      'https://lh3.googleusercontent.com/d/1jur4M5LT75X3_bVSOtEi8wN725kRIwe7'
+      'https://lh3.googleusercontent.com/d/1OiBDxbRxjeLVXI3bLiBHy9_3ixZ6Cf5d'
     ],
     videoEmbedUrl: 'https://drive.google.com/file/d/1ucp8xmzAyysXDPACRQMZV70r6yr4TSrC/preview',
-    wiringDiagramUrl: 'https://lh3.googleusercontent.com/d/14T77b0NTyy2I8vvH8jNNerXrdG9Pj0TO',
     featured: true,
     modelNumber: 'ME-WLC-9000D',
     material: 'Flame Retardant ABS Body & PVC Float Switch Sensors',
@@ -110,9 +109,9 @@ export const PRODUCTS_DATA: Product[] = [
     category: 'Water Level Controller',
     subtitle: 'Automated Starter Panel with Water Level Sensing & Phase Preventer',
     description: 'Heavy-duty industrial control panel engineered for high-capacity 3-phase submersible and centrifugal pumps. Includes star-delta starter integration and automatic water level logic.',
-    image: 'https://lh3.googleusercontent.com/d/1VNt-UEeGupP1i_ghqByTydYKuWhIR4YI',
+    image: 'https://lh3.googleusercontent.com/d/11fEoYfvRme9kxmJgMcfFy5TenVMFGFvT',
     galleryImages: [
-      'https://lh3.googleusercontent.com/d/1VNt-UEeGupP1i_ghqByTydYKuWhIR4YI'
+      'https://lh3.googleusercontent.com/d/11fEoYfvRme9kxmJgMcfFy5TenVMFGFvT'
     ],
     wiringDiagramUrl: 'https://lh3.googleusercontent.com/d/14T77b0NTyy2I8vvH8jNNerXrdG9Pj0TO',
     featured: false,

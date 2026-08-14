@@ -4,7 +4,8 @@ import {
   getFirestore, 
   initializeFirestore, 
   persistentLocalCache, 
-  persistentMultipleTabManager 
+  persistentMultipleTabManager,
+  setLogLevel
 } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 import configJson from '../../firebase-applet-config.json';
@@ -40,6 +41,9 @@ const firebaseConfig = {
 };
 
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+
+// Suppress benign 10s network latency warnings in sandbox/iframe environments
+setLogLevel('error');
 
 export const auth = getAuth(app);
 export const googleAuthProvider = new GoogleAuthProvider();

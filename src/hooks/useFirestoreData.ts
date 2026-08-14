@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback } from 'react';
-import { doc, getDocFromServer } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 import { subscribeProducts } from '../lib/firestore/products';
 import { subscribeCategories } from '../lib/firestore/categories';
@@ -41,22 +40,10 @@ export function useFirestoreData() {
   const [error, setError] = useState<string | null>(null);
   const [retryCount, setRetryCount] = useState(0);
 
-  const testConnection = async () => {
-    try {
-      await getDocFromServer(doc(db, 'test', 'connection'));
-    } catch (error: any) {
-      // Gracefully capture offline / unreachable connection notices
-      console.warn('Firestore connection check:', error?.message || 'Operating in offline/cached mode');
-    }
-  };
-
   const initData = useCallback(async () => {
     setLoading(true);
     setError(null);
     try {
-      // Run connection test non-blockingly
-      testConnection().catch(() => {});
-      
       // Auto-seed if database is currently unpopulated (fails gracefully if offline)
       seedFirestoreIfEmpty().catch((err) => {
         console.warn('Firestore seeding skipped or offline:', err);
