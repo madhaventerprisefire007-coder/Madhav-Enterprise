@@ -12,9 +12,7 @@ import {
   MessageSquare, 
   Send,
   ExternalLink,
-  Award,
-  Sparkles,
-  Flame
+  Award
 } from 'lucide-react';
 
 interface FooterProps {
@@ -122,24 +120,6 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onSelectCategory, 
                   <span>Contact Vadodara Hub</span>
                 </button>
               </li>
-              <li className="pt-2 border-t border-white/10">
-                <button 
-                  onClick={() => handleOpenProductBySlug('fire-material-supplier-vadodara')}
-                  className="text-red-400 hover:text-red-300 transition-colors flex items-center gap-1.5 font-bold"
-                >
-                  <Flame className="w-3.5 h-3.5 text-red-500" />
-                  <span>Fire Material Supplier (Vadodara)</span>
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => handleOpenProductBySlug('reliable-water-pumping-system-vadodara')}
-                  className="text-[#E86A2D] hover:text-orange-300 transition-colors flex items-center gap-1.5 font-bold"
-                >
-                  <Sparkles className="w-3.5 h-3.5 text-[#E86A2D]" />
-                  <span>Water Pumping System (Vadodara)</span>
-                </button>
-              </li>
             </ul>
           </div>
 
@@ -167,6 +147,25 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onSelectCategory, 
                   </button>
                 </li>
               ))}
+              
+              <li>
+                <button 
+                  onClick={() => handleOpenProductBySlug('fire-material-supplier-vadodara')}
+                  className="hover:text-white text-neutral-300 hover:text-[#E86A2D] transition-colors text-left font-medium flex items-start gap-2 group cursor-pointer"
+                >
+                  <span className="text-[#E86A2D] font-bold mt-0.5 group-hover:scale-125 transition-transform">•</span>
+                  <span className="group-hover:translate-x-1 transition-transform">Fire Material</span>
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => handleOpenProductBySlug('reliable-water-pumping-system-vadodara')}
+                  className="hover:text-white text-neutral-300 hover:text-[#E86A2D] transition-colors text-left font-medium flex items-start gap-2 group cursor-pointer"
+                >
+                  <span className="text-[#E86A2D] font-bold mt-0.5 group-hover:scale-125 transition-transform">•</span>
+                  <span className="group-hover:translate-x-1 transition-transform">Water Pumping System</span>
+                </button>
+              </li>
             </ul>
           </div>
 

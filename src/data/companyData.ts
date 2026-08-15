@@ -449,11 +449,9 @@ We provide rapid dispatch, technical sizing support, and direct delivery across 
 - **Local Engineering Expertise**: Experienced technical guidance for Bill of Quantities (BOQ) optimization, piping pressure drop sizing, and valve selection.
 
 Get in touch with Madhav Enterprise today for instant factory quotes, product datasheets, and swift on-site supply for your fire fighting projects in Vadodara.`,
-    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://lh3.googleusercontent.com/d/1MO0CXxvAuFA3fJNzwbqQvZd7419iYF3t',
     galleryImages: [
-      'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1599818814766-3d23f77df230?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80'
+      'https://lh3.googleusercontent.com/d/1MO0CXxvAuFA3fJNzwbqQvZd7419iYF3t'
     ],
     featured: true,
     modelNumber: 'ME-FIRE-VADODARA',
