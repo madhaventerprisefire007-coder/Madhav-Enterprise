@@ -20,7 +20,8 @@ import {
   Layers,
   Cpu,
   CircleDot,
-  Gauge
+  Gauge,
+  Flame
 } from 'lucide-react';
 import { motion } from 'motion/react';
 
@@ -304,10 +305,12 @@ export const HomePage: React.FC<HomePageProps> = ({
                     <div className="w-12 h-12 rounded-2xl bg-[#E86A2D]/15 text-[#E86A2D] flex items-center justify-center group-hover:bg-[#E86A2D] group-hover:text-white transition-colors">
                       {div.id === 'wlc' && <Cpu className="w-6 h-6" />}
                       {div.id === 'valves' && <CircleDot className="w-6 h-6" />}
+                      {div.id === 'sewage-pumps' && <Zap className="w-6 h-6" />}
                       {div.id === 'motor-pumps' && <Zap className="w-6 h-6" />}
                       {div.id === 'pipes-fittings' && <Layers className="w-6 h-6" />}
                       {div.id === 'pressure-pumps' && <Gauge className="w-6 h-6" />}
                       {div.id === 'submersible-pumps' && <Droplets className="w-6 h-6" />}
+                      {div.id === 'fire-material' && <Flame className="w-6 h-6" />}
                     </div>
                     <span className="text-[10px] font-mono font-extrabold uppercase px-2.5 py-1 rounded-full bg-white/10 text-neutral-300 border border-white/10">
                       Vadodara Hub

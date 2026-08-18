@@ -74,6 +74,15 @@ export const PRODUCT_DIVISIONS: ProductDivision[] = [
     iconName: 'Droplets',
     image: 'https://lh3.googleusercontent.com/d/1s3LE7sLg3nABRXZWKKiXHDEjqfeEo5uv',
   },
+  {
+    id: 'fire-material',
+    category: 'Fire Material',
+    displayName: 'Fire Material',
+    shortTitle: 'Fire Material',
+    description: 'ISI marked fire fighting hydrant valves, hose reels, fire sprinklers, branch pipes, and safety equipment in Vadodara.',
+    iconName: 'Flame',
+    image: 'https://lh3.googleusercontent.com/d/1MO0CXxvAuFA3fJNzwbqQvZd7419iYF3t',
+  },
 ];
 
 export const PRODUCTS_DATA: Product[] = [
@@ -114,7 +123,6 @@ export const PRODUCTS_DATA: Product[] = [
     galleryImages: [
       'https://lh3.googleusercontent.com/d/11fEoYfvRme9kxmJgMcfFy5TenVMFGFvT'
     ],
-    wiringDiagramUrl: 'https://lh3.googleusercontent.com/d/14T77b0NTyy2I8vvH8jNNerXrdG9Pj0TO',
     featured: false,
     modelNumber: 'ME-CP3P-15HP',
     material: 'CRCA Powder Coated Sheet Metal Enclosure',
@@ -137,8 +145,8 @@ export const PRODUCTS_DATA: Product[] = [
       { label: 'Starter Type', value: 'Direct On-Line (DOL) / Star-Delta' },
       { label: 'Protection Grade', value: 'IP-55 Industrial Grade' }
     ],
-    applications: ['GIDC Industrial Plants', 'Agriculture & Irrigation', 'Dewatering Sump Systems', 'Cooling Tower Water Panels'],
-    industries: ['Agriculture & Farm Irrigation']
+    applications: [],
+    industries: []
   },
   {
     id: 'valv-ball-ss',

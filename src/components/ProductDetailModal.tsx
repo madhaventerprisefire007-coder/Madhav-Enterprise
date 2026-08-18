@@ -155,22 +155,24 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             </div>
 
             {/* Industrial Applications */}
-            <div>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-neutral-500 mb-2 flex items-center gap-1.5">
-                <Wrench className="w-4 h-4 text-[#E86A2D]" />
-                <span>Target Industry Applications</span>
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {product.applications.map((app, idx) => (
-                  <span 
-                    key={idx}
-                    className="bg-neutral-100 hover:bg-neutral-200 text-neutral-800 text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors"
-                  >
-                    • {app}
-                  </span>
-                ))}
+            {product.applications && product.applications.length > 0 && (
+              <div>
+                <h3 className="text-sm font-bold uppercase tracking-wider text-neutral-500 mb-2 flex items-center gap-1.5">
+                  <Wrench className="w-4 h-4 text-[#E86A2D]" />
+                  <span>Target Industry Applications</span>
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {product.applications.map((app, idx) => (
+                    <span 
+                      key={idx}
+                      className="bg-neutral-100 hover:bg-neutral-200 text-neutral-800 text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors"
+                    >
+                      • {app}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
           {/* Modal Footer Actions */}
