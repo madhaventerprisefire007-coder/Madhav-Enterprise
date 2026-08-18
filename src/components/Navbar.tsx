@@ -56,17 +56,21 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const reliablePumpingProduct = PRODUCTS_DATA.find(
-    (p) => p.id === 'reliable-water-pumping-system-vadodara' || p.slug === 'reliable-water-pumping-system-vadodara'
+  const motorStarterProduct = PRODUCTS_DATA.find(
+    (p) =>
+      p.id === 'fully-automatic-digital-motor-starter-with-level-controller-and-protection' ||
+      p.slug === 'fully-automatic-digital-motor-starter-with-level-controller-and-protection' ||
+      p.id === 'reliable-water-pumping-system-vadodara' ||
+      p.slug === 'reliable-water-pumping-system-vadodara'
   );
 
   const fireMaterialProduct = PRODUCTS_DATA.find(
     (p) => p.id === 'fire-material-supplier-vadodara' || p.slug === 'fire-material-supplier-vadodara'
   );
 
-  const handleOpenPumpingSystem = () => {
-    if (reliablePumpingProduct && onSelectProduct) {
-      onSelectProduct(reliablePumpingProduct);
+  const handleOpenMotorStarter = () => {
+    if (motorStarterProduct && onSelectProduct) {
+      onSelectProduct(motorStarterProduct);
     } else {
       onPageChange('products');
     }
@@ -264,25 +268,25 @@ export const Navbar: React.FC<NavbarProps> = ({
                               </div>
                             </button>
 
-                            {/* Reliable Water Pumping System in Vadodara (Specialized Solution Page) */}
+                            {/* Fully Automatic Digital Motor Starter (Specialized Solution Page) */}
                             <button
-                              onClick={handleOpenPumpingSystem}
+                              onClick={handleOpenMotorStarter}
                               className="w-full text-left px-3 py-2.5 rounded-xl hover:bg-orange-50/90 transition-colors flex items-start gap-3 group border border-transparent hover:border-orange-200"
                             >
                               <div className="w-8 h-8 rounded-lg bg-[#E86A2D]/15 text-[#E86A2D] flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#E86A2D] group-hover:text-white transition-colors">
-                                <Sparkles className="w-4 h-4" />
+                                <Cpu className="w-4 h-4" />
                               </div>
                               <div className="space-y-0.5 flex-1">
                                 <div className="flex items-center justify-between">
                                   <p className="text-xs font-bold text-neutral-900 group-hover:text-[#E86A2D] transition-colors leading-tight">
-                                    Reliable Water Pumping System
+                                    Fully Automatic Digital Motor Starter
                                   </p>
                                   <span className="text-[9px] bg-orange-100 text-[#E86A2D] font-bold px-1.5 py-0.5 rounded">
                                     Vadodara
                                   </span>
                                 </div>
                                 <p className="text-[10px] text-neutral-500 line-clamp-1">
-                                  Industrial, commercial & residential heavy duty pumping systems.
+                                  With level controller, auto restart & complete motor protection.
                                 </p>
                               </div>
                             </button>
@@ -509,15 +513,15 @@ export const Navbar: React.FC<NavbarProps> = ({
                         </button>
 
                         <button
-                          onClick={handleOpenPumpingSystem}
+                          onClick={handleOpenMotorStarter}
                           className="w-full text-left p-2 rounded-lg bg-orange-50 hover:bg-orange-100/70 border border-[#E86A2D]/30 transition-colors flex items-center justify-between text-[#E86A2D] font-bold text-xs mb-1"
                         >
                           <span className="flex items-center gap-1.5 line-clamp-1">
-                            <Sparkles className="w-3.5 h-3.5 text-[#E86A2D] shrink-0" />
-                            <span>Reliable Water Pumping System (Vadodara)</span>
+                            <Cpu className="w-3.5 h-3.5 text-[#E86A2D] shrink-0" />
+                            <span>Fully Automatic Digital Motor Starter (Vadodara)</span>
                           </span>
                           <span className="text-[9px] bg-[#E86A2D] text-white px-1.5 py-0.5 rounded font-bold shrink-0">
-                            Featured
+                            Starter
                           </span>
                         </button>
 

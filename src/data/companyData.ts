@@ -290,113 +290,137 @@ export const PRODUCTS_DATA: Product[] = [
     industries: ['Agriculture & Farm Irrigation', 'Water & Effluent Treatment (ETP/STP)']
   },
   {
-    id: 'reliable-water-pumping-system-vadodara',
-    slug: 'reliable-water-pumping-system-vadodara',
-    name: 'reliable water pumping system in vadodara',
-    category: 'Pressure Pump',
-    subtitle: 'High-Performance Commercial, Industrial & Residential Water Pumping Systems with Smart Automation',
-    description: 'Looking for a reliable water pumping system in Vadodara? Madhav Enterprise delivers high-efficiency, durable, and energy-saving water pumping solutions engineered for uninterrupted water flow across residential high-rises, commercial buildings, and industrial plants across Vadodara and Gujarat.',
-    longDescription: `### Premier Reliable Water Pumping System in Vadodara by Madhav Enterprise
+    id: 'fully-automatic-digital-motor-starter-with-level-controller-and-protection',
+    slug: 'fully-automatic-digital-motor-starter-with-level-controller-and-protection',
+    name: 'Fully automatic digital motor starter with level controller and protection',
+    category: 'Water Level Controller',
+    subtitle: 'Electrolysis-Free Digital Motor Starter Panel with Auto Restart, Auto Cut-Off & Complete Motor Protection',
+    description: 'Looking for a fully automatic digital motor starter with level controller and protection in Vadodara? Madhav Enterprise / Madhav Electricals manufactures heavy-duty, electrolysis-free digital liquid level controller starter panels with automatic motor restart, high/low cut-off, and comprehensive protection for single-phase and 3-phase pumps.',
+    longDescription: `### Fully Automatic Digital Motor Starter with Level Controller and Protection in Vadodara
 
-When looking for a **reliable water pumping system in Vadodara**, efficiency, endurance, and seamless automation are critical. At Madhav Enterprise, we engineer and supply state-of-the-art water pumping systems tailored to address the demanding fluid transfer challenges of residential societies, commercial high-rise towers, municipal facilities, and heavy industrial plants across Vadodara, Gujarat.
+Manufactured by **Madhav Enterprise / Madhav Electricals** in Vadodara, Gujarat, this **Fully Automatic Digital Motor Starter with Level Controller and Protection** is engineered to automate your water pumping operations while safeguarding your costly motor pump against electrical and hydraulic hazards.
 
-Water supply disruptions can halt industrial manufacturing lines, disrupt commercial premises, and cause severe inconvenience in residential complexes. Our heavy-duty pumping systems are built with precision-balanced impellers, 100% pure electrolytic copper winding motors, and anti-corrosion stainless steel (SS 304 / SS 316) fluid pathways to guarantee consistent water delivery, high head pressure, and decades of trouble-free operation.
-
----
-
-### Key Engineering Advantages of Our Vadodara Water Pumping Systems
-
-1. **High Hydraulic Efficiency & Energy Conservation**: Engineered with advanced CFD hydrodynamic flow profiles, our pumps deliver maximum liters-per-minute (LPM) discharge while cutting electricity consumption by up to 25% compared to conventional pump systems.
-2. **Heavy-Duty Construction for Gujarat Water Conditions**: Fitted with corrosion-resistant stainless steel shafts, high-grade cast iron or SS bodies, and premium carbon-ceramic mechanical seals that withstand hard water, suspended sediments, and fluctuating operational temperatures.
-3. **Seamless Smart Automation Integration**: Completely compatible with Madhav Enterprise digital Automatic Water Level Controllers (WLC), dry-run protection sensors, and float switch logic—ensuring zero water overflow, dry-run burn prevention, and totally automated pump starts/stops.
-4. **Thermal Overload & Voltage Protection**: Equipped with Class F insulation and internal thermal overload relays capable of handling standard Indian industrial voltage fluctuations (180V to 440V).
+Designed with state-of-the-art **electrolysis-free liquid level sensing circuitry**, this intelligent starter panel eliminates probe corrosion and provides seamless dual-tank automation (simultaneous monitoring of Overhead Tank and Underground Sump).
 
 ---
 
-### Applications Across Vadodara & Gujarat Industrial Belts
+### Core Operational Features & Capabilities
 
-Our water pumping systems are actively deployed across prominent GIDC industrial estates and urban centers in Vadodara, including:
-- **GIDC Makarpura & GIDC Por**: Continuous process water transfer, cooling tower circulation, and plant utility supply.
-- **GIDC Nandesari & GIDC Savli**: Industrial effluent management, raw water intake, and heavy-duty transfer pumping.
-- **GIDC Waghodia & Manjusar**: High-capacity industrial water lifting and boiler feed water boosting.
-- **Commercial Complexes & High-Rise Apartments (Vasna Road, Diwalipura, Gotri, Alkapuri)**: Multi-story hydro-pneumatic pressure boosting, rooftop overhead tank filling, and underground sump water circulation.
-- **Agricultural & Farm Irrigation**: Deep borewell extraction, micro-sprinkler feeding, and canal water irrigation networks.
+1. **Fully Automatic Operation**:
+   - **Auto Start**: Automatically powers ON the motor pump when the Overhead (OH) Tank level falls below the low threshold (OH LOW) and sufficient water exists in the Underground (UG) Sump.
+   - **Auto Cut-Off**: Instantly cuts OFF power when the Overhead Tank reaches full capacity (OH HIGH), preventing wasteful water overflow and terrace flooding.
+   - **Auto Restart & Delay Timer**: Intelligently restarts the motor pump once power is restored or when underground water levels replenish.
+
+2. **Electrolysis-Free Sensing Technology**:
+   - Utilizes ultra-low AC voltage signal probing that completely prevents electrolytic corrosion, oxidation, or scaling on water contact sensors, delivering years of maintenance-free service.
+
+3. **Complete Motor Protection Engine**:
+   - **Dry-Run Protection**: Cuts power immediately if the underground sump runs dry, shielding pump impellers and mechanical seals from burning.
+   - **Voltage Surge & Under-Voltage Cut-Off**: Built-in relay protection against extreme voltage fluctuations (low voltage cut-off and high voltage surge safety).
+   - **Thermal Overload & Current Trip**: Protects copper windings from excessive current draw and motor jamming.
+
+4. **Front Panel Dual-Tank Visual Indicators**:
+   - **OH HIGH**: Overhead Tank Full Indicator (Red LED)
+   - **OH LOW**: Overhead Tank Low Level Indicator (Green LED)
+   - **PUMP ON**: Active Pumping Status Indicator (Green LED)
+   - **UG HIGH / UG LOW**: Underground Sump Level Status Indicators
+   - **MANUAL / AUTO Mode Switch**: Heavy-duty industrial toggle for switching between fully automated sensing and manual emergency bypass.
 
 ---
 
-### Why Choose Madhav Enterprise in Vadodara?
+### Terminal Connections & Electrical Layout
 
-- **Local Technical Engineering Desk**: Situated conveniently at Vasna Road / Diwalipura in Vadodara, providing instant consultation, sizing calculations, and prompt site assistance.
-- **Direct Factory Pricing & Complete Warranty**: Genuine manufacturer direct rates with comprehensive test certificates, spare parts availability, and guaranteed performance.
-- **Tailored Multi-Stage & Booster Customization**: From compact 0.5 HP domestic pressure boosters to heavy 25 HP industrial multi-pump booster skids, we design and deliver exact turnkey configurations.
+The starter panel is designed with clearly labelled, industrial-grade terminal blocks:
+- **OH Terminal (H, L, C)**: Overhead High, Low, and Common sensor probe connections.
+- **UG Terminal (H, L, C)**: Underground High, Low, and Common sensor probe connections.
+- **OUT Terminal (P, N, E)**: Direct Phase, Neutral, and Earth output supply to the Motor Pump.
+- **IN Terminal (P, N, E)**: Phase, Neutral, and Earth 230V/415V AC Mains Input supply.
 
-Get in touch with Madhav Enterprise today to receive technical sizing assistance, CAD drawings, and an instant direct quote for your reliable water pumping system in Vadodara.`,
+---
+
+### Key Applications Across Vadodara & Gujarat
+
+- **Residential Complexes & Societies**: Multi-story apartments, bungalows, and farmhouses in Diwalipura, Vasna Road, Gotri, Alkapuri, and Manjalpur.
+- **Commercial & Office Buildings**: Hospitals, hotels, institutions, and shopping malls.
+- **GIDC Industrial Units**: Makarpura, Savli, Nandesari, Waghodia, and Por industrial estates for process water supply and cooling tower tanks.
+- **Agriculture & Borewell Schemes**: Deep borewell submersible and openwell pump automation.
+
+---
+
+### Why Choose Madhav Enterprise / Madhav Electricals?
+
+- **Direct Manufacturer in Vadodara**: Located at C-10, Gaurav Park, Diwalipura, Vasna Road, Vadodara.
+- **Rigorous Factory Testing**: Every starter panel undergoes strict insulation resistance, relay trip, and high-voltage burn-in tests.
+- **Direct Factory Pricing & 1-Year Warranty**: Genuine manufacturer direct rates with fast local spare parts and on-site support.
+
+Contact Madhav Enterprise today to order your **Fully Automatic Digital Motor Starter with Level Controller and Protection** with direct delivery across Vadodara and Gujarat.`,
     image: 'https://lh3.googleusercontent.com/d/1yb2c1H4cKZEiuqOT1v7ECb4_za9YbUyo',
     galleryImages: [
       'https://lh3.googleusercontent.com/d/1yb2c1H4cKZEiuqOT1v7ECb4_za9YbUyo'
     ],
     featured: true,
-    modelNumber: 'ME-WPS-VADODARA',
-    material: 'SS 304 / SS 316 Impeller, Heavy Cast Iron / SS Shell & 100% Copper Winding',
+    modelNumber: 'ME-ADMS-PRO',
+    material: 'CRCA Powder Coated Heavy Metal Enclosure with Microprocessor PCB & Industrial Relays',
     rating: '4.9/5',
     keyFeatures: [
-      'High-Efficiency Hydraulic Design for Maximum Water Discharge with Low Power Consumption',
-      'Built-in Compatibility with Automatic Water Level Controllers & Dry-Run Sensors',
-      'Heavy-Duty Stainless Steel (SS 304/316) & Cast Iron Anti-Corrosive Construction',
-      'Continuous Duty Rating (S1) for 24/7 Demanding Industrial GIDC & Commercial Operations',
-      'Thermal Overload Protector & Voltage Fluctuation Safety Integration',
-      'Dynamically Balanced High-Grade Rotor with Ceramic-Carbon Mechanical Seal'
+      'Electrolysis-Free Sensing Circuitry Eliminates Probe Rust & Mineral Scaling',
+      'Dual Tank Level Control: Simultaneous Overhead (OH) Tank & Underground (UG) Sump Monitoring',
+      'Integrated Motor Protection: Dry-Run Safety, Voltage Trip & Thermal Overload Protection',
+      'Auto Start & Auto Cut-Off with Microprocessor Controlled Restart Timing',
+      'Manual / Auto Mode Toggle Switch for Emergency Manual Pumping',
+      'Front Panel LED Status Indicators for High, Low, and Pump ON Diagnostics'
     ],
     benefits: [
-      'Ensures Uninterrupted Water Supply: Eliminates unexpected water supply downtime across domestic societies, high-rise buildings, and industrial plants in Vadodara.',
-      'Saves Up to 25% Electricity: High-efficiency energy-saving motor reduces utility bills while delivering consistent flow pressure.',
-      'Zero Maintenance Hassle: Robust mechanical seals and anti-rust coatings guarantee long operational lifespan even in hard water conditions.',
-      'Turnkey Local Support in Vadodara: Prompt on-site assistance, spare parts availability, and engineering sizing support from Vasna Road, Diwalipura.'
+      '100% Water Overflow Prevention: Eliminates terrace tank overflow and underground water wastage.',
+      'Extends Motor Pump Lifespan: Protects motor windings and mechanical seals against dry-running and voltage spikes.',
+      'Zero Maintenance Probes: Electrolysis-free AC sensing ensures long years of maintenance-free operation.',
+      'Local Vadodara Manufacturer Support: Direct engineering assistance, warranty, and fast delivery from Vasna Road, Diwalipura.'
     ],
     specs: [
-      { label: 'System Type', value: 'Reliable Water Pumping System' },
-      { label: 'Power Range', value: '0.5 HP to 25 HP (Single Phase 220V & 3 Phase 415V)' },
-      { label: 'Head Range', value: '10 Meters to 280 Meters' },
-      { label: 'Flow Capacity', value: '50 LPM to 3,500 LPM' },
-      { label: 'Motor Rating', value: 'Class F Insulation / IP-55 Enclosure' },
-      { label: 'Automation Support', value: 'Compatible with Digital WLC Panels & Float Switches' },
-      { label: 'Inlet / Outlet Size', value: '25mm (1") to 150mm (6") Flanged / Screwed' },
-      { label: 'Service Location', value: 'Vadodara & Across Gujarat Industrial Belts' }
+      { label: 'Product Type', value: 'Fully Automatic Digital Motor Starter with Level Controller & Protection' },
+      { label: 'Technology', value: 'Electrolysis-Free AC Sensing Circuit' },
+      { label: 'Supported Pump Types', value: 'Submersible, Monoblock, Openwell & Jet Pumps (Single Phase & 3-Phase)' },
+      { label: 'Motor Power Rating', value: '0.5 HP to 5 HP (Single Phase 220V) / Up to 15 HP (Three Phase 415V)' },
+      { label: 'Input Operating Voltage', value: '180V - 250V AC (50 Hz)' },
+      { label: 'Safety Protections', value: 'Dry-Run Prevention, Overload Cut-off, Voltage Fluctuation Guard' },
+      { label: 'Control Modes', value: 'Fully Automatic / Manual Switchable' },
+      { label: 'Front Indicators', value: 'OH HIGH, OH LOW, UG HIGH, UG LOW, PUMP ON (LED Display)' },
+      { label: 'Enclosure Material', value: 'Shockproof Powder Coated Sheet Metal' },
+      { label: 'Manufacturer Location', value: 'Madhav Enterprise, Diwalipura, Vasna Road, Vadodara, Gujarat' }
     ],
     applications: [
-      'Commercial High-Rise Complexes & Towers in Vadodara',
-      'GIDC Industrial Estates (Makarpura, Nandesari, Savli, Waghodia, Por)',
-      'Residential Societies, Bungalows & Farmhouses',
-      'Overhead Tank & Underground Sump Water Transfer',
-      'Agriculture & Farm Irrigation Systems',
-      'Water & Effluent Treatment Plants (ETP / STP)'
+      'Residential Societies, Bungalows & High-Rise Apartments',
+      'Commercial Buildings, Hospitals & Hotels',
+      'GIDC Industrial Estates (Makarpura, Savli, Nandesari, Por, Waghodia)',
+      'Underground Sump to Overhead Rooftop Tank Water Transfer',
+      'Borewell & Openwell Pump Automatic Operation'
     ],
     industries: [
-      'Commercial Real Estate & Towers',
-      'Water & Effluent Treatment (ETP/STP)',
-      'Agriculture & Farm Irrigation'
+      'Residential & Commercial Real Estate',
+      'Industrial Manufacturing Plants & GIDC Belts',
+      'Water Utilities & Pumping Schemes'
     ],
     seoKeywords: [
-      'reliable water pumping system in vadodara',
-      'water pumping system in vadodara',
-      'industrial water pump vadodara',
-      'water pump supplier vadodara',
-      'pressure booster pump vadodara',
-      'commercial water pumping system vadodara',
-      'GIDC makarpura water pump supplier'
+      'fully automatic digital motor starter with level controller and protection',
+      'automatic motor starter with level controller in vadodara',
+      'digital motor starter vadodara',
+      'liquid level controller electrolysis free vadodara',
+      'automatic water level controller with motor protection',
+      'water pump starter panel manufacturer vadodara',
+      'madhav electricals level controller vadodara'
     ],
     faqs: [
       {
-        question: 'Why is Madhav Enterprise considered the most reliable water pumping system provider in Vadodara?',
-        answer: 'Madhav Enterprise combines 16+ years of specialized engineering experience in Vadodara with heavy-duty SS/Cast Iron manufacturing, 100% copper motors, and integrated automated water level controls to ensure zero water failure and maximum energy efficiency.'
+        question: 'What is the advantage of an electrolysis-free liquid level controller?',
+        answer: 'Traditional DC controllers cause probe corrosion and mineral deposition over time. Madhav Enterprise electrolysis-free controllers use low-frequency AC sensing current, preventing probe rust and water contamination for years of maintenance-free service.'
       },
       {
-        question: 'Can this water pumping system be integrated with automatic water level controllers?',
-        answer: 'Yes, all our water pumping systems are 100% compatible with our single-phase and three-phase digital water level controllers with dry-run protection float sensors.'
+        question: 'Does this panel protect the motor if the underground sump water is empty?',
+        answer: 'Yes! The panel continuously checks the Underground (UG) Sump level. If the sump is empty or dry, the controller will not allow the motor to turn on, completely protecting the pump from dry-run burning.'
       },
       {
-        question: 'Do you deliver and support industrial GIDC estates around Vadodara?',
-        answer: 'Yes, we provide supply, sizing consultation, and prompt local support across Makarpura GIDC, Savli GIDC, Nandesari GIDC, Por GIDC, Waghodia GIDC, Halol, and all across Vadodara district.'
+        question: 'Can I operate the motor manually if required?',
+        answer: 'Yes, the starter panel includes a dedicated front toggle switch to easily select between Automatic mode and Manual mode whenever emergency pumping is needed.'
       }
     ]
   },

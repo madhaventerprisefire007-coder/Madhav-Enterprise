@@ -67,9 +67,6 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
   const currentDivision = PRODUCT_DIVISIONS.find((d) => d.category === activeCategory);
 
   const filteredProducts = PRODUCTS_DATA.filter((p) => {
-    if (activeCategory === 'Pressure Pump' && p.id === 'reliable-water-pumping-system-vadodara') {
-      return false;
-    }
     const matchesCategory = activeCategory === 'All' || p.category === activeCategory;
     const matchesSearch =
       p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -83,8 +80,8 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
   const currentTitle = isDetail
     ? (internalSelectedProduct.slug === 'fire-material-supplier-vadodara'
         ? `Fire Material Supplier in Vadodara | Madhav Enterprise`
-        : internalSelectedProduct.slug === 'reliable-water-pumping-system-vadodara'
-        ? `Reliable Water Pumping System in Vadodara | Madhav Enterprise`
+        : (internalSelectedProduct.slug === 'fully-automatic-digital-motor-starter-with-level-controller-and-protection' || internalSelectedProduct.slug === 'reliable-water-pumping-system-vadodara')
+        ? `Fully Automatic Digital Motor Starter with Level Controller and Protection in Vadodara | Madhav Enterprise`
         : `${internalSelectedProduct.name} - ${
             internalSelectedProduct.category === 'Butterfly Valve'
               ? 'Butterfly Valve Supplier'

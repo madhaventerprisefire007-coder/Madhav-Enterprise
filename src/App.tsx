@@ -64,13 +64,15 @@ export default function App() {
         }
 
         if (targetIdOrSlug) {
+          const targetLower = targetIdOrSlug.toLowerCase();
           const found = PRODUCTS_DATA.find(
             (p) =>
-              p.id.toLowerCase() === targetIdOrSlug.toLowerCase() ||
-              (p.slug && p.slug.toLowerCase() === targetIdOrSlug.toLowerCase()) ||
-              generateSlug(p.name) === targetIdOrSlug.toLowerCase() ||
-              p.modelNumber.toLowerCase() === targetIdOrSlug.toLowerCase() ||
-              generateSlug(p.category) === targetIdOrSlug.toLowerCase()
+              p.id.toLowerCase() === targetLower ||
+              (p.slug && p.slug.toLowerCase() === targetLower) ||
+              generateSlug(p.name) === targetLower ||
+              p.modelNumber.toLowerCase() === targetLower ||
+              (targetLower.includes('reliable-water-pumping') && p.id === 'fully-automatic-digital-motor-starter-with-level-controller-and-protection') ||
+              generateSlug(p.category) === targetLower
           );
           if (found) {
             setSelectedDetailProduct(found);
@@ -80,14 +82,15 @@ export default function App() {
         }
       }
 
-      // 1b. Direct clean product slug URL (e.g. /reliable-water-pumping-system-vadodara)
+      // 1b. Direct clean product slug URL (e.g. /fully-automatic-digital-motor-starter-with-level-controller-and-protection)
       const cleanSlug = routeStr.replace(/^\//, '').split('?')[0].toLowerCase();
       if (cleanSlug && !['home', 'about', 'products', 'contact', '404'].includes(cleanSlug)) {
         const foundByDirectSlug = PRODUCTS_DATA.find(
           (p) =>
             p.id.toLowerCase() === cleanSlug ||
             (p.slug && p.slug.toLowerCase() === cleanSlug) ||
-            generateSlug(p.name) === cleanSlug
+            generateSlug(p.name) === cleanSlug ||
+            (cleanSlug.includes('reliable-water-pumping') && p.id === 'fully-automatic-digital-motor-starter-with-level-controller-and-protection')
         );
         if (foundByDirectSlug) {
           setSelectedDetailProduct(foundByDirectSlug);

@@ -16,15 +16,15 @@ export const RelatedProducts: React.FC<RelatedProductsProps> = ({
   onSelectProduct,
   onOpenQuoteModal,
 }) => {
-  // Find products in the same category excluding the current product and standalone solution pages
+  // Find products in the same category excluding the current product
   let related = allProducts.filter(
-    (p) => p.category === currentProduct.category && p.id !== currentProduct.id && p.id !== 'reliable-water-pumping-system-vadodara'
+    (p) => p.category === currentProduct.category && p.id !== currentProduct.id
   );
 
   // If not enough in same category, fill with other featured products
   if (related.length < 3) {
     const extra = allProducts.filter(
-      (p) => p.id !== currentProduct.id && p.id !== 'reliable-water-pumping-system-vadodara' && !related.some((r) => r.id === p.id)
+      (p) => p.id !== currentProduct.id && !related.some((r) => r.id === p.id)
     );
     related = [...related, ...extra].slice(0, 3);
   } else {

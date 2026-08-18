@@ -159,11 +159,11 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onSelectCategory, 
               </li>
               <li>
                 <button 
-                  onClick={() => handleOpenProductBySlug('reliable-water-pumping-system-vadodara')}
+                  onClick={() => handleOpenProductBySlug('fully-automatic-digital-motor-starter-with-level-controller-and-protection')}
                   className="hover:text-white text-neutral-300 hover:text-[#E86A2D] transition-colors text-left font-medium flex items-start gap-2 group cursor-pointer"
                 >
                   <span className="text-[#E86A2D] font-bold mt-0.5 group-hover:scale-125 transition-transform">•</span>
-                  <span className="group-hover:translate-x-1 transition-transform">Water Pumping System</span>
+                  <span className="group-hover:translate-x-1 transition-transform">Digital Motor Starter & Controller</span>
                 </button>
               </li>
             </ul>
