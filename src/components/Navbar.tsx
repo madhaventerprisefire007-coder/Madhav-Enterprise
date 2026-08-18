@@ -288,7 +288,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             </button>
 
                             {/* Standard Product Divisions */}
-                            {PRODUCT_DIVISIONS.map((div) => (
+                            {PRODUCT_DIVISIONS.filter((div) => div.id !== 'fire-material').map((div) => (
                               <button
                                 key={div.id}
                                 onClick={() => handleCategoryClick(div.category)}
@@ -524,7 +524,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                         <p className="text-[10px] font-extrabold uppercase tracking-wider text-neutral-400 px-1 pt-1">
                           Product Categories:
                         </p>
-                        {PRODUCT_DIVISIONS.map((div) => (
+                        {PRODUCT_DIVISIONS.filter((div) => div.id !== 'fire-material').map((div) => (
                           <button
                             key={div.id}
                             onClick={() => handleCategoryClick(div.category)}
