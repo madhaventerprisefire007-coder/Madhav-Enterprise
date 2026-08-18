@@ -6,8 +6,6 @@ import { ProductGallery } from './ProductGallery';
 import { ProductSpecificationTable } from './ProductSpecificationTable';
 import { ProductFeatures } from './ProductFeatures';
 import { ProductBenefits } from './ProductBenefits';
-import { ProductApplications } from './ProductApplications';
-import { ProductIndustries } from './ProductIndustries';
 import { RelatedProducts } from './RelatedProducts';
 import { EnquiryForm } from './EnquiryForm';
 import { COMPANY_INFO, COMPANY_ADVANTAGES } from '../../data/companyData';
@@ -292,12 +290,6 @@ export const ProductDetailsView: React.FC<ProductDetailsViewProps> = ({
 
             {/* Industrial Benefits */}
             <ProductBenefits benefits={product.benefits} />
-
-            {/* Target Applications */}
-            <ProductApplications applications={product.applications} />
-
-            {/* Industries Using This Product */}
-            <ProductIndustries industries={product.industries} />
 
             {/* Extended SEO & Technical Description */}
             {product.longDescription && (

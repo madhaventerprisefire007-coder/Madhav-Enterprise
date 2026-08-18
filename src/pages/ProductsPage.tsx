@@ -67,6 +67,9 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
   const currentDivision = PRODUCT_DIVISIONS.find((d) => d.category === activeCategory);
 
   const filteredProducts = PRODUCTS_DATA.filter((p) => {
+    if (activeCategory === 'Pressure Pump' && p.id === 'reliable-water-pumping-system-vadodara') {
+      return false;
+    }
     const matchesCategory = activeCategory === 'All' || p.category === activeCategory;
     const matchesSearch =
       p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
