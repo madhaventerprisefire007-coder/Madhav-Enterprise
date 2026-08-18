@@ -85,7 +85,8 @@ export const PRODUCTS_DATA: Product[] = [
     description: 'Single phase digital panel with sensor water level controller designed to automatically control single phase pumps with dry-run protection and sensor cutoff.',
     image: 'https://lh3.googleusercontent.com/d/1OiBDxbRxjeLVXI3bLiBHy9_3ixZ6Cf5d',
     galleryImages: [
-      'https://lh3.googleusercontent.com/d/1OiBDxbRxjeLVXI3bLiBHy9_3ixZ6Cf5d'
+      'https://lh3.googleusercontent.com/d/1OiBDxbRxjeLVXI3bLiBHy9_3ixZ6Cf5d',
+      'https://lh3.googleusercontent.com/d/1Xxh02Z5jOZsZVPvnPXJEhcHoVhviJQ6H'
     ],
     videoEmbedUrl: 'https://drive.google.com/file/d/1ucp8xmzAyysXDPACRQMZV70r6yr4TSrC/preview',
     featured: true,
