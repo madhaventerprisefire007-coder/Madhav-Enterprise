@@ -154,10 +154,10 @@ export const PRODUCTS_DATA: Product[] = [
     name: 'Star Delta Auto Start Digital Panel With Sensor',
     category: 'Water Level Controller',
     subtitle: 'Fully Automatic Microprocessor Star Delta Starter Panel with Digital Level Sensing & Comprehensive Motor Protection',
-    description: 'Looking for Star Delta Auto Start Digital Panel With Sensor in Vadodara? Madhav Enterprise is a premier manufacturer of heavy-duty 3-phase automatic Star Delta starter panels with digital liquid level controllers, electrolysis-free sensors, auto start-stop, dry-run safety, and phase failure protection for high-capacity submersible and centrifugal pumps in Vadodara, Gujarat.',
+    description: 'Looking for Star Delta Auto Start Digital Panel With Sensor in Vadodara? Madhav Enterprise is a premier manufacturer of heavy-duty 3-phase automatic Star Delta starter panels with digital liquid level controllers, electrolysis-free sensors, auto start-stop, dry-run safety, and phase failure protection for high-capacity 10 HP to 50 HP submersible and centrifugal pumps in Vadodara, Gujarat.',
     longDescription: `### Star Delta Auto Start Digital Panel With Sensor – Manufacturer & Supplier in Vadodara
 
-Welcome to **Madhav Enterprise**, the premier manufacturer and supplier of the advanced **Star Delta Auto Start Digital Panel With Sensor** in Vadodara, Gujarat. Designed specifically for high-power 3-phase submersible pumps, openwell pumps, and heavy centrifugal motor pumps ranging from 5 HP up to 50 HP, our microprocessor-controlled Star Delta starter panel integrates automated water level sensing and heavy-duty motor protection into a single, compact, industrial-grade unit.
+Welcome to **Madhav Enterprise**, the premier manufacturer and supplier of the advanced **Star Delta Auto Start Digital Panel With Sensor** in Vadodara, Gujarat. Designed specifically for high-power 3-phase submersible pumps, openwell pumps, and heavy centrifugal motor pumps ranging from 10 HP up to 50 HP, our microprocessor-controlled Star Delta starter panel integrates automated water level sensing and heavy-duty motor protection into a single, compact, industrial-grade unit.
 
 Heavy 3-phase pump motors consume high starting current (up to 6 times the rated current) when started Direct-On-Line (DOL). Our **Star Delta Auto Start Digital Panel** starts the motor in star configuration to lower inrush currents by up to 65%, smoothly transitioning to delta configuration via precision digital timing. Simultaneously, the built-in intelligent liquid level controller constantly monitors both overhead and underground water levels, automating your pumping operations 24/7 without manual intervention.
 
@@ -192,7 +192,7 @@ Heavy 3-phase pump motors consume high starting current (up to 6 times the rated
 
 - **Product Name**: Star Delta Auto Start Digital Panel With Sensor
 - **Operating Voltage**: 380V - 440V AC, 3-Phase, 50 Hz
-- **Motor HP Compatibility**: 5 HP to 50 HP (Submersible, Openwell & Centrifugal Pumps)
+- **Motor HP Compatibility**: 10 HP to 50 HP (Submersible, Openwell & Centrifugal Pumps)
 - **Starting Method**: Automatic Star-Delta with Digital Timer (0.5s to 30s adjustable)
 - **Sensor Types**: Non-corrosive Stainless Steel (SS 304/316) Magnetic Float Switches & AC Sensing Probes
 - **Enclosure Material**: CRCA Heavy Gauge Powder Coated Sheet Metal (IP-55 Weatherproof)
@@ -245,7 +245,7 @@ Contact Madhav Enterprise today to request technical sizing, wiring diagrams, an
       { label: 'Product Name', value: 'Star Delta Auto Start Digital Panel With Sensor' },
       { label: 'Control System', value: 'Microprocessor Digital Star-Delta Auto Starter' },
       { label: 'Operating Voltage', value: '380V - 440V AC, 3 Phase, 50 Hz' },
-      { label: 'Motor HP Range', value: '5.0 HP to 50.0 HP (Submersible, Openwell & Monoblock Pumps)' },
+      { label: 'Motor HP Range', value: '10.0 HP to 50.0 HP (Submersible, Openwell & Monoblock Pumps)' },
       { label: 'Sensor Type', value: 'Electrolysis-Free SS 304 Probes & Magnetic Float Sensors' },
       { label: 'Safety Protections', value: 'Dry-Run, Single Phasing (SPP), Overload, Phase Reversal, Under/Over Voltage' },
       { label: 'Operation Modes', value: 'Fully Automatic / Manual Switchable' },
@@ -290,7 +290,7 @@ Contact Madhav Enterprise today to request technical sizing, wiring diagrams, an
       },
       {
         question: 'Can this panel be used for both submersible and monoblock pumps?',
-        answer: 'Yes, it is designed for all 3-phase submersible pumps, openwell pumps, monoblock booster pumps, and centrifugal water pumps from 5 HP up to 50 HP.'
+        answer: 'Yes, it is designed for all 3-phase submersible pumps, openwell pumps, monoblock booster pumps, and centrifugal water pumps from 10 HP up to 50 HP.'
       }
     ]
   },
