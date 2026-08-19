@@ -149,6 +149,152 @@ export const PRODUCTS_DATA: Product[] = [
     industries: []
   },
   {
+    id: 'star-delta-auto-start-digital-panel-with-sensor',
+    slug: 'star-delta-auto-start-digital-panel-with-sensor',
+    name: 'Star Delta Auto Start Digital Panel With Sensor',
+    category: 'Water Level Controller',
+    subtitle: 'Fully Automatic Microprocessor Star Delta Starter Panel with Digital Level Sensing & Comprehensive Motor Protection',
+    description: 'Looking for Star Delta Auto Start Digital Panel With Sensor in Vadodara? Madhav Enterprise is a premier manufacturer of heavy-duty 3-phase automatic Star Delta starter panels with digital liquid level controllers, electrolysis-free sensors, auto start-stop, dry-run safety, and phase failure protection for high-capacity submersible and centrifugal pumps in Vadodara, Gujarat.',
+    longDescription: `### Star Delta Auto Start Digital Panel With Sensor – Manufacturer & Supplier in Vadodara
+
+Welcome to **Madhav Enterprise**, the premier manufacturer and supplier of the advanced **Star Delta Auto Start Digital Panel With Sensor** in Vadodara, Gujarat. Designed specifically for high-power 3-phase submersible pumps, openwell pumps, and heavy centrifugal motor pumps ranging from 5 HP up to 50 HP, our microprocessor-controlled Star Delta starter panel integrates automated water level sensing and heavy-duty motor protection into a single, compact, industrial-grade unit.
+
+Heavy 3-phase pump motors consume high starting current (up to 6 times the rated current) when started Direct-On-Line (DOL). Our **Star Delta Auto Start Digital Panel** starts the motor in star configuration to lower inrush currents by up to 65%, smoothly transitioning to delta configuration via precision digital timing. Simultaneously, the built-in intelligent liquid level controller constantly monitors both overhead and underground water levels, automating your pumping operations 24/7 without manual intervention.
+
+---
+
+### Key Operational Features & Engineering Highlights
+
+1. **Intelligent Star-to-Delta Auto Transition**:
+   - Microprocessor-timed digital transition smoothly shifts from Star mode to Delta mode, protecting high-capacity copper motor windings from thermal shock and grid voltage dips.
+
+2. **Automated Dual-Tank Water Level Sensing**:
+   - **Auto Motor Start**: Automatically triggers the pump when the Overhead (OH) Tank falls below the predetermined low water level (OH LOW), provided there is sufficient water in the Underground (UG) Sump.
+   - **Auto High Level Cut-Off**: Instantly shuts off the pump when the Overhead Tank reaches full capacity (OH HIGH), completely preventing water overflow and wastage.
+   - **Underground Dry-Run Cut-Off**: Protects the pump against dry running by immediately stopping the motor when the underground sump or borewell water drops below safety levels.
+
+3. **Electrolysis-Free Stainless Steel Sensor Technology**:
+   - Operates with low-voltage AC sensing signals that eliminate probe corrosion, electrolysis rust, and mineral scaling, guaranteeing years of maintenance-free operation in Gujarat hard water conditions.
+
+4. **Comprehensive 3-Phase Electrical Motor Protection**:
+   - **Single Phasing Preventer (SPP)**: Trips the motor within milliseconds if any single phase is lost, preventing instantaneous motor burnout.
+   - **Phase Reversal / Phase Asymmetry Guard**: Prevents reverse rotation of submersible pump impellers.
+   - **Overload & Thermal Current Trip**: Precise bi-metallic overload relay trips during mechanical jam or overcurrent draw.
+   - **High & Low Voltage Cut-Off**: Shuts down operations if line voltage swings outside safe operating limits (340V to 460V AC).
+
+5. **Front Panel Diagnostic Digital Display**:
+   - Clear digital LED indicators for Line Voltages (RY, YB, BR), Phase Currents, Water Levels (OH HIGH, OH LOW, UG HIGH, UG LOW), Pump ON Status, and Trip Alarms (Overload, Dry Run, Single Phasing).
+   - **Manual / Auto Mode Selector Switch**: Allows instant manual bypass for testing or emergency water pumping.
+
+---
+
+### Technical Specifications
+
+- **Product Name**: Star Delta Auto Start Digital Panel With Sensor
+- **Operating Voltage**: 380V - 440V AC, 3-Phase, 50 Hz
+- **Motor HP Compatibility**: 5 HP to 50 HP (Submersible, Openwell & Centrifugal Pumps)
+- **Starting Method**: Automatic Star-Delta with Digital Timer (0.5s to 30s adjustable)
+- **Sensor Types**: Non-corrosive Stainless Steel (SS 304/316) Magnetic Float Switches & AC Sensing Probes
+- **Enclosure Material**: CRCA Heavy Gauge Powder Coated Sheet Metal (IP-55 Weatherproof)
+- **Contactor Ratings**: Heavy-duty Industrial Silver Alloy Contactors (AC-3 Duty)
+- **Warranty**: 1-Year Comprehensive Manufacturer Warranty with Local Vadodara Support
+
+---
+
+### Industrial & Commercial Applications Across Vadodara & Gujarat
+
+Madhav Enterprise Star Delta Auto Start Digital Starter Panels are trusted across prominent industrial and residential sectors in Vadodara:
+- **GIDC Industrial Belts (Makarpura, Savli, Nandesari, Waghodia, Por, Halol)**: Continuous cooling tower circulation, boiler feed pumps, raw water transfer, and effluent treatment plant (ETP/STP) pumping.
+- **Commercial High-Rises & Towers**: Multi-story apartments, corporate office complexes, hospitals, and hotels across Vasna Road, Diwalipura, Gotri, Alkapuri, and Manjalpur.
+- **Agricultural & Farm Irrigation**: High-discharge deep borewell submersibles and canal water lifting systems.
+- **Municipal & Township Water Schemes**: Overhead reservoir filling and raw water intake pumping stations.
+
+---
+
+### Why Choose Madhav Enterprise in Vadodara?
+
+- **Local Manufacturer with 15+ Years Track Record**: Based at Diwalipura, Vasna Road, Vadodara, offering instant on-site technical support, prompt delivery, and genuine factory direct pricing.
+- **Strict Quality Benchmarks**: Every digital panel undergoes high-potential insulation testing, contactor endurance tests, and rigorous sensor logic checks prior to dispatch.
+- **Turnkey Customization**: Custom panel sizing, telemetry / GSM SMS alert integration, and multi-pump cascade configurations available upon request.
+
+Contact Madhav Enterprise today to request technical sizing, wiring diagrams, and an instant wholesale quote for your **Star Delta Auto Start Digital Panel With Sensor in Vadodara**.`,
+    image: 'https://lh3.googleusercontent.com/d/1-sDzb5LH6FAkfSb-CsxRDEv6UzKlNkpl',
+    galleryImages: [
+      'https://lh3.googleusercontent.com/d/1-sDzb5LH6FAkfSb-CsxRDEv6UzKlNkpl',
+      'https://lh3.googleusercontent.com/d/1cT_Glz3puVR2bvPr9NaRItzJfYa6-ppL'
+    ],
+    featured: true,
+    modelNumber: 'ME-SD-AUTO-DIGITAL',
+    material: 'CRCA Heavy Gauge Powder Coated Enclosure with Microprocessor PCB & Industrial Contactors',
+    rating: '4.9/5',
+    keyFeatures: [
+      'Automatic Star-to-Delta Transition with Microprocessor Precision Timer',
+      'Integrated Dual Tank Water Level Controller (Overhead Tank & Underground Sump)',
+      'Electrolysis-Free Low AC Voltage Sensor Probes Preventing Rust & Mineral Scaling',
+      'Complete 3-Phase Protection: Single Phase Preventer (SPP), Overload, Voltage Trip & Dry-Run Safety',
+      'Front Panel Digital Display for Real-Time Voltage, Current & Level Status Indication',
+      'Manual / Auto Mode Selector Switch for Operational Flexibility'
+    ],
+    benefits: [
+      'Reduces High Motor Inrush Starting Current by up to 65%, Protecting Electrical Transformers & Windings',
+      '100% Water Overflow Prevention & Elimination of Dry-Run Pump Motor Coil Burnouts',
+      'Completely Automates 3-Phase Water Pumping Operations, Eliminating Daily Manual Monitoring',
+      'Direct Local Vadodara Manufacturer Support, Warranty & Fast Delivery from Vasna Road, Diwalipura'
+    ],
+    specs: [
+      { label: 'Product Name', value: 'Star Delta Auto Start Digital Panel With Sensor' },
+      { label: 'Control System', value: 'Microprocessor Digital Star-Delta Auto Starter' },
+      { label: 'Operating Voltage', value: '380V - 440V AC, 3 Phase, 50 Hz' },
+      { label: 'Motor HP Range', value: '5.0 HP to 50.0 HP (Submersible, Openwell & Monoblock Pumps)' },
+      { label: 'Sensor Type', value: 'Electrolysis-Free SS 304 Probes & Magnetic Float Sensors' },
+      { label: 'Safety Protections', value: 'Dry-Run, Single Phasing (SPP), Overload, Phase Reversal, Under/Over Voltage' },
+      { label: 'Operation Modes', value: 'Fully Automatic / Manual Switchable' },
+      { label: 'Enclosure Rating', value: 'IP-55 Dust & Weatherproof Powder Coated Sheet Metal' },
+      { label: 'Manufacturer Location', value: 'Madhav Enterprise, Diwalipura, Vasna Road, Vadodara, Gujarat' }
+    ],
+    applications: [
+      'GIDC Industrial Estates (Makarpura, Savli, Nandesari, Por, Waghodia)',
+      'Commercial High-Rise Complexes, Hospitals & Corporate Towers',
+      'Residential Societies & Townships Overhead / Underground Water Transfer',
+      'Deep Borewell Submersible & Agricultural Farm Irrigation Schemes',
+      'Water & Effluent Treatment Plants (ETP / STP)'
+    ],
+    industries: [
+      'Water & Wastewater Management (ETP/STP)',
+      'Industrial Manufacturing Plants & GIDC Belts',
+      'Commercial Real Estate & Infrastructure',
+      'Agriculture & Farm Irrigation'
+    ],
+    seoKeywords: [
+      'star delta auto start digital panel with sensor',
+      'star delta auto start digital penal with sensor',
+      'star delta starter panel with water level controller vadodara',
+      'digital star delta panel with sensor vadodara',
+      'water level controller manufacturer in vadodara',
+      'automatic 3 phase motor starter panel vadodara',
+      'star delta pump panel with dry run sensor vadodara',
+      'industrial pump control panel vadodara'
+    ],
+    faqs: [
+      {
+        question: 'What is the function of a Star Delta Auto Start Digital Panel With Sensor?',
+        answer: 'It reduces high motor starting inrush current by first engaging the motor in Star configuration and transitioning automatically to Delta mode once up to speed. Simultaneously, its built-in digital water level controller starts and stops the pump automatically based on tank water levels, protecting the motor against dry run and electrical faults.'
+      },
+      {
+        question: 'Does the panel protect against phase loss (single phasing)?',
+        answer: 'Yes! The panel comes with an integrated Single Phase Preventer (SPP) and phase reversal circuit that trips the motor immediately if any of the three phases is lost or imbalanced, completely preventing motor coil burnouts.'
+      },
+      {
+        question: 'What types of water sensors are included with this Star Delta panel?',
+        answer: 'Our panel uses electrolysis-free stainless steel (SS 304/316) sensor probes and magnetic float switches that operate on low AC sensing voltage. This eliminates probe corrosion, carbon scaling, and rust for long-lasting maintenance-free operation.'
+      },
+      {
+        question: 'Can this panel be used for both submersible and monoblock pumps?',
+        answer: 'Yes, it is designed for all 3-phase submersible pumps, openwell pumps, monoblock booster pumps, and centrifugal water pumps from 5 HP up to 50 HP.'
+      }
+    ]
+  },
+  {
     id: 'valv-ball-ss',
     name: 'Butterfly Valve',
     category: 'Butterfly Valve',
