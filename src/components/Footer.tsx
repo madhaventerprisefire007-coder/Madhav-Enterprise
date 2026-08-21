@@ -12,7 +12,8 @@ import {
   MessageSquare, 
   Send,
   ExternalLink,
-  Award
+  Award,
+  User
 } from 'lucide-react';
 
 interface FooterProps {
@@ -175,9 +176,9 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onSelectCategory, 
               Vadodara Office & Factory
             </h4>
             <div className="space-y-2.5 text-xs text-neutral-300">
-              <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#E86A2D] shrink-0 mt-0.5" />
-                <span className="leading-snug">{COMPANY_INFO.fullAddress}</span>
+              <div className="flex items-center gap-2.5">
+                <User className="w-4 h-4 text-[#E86A2D] shrink-0" />
+                <span className="font-bold tracking-wide text-white">{COMPANY_INFO.contactPerson}</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#E86A2D] shrink-0" />
@@ -200,6 +201,10 @@ export const Footer: React.FC<FooterProps> = ({ onPageChange, onSelectCategory, 
               <div className="flex items-center gap-2.5 text-neutral-400">
                 <Clock className="w-4 h-4 text-[#E86A2D] shrink-0" />
                 <span>{COMPANY_INFO.workingHours}</span>
+              </div>
+              <div className="flex items-start gap-2.5 pt-1 border-t border-white/10">
+                <MapPin className="w-4 h-4 text-[#E86A2D] shrink-0 mt-0.5" />
+                <span className="leading-snug">{COMPANY_INFO.fullAddress}</span>
               </div>
             </div>
 

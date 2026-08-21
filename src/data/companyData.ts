@@ -2,6 +2,7 @@ import { Product, Industry, Testimonial, FAQItem, ProductCategory } from '../typ
 
 export const COMPANY_INFO = {
   name: 'Madhav Enterprise',
+  contactPerson: 'MADHAVJI K. JAVIYA',
   tagline: 'Reliable Water Level Controller & Butterfly Valve Supplier',
   subheading: 'Trusted Manufacturer & Supplier in Vadodara, Gujarat',
   location: 'Vadodara, Gujarat, India',
@@ -9,8 +10,8 @@ export const COMPANY_INFO = {
   phonePrimary: '+91 70417 72780',
   phoneSecondary: '+91 99240 40633',
   whatsappNumber: '917041772780',
-  emailSales: 'madhaventerpise02021@gmail.com',
-  emailInfo: 'madhaventerpise02021@gmail.com',
+  emailSales: 'madhaventerprise226@gmail.com',
+  emailInfo: 'madhaventerprise226@gmail.com',
   workingHours: 'Mon - Sat: 9:00 AM - 7:00 PM',
   establishedYear: 2008,
   certifications: ['CE Compliant', 'MSME Registered', 'Make in India Certified'],
