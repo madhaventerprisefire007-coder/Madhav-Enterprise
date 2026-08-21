@@ -43,7 +43,11 @@ const firebaseConfig = {
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 
 // Suppress benign 10s network latency warnings in sandbox/iframe environments
-setLogLevel('error');
+try {
+  setLogLevel('silent');
+} catch {
+  // Ignore
+}
 
 export const auth = getAuth(app);
 export const googleAuthProvider = new GoogleAuthProvider();
@@ -56,13 +60,21 @@ const dbId = configJson.firestoreDatabaseId && configJson.firestoreDatabaseId !=
 let firestoreInstance;
 try {
   firestoreInstance = initializeFirestore(app, {
+    experimentalAutoDetectLongPolling: true,
     experimentalForceLongPolling: true,
     localCache: persistentLocalCache({
       tabManager: persistentMultipleTabManager()
     })
   }, dbId);
 } catch {
-  firestoreInstance = dbId ? getFirestore(app, dbId) : getFirestore(app);
+  try {
+    firestoreInstance = initializeFirestore(app, {
+      experimentalAutoDetectLongPolling: true,
+      experimentalForceLongPolling: true
+    }, dbId);
+  } catch {
+    firestoreInstance = dbId ? getFirestore(app, dbId) : getFirestore(app);
+  }
 }
 
 export const db = firestoreInstance;

@@ -66,22 +66,22 @@ export const HomePage: React.FC<HomePageProps> = ({
         {/* Large Industrial Background Overlay Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://lh3.googleusercontent.com/d/16Tr3OO5GE7S0DeNll8tT9iPp7n-xZQXy"
+            src="https://lh3.googleusercontent.com/d/1mDg9XOrkXDjqRs78PV1T97pp-WQybEAN"
             alt="Madhav Enterprise Industrial Hero Banner"
-            className="w-full h-full object-cover object-center opacity-45 scale-105"
+            className="w-full h-full object-cover object-center opacity-65"
             referrerPolicy="no-referrer"
             onError={(e) => {
               const target = e.currentTarget;
               if (!target.dataset.triedFallback) {
                 target.dataset.triedFallback = 'true';
-                target.src = 'https://drive.google.com/uc?export=view&id=16Tr3OO5GE7S0DeNll8tT9iPp7n-xZQXy';
+                target.src = 'https://drive.google.com/uc?export=view&id=1mDg9XOrkXDjqRs78PV1T97pp-WQybEAN';
               }
             }}
           />
           {/* Dark luxury gradient overlays for crisp text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#111111] via-[#111111]/80 to-[#111111]/50" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-[#111111]/40" />
-          <div className="absolute inset-0 industrial-grid-dark opacity-30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#111111]/90 via-[#111111]/70 to-[#111111]/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-[#111111]/50" />
+          <div className="absolute inset-0 industrial-grid-dark opacity-20" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
