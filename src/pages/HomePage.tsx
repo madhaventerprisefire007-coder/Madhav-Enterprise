@@ -62,13 +62,13 @@ export const HomePage: React.FC<HomePageProps> = ({
       />
       
       {/* 1. HERO SECTION */}
-      <section className="relative min-h-[85vh] lg:min-h-[90vh] bg-neutral-950 flex items-center justify-center overflow-hidden py-16 lg:py-24">
-        {/* Large Industrial Background Overlay Image */}
+      <section className="relative min-h-[85vh] lg:min-h-[92vh] bg-neutral-950 flex items-center overflow-hidden py-12 lg:py-20">
+        {/* Crystal Clear Industrial Background Banner Image */}
         <div className="absolute inset-0 z-0">
           <img
             src="https://lh3.googleusercontent.com/d/1mDg9XOrkXDjqRs78PV1T97pp-WQybEAN"
             alt="Madhav Enterprise Industrial Hero Banner"
-            className="w-full h-full object-cover object-center opacity-65"
+            className="w-full h-full object-cover object-center opacity-100"
             referrerPolicy="no-referrer"
             onError={(e) => {
               const target = e.currentTarget;
@@ -78,97 +78,94 @@ export const HomePage: React.FC<HomePageProps> = ({
               }
             }}
           />
-          {/* Dark luxury gradient overlays for crisp text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#111111]/90 via-[#111111]/70 to-[#111111]/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-[#111111]/50" />
-          <div className="absolute inset-0 industrial-grid-dark opacity-20" />
+          {/* Subtle directional gradient to keep text readable while leaving the banner photo bright and clear */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#111111]/85 via-[#111111]/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#111111]/80 via-transparent to-[#111111]/30" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-4xl space-y-6">
+          <div className="max-w-2xl bg-black/45 sm:bg-black/40 backdrop-blur-md p-6 sm:p-8 lg:p-10 rounded-3xl border border-white/10 shadow-2xl space-y-6">
             
             {/* Badge */}
-              
-              {/* Badge */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="inline-flex items-center gap-2 bg-[#E86A2D]/20 border border-[#E86A2D]/40 backdrop-blur-md px-4 py-1.5 rounded-full"
-              >
-                <div className="w-2 h-2 rounded-full bg-[#E86A2D] animate-ping" />
-                <span className="text-xs font-extrabold uppercase tracking-widest text-[#E86A2D]">
-                  Vadodara's Trusted Industrial Manufacturer & Supplier
-                </span>
-              </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="inline-flex items-center gap-2 bg-[#E86A2D]/20 border border-[#E86A2D]/40 backdrop-blur-md px-4 py-1.5 rounded-full"
+            >
+              <div className="w-2 h-2 rounded-full bg-[#E86A2D] animate-ping" />
+              <span className="text-xs font-extrabold uppercase tracking-widest text-[#E86A2D]">
+                Vadodara's Trusted Industrial Manufacturer & Supplier
+              </span>
+            </motion.div>
 
-              {/* Main Headline */}
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-black text-white leading-[1.15] tracking-tight"
-              >
-                Fully Automatic Digital <span className="text-[#E86A2D] underline decoration-[#E86A2D]/40 underline-offset-8">Motor Starter</span> With Level Controller & Protection and <span className="text-[#E86A2D]">Fire Material</span>
-              </motion.h1>
+            {/* Main Headline */}
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-black text-white leading-[1.2] tracking-tight drop-shadow-md"
+            >
+              Fully Automatic Digital <span className="text-[#E86A2D] underline decoration-[#E86A2D]/40 underline-offset-8">Motor Starter</span> With Level Controller & Protection and <span className="text-[#E86A2D]">Fire Material</span>
+            </motion.h1>
 
-              {/* Subheading */}
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-base sm:text-lg md:text-xl text-neutral-300 max-w-2xl font-medium leading-relaxed"
-              >
-                {COMPANY_INFO.subheading}. Engineered for heavy industrial plants, chemical processing units, commercial towers, and deep groundwater extraction.
-              </motion.p>
+            {/* Subheading */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-sm sm:text-base md:text-lg text-neutral-200 font-medium leading-relaxed drop-shadow-sm"
+            >
+              {COMPANY_INFO.subheading}. Engineered for heavy industrial plants, chemical processing units, commercial towers, and deep groundwater extraction.
+            </motion.p>
 
-              {/* Hero Action Buttons */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="pt-4 flex flex-wrap items-center gap-4"
+            {/* Hero Action Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="pt-2 flex flex-wrap items-center gap-4"
+            >
+              {/* Get Quote Button */}
+              <button
+                onClick={() => onOpenQuoteModal()}
+                className="inline-flex items-center gap-3 bg-[#E86A2D] hover:bg-[#d0591f] text-white px-7 py-3.5 rounded-full text-sm font-extrabold transition-all shadow-xl shadow-[#E86A2D]/30 hover:scale-[1.03] active:scale-[0.98] group"
               >
-                {/* Get Quote Button */}
-                <button
-                  onClick={() => onOpenQuoteModal()}
-                  className="inline-flex items-center gap-3 bg-[#E86A2D] hover:bg-[#d0591f] text-white px-8 py-4 rounded-full text-sm font-extrabold transition-all shadow-xl shadow-[#E86A2D]/30 hover:scale-[1.03] active:scale-[0.98] group"
-                >
-                  <FileText className="w-5 h-5" />
-                  <span>Get Factory Quote</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
+                <FileText className="w-5 h-5" />
+                <span>Get Factory Quote</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
 
-                {/* Call Now Button */}
-                <button
-                  onClick={onOpenCallModal}
-                  className="inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md px-8 py-4 rounded-full text-sm font-extrabold transition-all hover:scale-[1.03]"
-                >
-                  <Phone className="w-5 h-5 text-[#E86A2D]" />
-                  <span>Call Now</span>
-                </button>
-              </motion.div>
-
-              {/* Key Quick Highlights Ticker */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="pt-6 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs text-neutral-300"
+              {/* Call Now Button */}
+              <button
+                onClick={onOpenCallModal}
+                className="inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md px-7 py-3.5 rounded-full text-sm font-extrabold transition-all hover:scale-[1.03]"
               >
-                <div className="flex items-center gap-2">
-                  <ShieldCheck className="w-4 h-4 text-[#E86A2D]" />
-                  <span>100% Tested Quality</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-[#E86A2D]" />
-                  <span>Vadodara Supply Hub</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Award className="w-4 h-4 text-[#E86A2D]" />
-                  <span>MSME Registered Supplier</span>
-                </div>
-              </motion.div>
+                <Phone className="w-5 h-5 text-[#E86A2D]" />
+                <span>Call Now</span>
+              </button>
+            </motion.div>
+
+            {/* Key Quick Highlights Ticker */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="pt-4 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs text-neutral-200"
+            >
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4 text-[#E86A2D] shrink-0" />
+                <span>100% Tested Quality</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-[#E86A2D] shrink-0" />
+                <span>Vadodara Supply Hub</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Award className="w-4 h-4 text-[#E86A2D] shrink-0" />
+                <span>MSME Registered</span>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
