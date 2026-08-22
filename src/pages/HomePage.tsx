@@ -106,7 +106,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-black text-white leading-[1.2] tracking-tight drop-shadow-lg"
             >
-              Fully Automatic Digital <span className="text-[#E86A2D] underline decoration-[#E86A2D]/40 underline-offset-8">Motor Starter</span> With Level Controller & Protection and <span className="text-[#E86A2D]">Fire Material</span>
+              Fully Automatic Digital with <span className="text-[#E86A2D]">Motor Starter</span> and <span className="text-[#E86A2D]">Level Controller</span> Submersible Pump Pressure System, <span className="text-[#E86A2D]">Butterfly Valve</span>, <span className="text-[#E86A2D]">Fire Material</span>
             </motion.h1>
 
             {/* Subheading */}

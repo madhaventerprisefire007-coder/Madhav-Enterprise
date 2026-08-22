@@ -38,7 +38,7 @@ export const BUSINESS_INFO = {
   formattedAddress: 'C-10, Gaurav Park, Diwalipura, Vasna Road, Vadodara, Gujarat 390007, India',
   phone: '+91 70417 72780',
   phoneSecondary: '+91 99240 40633',
-  email: 'madhaventerpise02021@gmail.com',
+  email: 'madhaventerprise.fire007@gmail.com',
   workingHours: 'Mon - Sat: 09:00 AM - 07:00 PM',
   geo: {
     latitude: '22.2985',
