@@ -63,12 +63,12 @@ export const HomePage: React.FC<HomePageProps> = ({
       
       {/* 1. HERO SECTION */}
       <section className="relative min-h-[85vh] lg:min-h-[92vh] bg-neutral-950 flex items-center overflow-hidden py-12 lg:py-20">
-        {/* Crystal Clear Industrial Background Banner Image */}
+        {/* Crystal Clear Industrial Background Banner Image - Desktop full view & Mobile Fire Product Focus */}
         <div className="absolute inset-0 z-0">
           <img
             src="https://lh3.googleusercontent.com/d/1mDg9XOrkXDjqRs78PV1T97pp-WQybEAN"
             alt="Madhav Enterprise Industrial Hero Banner"
-            className="w-full h-full object-cover object-center opacity-100"
+            className="w-full h-full object-cover object-[95%_center] sm:object-center opacity-100"
             referrerPolicy="no-referrer"
             onError={(e) => {
               const target = e.currentTarget;
@@ -78,9 +78,9 @@ export const HomePage: React.FC<HomePageProps> = ({
               }
             }}
           />
-          {/* Subtle directional gradient to keep text readable while leaving the banner photo bright and clear */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#111111]/85 via-[#111111]/40 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111111]/80 via-transparent to-[#111111]/30" />
+          {/* Gradients: Mobile shows Fire products brightly with soft bottom gradient, Desktop shows left-aligned dark card gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-neutral-950/95 via-neutral-950/60 sm:via-[#111111]/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/40 via-transparent to-neutral-950/80 sm:hidden" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
