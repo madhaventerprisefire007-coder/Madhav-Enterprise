@@ -91,7 +91,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
               Get Manufacturer Quote
             </h2>
             <p className="text-xs md:text-sm text-neutral-300 mt-1 max-w-lg">
-              Receive competitive direct factory pricing, technical spec sheets, and delivery timeline from Madhav Enterprise Vadodara.
+              Receive competitive direct factory pricing, technical spec sheets, and delivery timeline from Madhav Enterprise and Automation Vadodara.
             </p>
           </div>
 
@@ -122,7 +122,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
 
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
                   <a
-                    href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hi%20Madhav%20Enterprise,%20I%20just%20submitted%20a%20quote%20request%20for%20${encodeURIComponent(formData.productName)}.`}
+                    href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hi%20Madhav%20Enterprise%20and%20Automation,%20I%20just%20submitted%20a%20quote%20request%20for%20${encodeURIComponent(formData.productName)}.`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full text-xs font-bold transition-colors shadow"

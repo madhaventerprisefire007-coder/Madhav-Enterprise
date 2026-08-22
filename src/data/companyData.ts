@@ -1,7 +1,7 @@
 import { Product, Industry, Testimonial, FAQItem, ProductCategory } from '../types';
 
 export const COMPANY_INFO = {
-  name: 'Madhav Enterprise',
+  name: 'Madhav Enterprise and Automation',
   contactPerson: 'MADHAVJI K. JAVIYA',
   tagline: 'Reliable Water Level Controller & Butterfly Valve Supplier',
   subheading: 'Trusted Manufacturer & Supplier in Vadodara, Gujarat',
@@ -155,10 +155,10 @@ export const PRODUCTS_DATA: Product[] = [
     name: 'Star Delta Auto Start Digital Panel With Sensor',
     category: 'Water Level Controller',
     subtitle: 'Fully Automatic Microprocessor Star Delta Starter Panel with Digital Level Sensing & Comprehensive Motor Protection',
-    description: 'Looking for Star Delta Auto Start Digital Panel With Sensor in Vadodara? Madhav Enterprise is a premier manufacturer of heavy-duty 3-phase automatic Star Delta starter panels with digital liquid level controllers, electrolysis-free sensors, auto start-stop, dry-run safety, and phase failure protection for high-capacity 10 HP to 50 HP submersible and centrifugal pumps in Vadodara, Gujarat.',
+    description: 'Looking for Star Delta Auto Start Digital Panel With Sensor in Vadodara? Madhav Enterprise and Automation is a premier manufacturer of heavy-duty 3-phase automatic Star Delta starter panels with digital liquid level controllers, electrolysis-free sensors, auto start-stop, dry-run safety, and phase failure protection for high-capacity 10 HP to 50 HP submersible and centrifugal pumps in Vadodara, Gujarat.',
     longDescription: `### Star Delta Auto Start Digital Panel With Sensor – Manufacturer & Supplier in Vadodara
 
-Welcome to **Madhav Enterprise**, the premier manufacturer and supplier of the advanced **Star Delta Auto Start Digital Panel With Sensor** in Vadodara, Gujarat. Designed specifically for high-power 3-phase submersible pumps, openwell pumps, and heavy centrifugal motor pumps ranging from 10 HP up to 50 HP, our microprocessor-controlled Star Delta starter panel integrates automated water level sensing and heavy-duty motor protection into a single, compact, industrial-grade unit.
+Welcome to **Madhav Enterprise and Automation**, the premier manufacturer and supplier of the advanced **Star Delta Auto Start Digital Panel With Sensor** in Vadodara, Gujarat. Designed specifically for high-power 3-phase submersible pumps, openwell pumps, and heavy centrifugal motor pumps ranging from 10 HP up to 50 HP, our microprocessor-controlled Star Delta starter panel integrates automated water level sensing and heavy-duty motor protection into a single, compact, industrial-grade unit.
 
 Heavy 3-phase pump motors consume high starting current (up to 6 times the rated current) when started Direct-On-Line (DOL). Our **Star Delta Auto Start Digital Panel** starts the motor in star configuration to lower inrush currents by up to 65%, smoothly transitioning to delta configuration via precision digital timing. Simultaneously, the built-in intelligent liquid level controller constantly monitors both overhead and underground water levels, automating your pumping operations 24/7 without manual intervention.
 
@@ -204,7 +204,7 @@ Heavy 3-phase pump motors consume high starting current (up to 6 times the rated
 
 ### Industrial & Commercial Applications Across Vadodara & Gujarat
 
-Madhav Enterprise Star Delta Auto Start Digital Starter Panels are trusted across prominent industrial and residential sectors in Vadodara:
+Madhav Enterprise and Automation Star Delta Auto Start Digital Starter Panels are trusted across prominent industrial and residential sectors in Vadodara:
 - **GIDC Industrial Belts (Makarpura, Savli, Nandesari, Waghodia, Por, Halol)**: Continuous cooling tower circulation, boiler feed pumps, raw water transfer, and effluent treatment plant (ETP/STP) pumping.
 - **Commercial High-Rises & Towers**: Multi-story apartments, corporate office complexes, hospitals, and hotels across Vasna Road, Diwalipura, Gotri, Alkapuri, and Manjalpur.
 - **Agricultural & Farm Irrigation**: High-discharge deep borewell submersibles and canal water lifting systems.
@@ -212,13 +212,13 @@ Madhav Enterprise Star Delta Auto Start Digital Starter Panels are trusted acros
 
 ---
 
-### Why Choose Madhav Enterprise in Vadodara?
+### Why Choose Madhav Enterprise and Automation in Vadodara?
 
 - **Local Manufacturer with 15+ Years Track Record**: Based at Diwalipura, Vasna Road, Vadodara, offering instant on-site technical support, prompt delivery, and genuine factory direct pricing.
 - **Strict Quality Benchmarks**: Every digital panel undergoes high-potential insulation testing, contactor endurance tests, and rigorous sensor logic checks prior to dispatch.
 - **Turnkey Customization**: Custom panel sizing, telemetry / GSM SMS alert integration, and multi-pump cascade configurations available upon request.
 
-Contact Madhav Enterprise today to request technical sizing, wiring diagrams, and an instant wholesale quote for your **Star Delta Auto Start Digital Panel With Sensor in Vadodara**.`,
+Contact Madhav Enterprise and Automation today to request technical sizing, wiring diagrams, and an instant wholesale quote for your **Star Delta Auto Start Digital Panel With Sensor in Vadodara**.`,
     image: 'https://lh3.googleusercontent.com/d/1-sDzb5LH6FAkfSb-CsxRDEv6UzKlNkpl',
     galleryImages: [
       'https://lh3.googleusercontent.com/d/1-sDzb5LH6FAkfSb-CsxRDEv6UzKlNkpl',
@@ -251,7 +251,7 @@ Contact Madhav Enterprise today to request technical sizing, wiring diagrams, an
       { label: 'Safety Protections', value: 'Dry-Run, Single Phasing (SPP), Overload, Phase Reversal, Under/Over Voltage' },
       { label: 'Operation Modes', value: 'Fully Automatic / Manual Switchable' },
       { label: 'Enclosure Rating', value: 'IP-55 Dust & Weatherproof Powder Coated Sheet Metal' },
-      { label: 'Manufacturer Location', value: 'Madhav Enterprise, Diwalipura, Vasna Road, Vadodara, Gujarat' }
+      { label: 'Manufacturer Location', value: 'Madhav Enterprise and Automation, Diwalipura, Vasna Road, Vadodara, Gujarat' }
     ],
     applications: [
       'GIDC Industrial Estates (Makarpura, Savli, Nandesari, Por, Waghodia)',
@@ -442,10 +442,10 @@ Contact Madhav Enterprise today to request technical sizing, wiring diagrams, an
     name: 'Fully automatic digital motor starter with level controller and protection',
     category: 'Water Level Controller',
     subtitle: 'Electrolysis-Free Digital Motor Starter Panel with Auto Restart, Auto Cut-Off & Complete Motor Protection',
-    description: 'Looking for a fully automatic digital motor starter with level controller and protection in Vadodara? Madhav Enterprise / Madhav Electricals manufactures heavy-duty, electrolysis-free digital liquid level controller starter panels with automatic motor restart, high/low cut-off, and comprehensive protection for single-phase and 3-phase pumps.',
+    description: 'Looking for a fully automatic digital motor starter with level controller and protection in Vadodara? Madhav Enterprise and Automation manufactures heavy-duty, electrolysis-free digital liquid level controller starter panels with automatic motor restart, high/low cut-off, and comprehensive protection for single-phase and 3-phase pumps.',
     longDescription: `### Fully Automatic Digital Motor Starter with Level Controller and Protection in Vadodara
 
-Manufactured by **Madhav Enterprise / Madhav Electricals** in Vadodara, Gujarat, this **Fully Automatic Digital Motor Starter with Level Controller and Protection** is engineered to automate your water pumping operations while safeguarding your costly motor pump against electrical and hydraulic hazards.
+Manufactured by **Madhav Enterprise and Automation** in Vadodara, Gujarat, this **Fully Automatic Digital Motor Starter with Level Controller and Protection** is engineered to automate your water pumping operations while safeguarding your costly motor pump against electrical and hydraulic hazards.
 
 Designed with state-of-the-art **electrolysis-free liquid level sensing circuitry**, this intelligent starter panel eliminates probe corrosion and provides seamless dual-tank automation (simultaneous monitoring of Overhead Tank and Underground Sump).
 
@@ -494,13 +494,13 @@ The starter panel is designed with clearly labelled, industrial-grade terminal b
 
 ---
 
-### Why Choose Madhav Enterprise / Madhav Electricals?
+### Why Choose Madhav Enterprise and Automation?
 
 - **Direct Manufacturer in Vadodara**: Located at C-10, Gaurav Park, Diwalipura, Vasna Road, Vadodara.
 - **Rigorous Factory Testing**: Every starter panel undergoes strict insulation resistance, relay trip, and high-voltage burn-in tests.
 - **Direct Factory Pricing & 1-Year Warranty**: Genuine manufacturer direct rates with fast local spare parts and on-site support.
 
-Contact Madhav Enterprise today to order your **Fully Automatic Digital Motor Starter with Level Controller and Protection** with direct delivery across Vadodara and Gujarat.`,
+Contact Madhav Enterprise and Automation today to order your **Fully Automatic Digital Motor Starter with Level Controller and Protection** with direct delivery across Vadodara and Gujarat.`,
     image: 'https://lh3.googleusercontent.com/d/1yb2c1H4cKZEiuqOT1v7ECb4_za9YbUyo',
     galleryImages: [
       'https://lh3.googleusercontent.com/d/1yb2c1H4cKZEiuqOT1v7ECb4_za9YbUyo'
@@ -533,7 +533,7 @@ Contact Madhav Enterprise today to order your **Fully Automatic Digital Motor St
       { label: 'Control Modes', value: 'Fully Automatic / Manual Switchable' },
       { label: 'Front Indicators', value: 'OH HIGH, OH LOW, UG HIGH, UG LOW, PUMP ON (LED Display)' },
       { label: 'Enclosure Material', value: 'Shockproof Powder Coated Sheet Metal' },
-      { label: 'Manufacturer Location', value: 'Madhav Enterprise, Diwalipura, Vasna Road, Vadodara, Gujarat' }
+      { label: 'Manufacturer Location', value: 'Madhav Enterprise and Automation, Diwalipura, Vasna Road, Vadodara, Gujarat' }
     ],
     applications: [
       'Residential Societies, Bungalows & High-Rise Apartments',
@@ -559,7 +559,7 @@ Contact Madhav Enterprise today to order your **Fully Automatic Digital Motor St
     faqs: [
       {
         question: 'What is the advantage of an electrolysis-free liquid level controller?',
-        answer: 'Traditional DC controllers cause probe corrosion and mineral deposition over time. Madhav Enterprise electrolysis-free controllers use low-frequency AC sensing current, preventing probe rust and water contamination for years of maintenance-free service.'
+        answer: 'Traditional DC controllers cause probe corrosion and mineral deposition over time. Madhav Enterprise and Automation electrolysis-free controllers use low-frequency AC sensing current, preventing probe rust and water contamination for years of maintenance-free service.'
       },
       {
         question: 'Does this panel protect the motor if the underground sump water is empty?',
@@ -577,10 +577,10 @@ Contact Madhav Enterprise today to order your **Fully Automatic Digital Motor St
     name: 'Fire Material Supplier in Vadodara',
     category: 'Fire Material',
     subtitle: 'Authorized Supplier of ISI Marked Fire Fighting Materials, Hydrant Landing Valves, Fire Sprinklers, Hose Reels & Safety Equipment in Vadodara',
-    description: 'Looking for a certified Fire Material Supplier in Vadodara? Madhav Enterprise is a trusted supplier of ISI certified fire fighting equipment, fire hydrant landing valves, fire safety butterfly valves, sprinkler heads, fire hose reels, fire booster pumps, and industrial fire protection piping across Vadodara and Gujarat.',
-    longDescription: `### Premier Fire Material Supplier in Vadodara by Madhav Enterprise
+    description: 'Looking for a certified Fire Material Supplier in Vadodara? Madhav Enterprise and Automation is a trusted supplier of ISI certified fire fighting equipment, fire hydrant landing valves, fire safety butterfly valves, sprinkler heads, fire hose reels, fire booster pumps, and industrial fire protection piping across Vadodara and Gujarat.',
+    longDescription: `### Premier Fire Material Supplier in Vadodara by Madhav Enterprise and Automation
 
-Madhav Enterprise is a premier **Fire Material Supplier in Vadodara**, delivering certified, heavy-duty, and ISI-marked fire safety and fire fighting solutions to commercial complexes, residential high-rise towers, industrial factories, and EPC contractors throughout Vadodara, Gujarat.
+Madhav Enterprise and Automation is a premier **Fire Material Supplier in Vadodara**, delivering certified, heavy-duty, and ISI-marked fire safety and fire fighting solutions to commercial complexes, residential high-rise towers, industrial factories, and EPC contractors throughout Vadodara, Gujarat.
 
 Fire safety systems demand zero compromise on material integrity, pressure handling, and regulatory compliance. We supply a complete range of certified fire fighting equipment engineered to withstand extreme pressures and deliver foolproof reliability in emergency fire containment situations.
 
@@ -600,7 +600,7 @@ Fire safety systems demand zero compromise on material integrity, pressure handl
 
 ### Strict Regulatory Compliance & Industry Standards
 
-All fire materials supplied by Madhav Enterprise comply strictly with national and international fire safety norms:
+All fire materials supplied by Madhav Enterprise and Automation comply strictly with national and international fire safety norms:
 - **IS 5290**: Landing valves and fire hydrant fittings.
 - **IS 903**: Fire hose delivery couplings, branch pipes, and nozzles.
 - **IS 884**: First-aid fire hose reels for building safety.
@@ -621,14 +621,14 @@ We provide rapid dispatch, technical sizing support, and direct delivery across 
 
 ---
 
-### Why Madhav Enterprise is the Preferred Fire Material Supplier in Vadodara
+### Why Madhav Enterprise and Automation is the Preferred Fire Material Supplier in Vadodara
 
 - **Extensive Ready Stock in Vadodara**: Located at Diwalipura, Vasna Road with immediate inventory for swift site dispatches.
 - **Direct Factory Pricing & MTC Test Certificates**: Genuine rates with complete Mill Test Certificates (MTC) and hydrostatic inspection reports to facilitate hassle-free Fire NOC approval.
 - **Complete End-to-End Solutions**: From fire line pipes, valves, and hydrants to automated booster panels and sensors, get everything under one roof.
 - **Local Engineering Expertise**: Experienced technical guidance for Bill of Quantities (BOQ) optimization, piping pressure drop sizing, and valve selection.
 
-Get in touch with Madhav Enterprise today for instant factory quotes, product datasheets, and swift on-site supply for your fire fighting projects in Vadodara.`,
+Get in touch with Madhav Enterprise and Automation today for instant factory quotes, product datasheets, and swift on-site supply for your fire fighting projects in Vadodara.`,
     image: 'https://lh3.googleusercontent.com/d/1MO0CXxvAuFA3fJNzwbqQvZd7419iYF3t',
     galleryImages: [
       'https://lh3.googleusercontent.com/d/1MO0CXxvAuFA3fJNzwbqQvZd7419iYF3t'
@@ -686,8 +686,8 @@ Get in touch with Madhav Enterprise today for instant factory quotes, product da
     ],
     faqs: [
       {
-        question: 'Why choose Madhav Enterprise as your fire material supplier in Vadodara?',
-        answer: 'Madhav Enterprise provides genuine ISI marked, NBC 2016 compliant fire materials with Mill Test Certificates (MTC), backed by 16+ years of engineering experience, ready local stock in Diwalipura/Vasna Road, and swift delivery across Vadodara and Gujarat.'
+        question: 'Why choose Madhav Enterprise and Automation as your fire material supplier in Vadodara?',
+        answer: 'Madhav Enterprise and Automation provides genuine ISI marked, NBC 2016 compliant fire materials with Mill Test Certificates (MTC), backed by 16+ years of engineering experience, ready local stock in Diwalipura/Vasna Road, and swift delivery across Vadodara and Gujarat.'
       },
       {
         question: 'Are the fire hydrant valves and landing valves ISI certified?',
@@ -735,7 +735,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     role: 'Plant Maintenance Head',
     company: 'Gujarat Chemicals & Resins',
     location: 'Vadodara Industrial Zone, Gujarat',
-    comment: 'We installed 12 units of Madhav Enterprise Automatic Water Level Controllers across our chemical batching tanks. The dry-run protection has saved our pumps from burning out multiple times. Fantastic product quality and prompt local service!',
+    comment: 'We installed 12 units of Madhav Enterprise and Automation Automatic Water Level Controllers across our chemical batching tanks. The dry-run protection has saved our pumps from burning out multiple times. Fantastic product quality and prompt local service!',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80'
   },
@@ -745,7 +745,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     role: 'Chief Engineer',
     company: 'Apex Textile Processors',
     location: 'Halol Industrial Zone, Gujarat',
-    comment: 'Madhav Enterprise supplied SS 316 ball valves and heavy centrifugal pumps for our modern dyeing unit expansion. The valve seating quality and pressure retention pass strict hydro tests easily. Highly recommended supplier in Vadodara!',
+    comment: 'Madhav Enterprise and Automation supplied SS 316 ball valves and heavy centrifugal pumps for our modern dyeing unit expansion. The valve seating quality and pressure retention pass strict hydro tests easily. Highly recommended supplier in Vadodara!',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80'
   },
@@ -755,7 +755,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     role: 'Project Director',
     company: 'Skyline Commercial Infrastructure',
     location: 'Alkapuri, Vadodara',
-    comment: 'For our 18-floor luxury commercial complex, Madhav Enterprise designed and delivered a multi-stage Hydro-Pneumatic Pressure Booster system. Constant pressure across all rest rooms and zero noise. Excellent engineering guidance!',
+    comment: 'For our 18-floor luxury commercial complex, Madhav Enterprise and Automation designed and delivered a multi-stage Hydro-Pneumatic Pressure Booster system. Constant pressure across all rest rooms and zero noise. Excellent engineering guidance!',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80'
   }
@@ -770,13 +770,13 @@ export const FAQ_DATA: FAQItem[] = [
   },
   {
     id: 'faq-2',
-    question: 'Where is Madhav Enterprise located in Vadodara?',
+    question: 'Where is Madhav Enterprise and Automation located in Vadodara?',
     answer: 'Our main office and unit are located at C-10, Gaurav Park, Diwalipura, Vasna Road, Vadodara- 390007, Gujarat. Customers and clients are welcome to visit our facility for product demonstrations and consultations.',
     category: 'General'
   },
   {
     id: 'faq-3',
-    question: 'What materials are used in Madhav Enterprise butterfly valves?',
+    question: 'What materials are used in Madhav Enterprise and Automation butterfly valves?',
     answer: 'We manufacture and supply valves in various grades including Stainless Steel SS 316 / CF8M, SS 304, Cast Iron (CI), Ductile Iron (DI), WCB Carbon Steel, and PVC/CPVC. All valves undergo hydrostatic pressure testing and seating integrity checks before dispatch.',
     category: 'Valves'
   },
@@ -789,7 +789,7 @@ export const FAQ_DATA: FAQItem[] = [
   {
     id: 'faq-5',
     question: 'What is the warranty provided on pumps and controllers?',
-    answer: 'All Madhav Enterprise Water Level Controllers and Motor/Submersible Pumps come with a 12-Month to 24-Month Manufacturer Warranty against manufacturing defects, supported by our dedicated technical repair team in Vadodara.',
+    answer: 'All Madhav Enterprise and Automation Water Level Controllers and Motor/Submersible Pumps come with a 12-Month to 24-Month Manufacturer Warranty against manufacturing defects, supported by our dedicated technical repair team in Vadodara.',
     category: 'Delivery & Support'
   },
   {

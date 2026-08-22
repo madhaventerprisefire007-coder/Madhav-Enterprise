@@ -42,13 +42,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onPageChange, onOpenQu
     <div className="min-h-screen bg-neutral-50 font-sans text-neutral-900 pb-20">
       <SEOHead
         pageName="contact"
-        title="Contact Madhav Enterprise Vadodara | Phone, Address & Inquiries"
-        description="Contact Madhav Enterprise at C-10 Gaurav Park, Diwalipura, Vasna Road, Vadodara, Gujarat 390007. Call +91 70417 72780 / +91 99240 40633 for Water Level Controllers, Valves & Pumps."
+        title="Contact Madhav Enterprise and Automation Vadodara | Phone, Address & Inquiries"
+        description="Contact Madhav Enterprise and Automation at C-10 Gaurav Park, Diwalipura, Vasna Road, Vadodara, Gujarat 390007. Call +91 70417 72780 / +91 99240 40633 for Water Level Controllers, Valves, Pumps & Fire Materials."
         keywords={[
-          'Contact Madhav Enterprise Vadodara',
+          'Contact Madhav Enterprise and Automation Vadodara',
           'Water Level Controller Phone Number Vadodara',
           'Butterfly Valve Supplier Address Diwalipura',
-          'Madhav Enterprise Email Vasna Road'
+          'Madhav Enterprise and Automation Email Vasna Road'
         ]}
       />
       
@@ -61,7 +61,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onPageChange, onOpenQu
             <span>Vadodara, Gujarat Head Office</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
-            Contact Madhav Enterprise Vadodara
+            Contact Madhav Enterprise and Automation Vadodara
           </h1>
           <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
             Get in touch with our team at Diwalipura, Vasna Road, Vadodara. We provide immediate technical consultations, product inquiries, quotes, and customer support.
@@ -133,7 +133,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onPageChange, onOpenQu
 
             {/* WhatsApp Quick Chat */}
             <a
-              href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hello%20Madhav%20Enterprise%20team,%20I%20am%20contacting%20you%20from%20your%20website.`}
+              href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hello%20Madhav%20Enterprise%20and%20Automation%20team,%20I%20am%20contacting%20you%20from%20your%20website.`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between p-5 bg-emerald-600 text-white rounded-3xl shadow-lg hover:bg-emerald-700 transition-colors"
@@ -298,7 +298,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onPageChange, onOpenQu
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-[#E86A2D]" />
               <h3 className="text-base font-display font-bold text-neutral-900">
-                Madhav Enterprise - Diwalipura, Vasna Road Location
+                Madhav Enterprise and Automation - Diwalipura, Vasna Road Location
               </h3>
             </div>
             <a
@@ -314,7 +314,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onPageChange, onOpenQu
 
           <div className="relative h-96 rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-100 shadow-inner">
             <iframe
-              title="Madhav Enterprise Google Map Location"
+              title="Madhav Enterprise and Automation Google Map Location"
               src={COMPANY_INFO.mapEmbedUrl}
               className="w-full h-full border-0"
               allowFullScreen

@@ -350,7 +350,7 @@ export default function App() {
       {/* Floating Action Buttons (WhatsApp & Quick Call) */}
       <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
         <a
-          href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hello%20Madhav%20Enterprise%20team,%20I%20want%20to%20inquire%20about%20your%20industrial%20products.`}
+          href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hello%20Madhav%20Enterprise%20and%20Automation%20team,%20I%20want%20to%20inquire%20about%20your%20industrial%20products.`}
           target="_blank"
           rel="noopener noreferrer"
           className="w-12 h-12 md:w-14 md:h-14 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full flex items-center justify-center shadow-xl shadow-emerald-900/30 hover:scale-110 transition-transform group"

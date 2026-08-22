@@ -26,7 +26,7 @@ export const Logo: React.FC<LogoProps> = ({ className = '', variant = 'dark', sh
       {!imageError ? (
         <img
           src={currentSrc}
-          alt="Madhav Enterprise Logo"
+          alt="Madhav Enterprise and Automation Logo"
           onError={() => {
             if (currentSrc === googleDriveLogoUrl) {
               setCurrentSrc(googleDriveFallbackUrl);
@@ -40,7 +40,7 @@ export const Logo: React.FC<LogoProps> = ({ className = '', variant = 'dark', sh
       ) : (
         /* Fallback Vector Logo combining ME Monogram, Brand Typography, and Mor Pankh */
         <svg
-          viewBox="0 0 780 220"
+          viewBox="0 0 980 220"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="h-12 sm:h-15 md:h-18 lg:h-20 w-auto drop-shadow-sm transition-transform duration-300 hover:scale-[1.01]"
@@ -61,35 +61,35 @@ export const Logo: React.FC<LogoProps> = ({ className = '', variant = 'dark', sh
           <g id="brand-text" transform="translate(210, 35)">
             <text
               x="0"
-              y="85"
+              y="75"
               fontFamily="'Syne', 'Plus Jakarta Sans', Arial, sans-serif"
               fontWeight="800"
-              fontSize="84"
+              fontSize="70"
               fill={primaryTextColor}
-              letterSpacing="3"
+              letterSpacing="2"
             >
               MADHAV
             </text>
             <text
               x="5"
-              y="142"
+              y="125"
               fontFamily="'Plus Jakarta Sans', Arial, sans-serif"
               fontWeight="700"
-              fontSize="38"
+              fontSize="28"
               fill={orangeColor}
-              letterSpacing="15"
+              letterSpacing="6"
             >
-              ENTERPRISE
+              ENTERPRISE &amp; AUTOMATION
             </text>
             {showTagline && (
               <text
                 x="5"
-                y="178"
+                y="160"
                 fontFamily="'Plus Jakarta Sans', Arial, sans-serif"
                 fontWeight="600"
-                fontSize="18"
+                fontSize="16"
                 fill={isDarkBg ? '#A3A3A3' : '#666666'}
-                letterSpacing="3"
+                letterSpacing="2"
               >
                 MFR. &amp; SUPPLIER • VADODARA
               </text>
@@ -97,7 +97,7 @@ export const Logo: React.FC<LogoProps> = ({ className = '', variant = 'dark', sh
           </g>
 
           {/* 3. PEACOCK FEATHER */}
-          <g id="peacock-feather" transform="translate(635, 5)">
+          <g id="peacock-feather" transform="translate(835, 5)">
             <path d="M 20 200 C 45 150 70 100 85 10" stroke={featherGreen} strokeWidth="3.5" strokeLinecap="round" />
             <path d="M 25 190 C 5 180 -10 160 5 150 M 28 180 C 60 175 75 165 60 155" stroke={featherGreen} strokeWidth="1.8" opacity="0.85" />
             <path d="M 32 170 C 10 155 -5 135 12 125 M 36 160 C 70 150 82 140 68 128" stroke={featherGreenLight} strokeWidth="1.8" opacity="0.85" />

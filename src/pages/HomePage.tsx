@@ -21,7 +21,10 @@ import {
   Cpu,
   CircleDot,
   Gauge,
-  Flame
+  Flame,
+  User,
+  Mail,
+  Clock
 } from 'lucide-react';
 import { motion } from 'motion/react';
 
@@ -45,8 +48,8 @@ export const HomePage: React.FC<HomePageProps> = ({
     <div className="min-h-screen bg-white font-sans text-neutral-900 overflow-x-hidden">
       <SEOHead
         pageName="home"
-        title="Fully Automatic Digital Motor Starter With Level Controller and Protection & Fire Material | Madhav Enterprise Vadodara"
-        description="Madhav Enterprise is Vadodara's leading manufacturer of Fully Automatic Digital Motor Starters With Level Controller and Protection, Fire Material & Hydrant Valves, Butterfly Valves, and Industrial Pumps in Vasna Road, Diwalipura, Vadodara."
+        title="Fully Automatic Digital Motor Starter With Level Controller and Protection & Fire Material | Madhav Enterprise and Automation Vadodara"
+        description="Madhav Enterprise and Automation is Vadodara's leading manufacturer of Fully Automatic Digital Motor Starters With Level Controller and Protection, Fire Material & Hydrant Valves, Butterfly Valves, and Industrial Pumps in Vasna Road, Diwalipura, Vadodara."
         keywords={[
           'Fully Automatic Digital Motor Starter With Level Controller and Protection',
           'Fire Material Supplier in Vadodara',
@@ -67,7 +70,7 @@ export const HomePage: React.FC<HomePageProps> = ({
         <div className="absolute inset-0 z-0">
           <img
             src="https://lh3.googleusercontent.com/d/1mDg9XOrkXDjqRs78PV1T97pp-WQybEAN"
-            alt="Madhav Enterprise Industrial Hero Banner"
+            alt="Madhav Enterprise and Automation Industrial Hero Banner"
             className="w-full h-full object-cover object-[95%_center] sm:object-center opacity-100"
             referrerPolicy="no-referrer"
             onError={(e) => {
@@ -118,6 +121,64 @@ export const HomePage: React.FC<HomePageProps> = ({
             >
               {COMPANY_INFO.subheading}. Engineered for heavy industrial plants, chemical processing units, commercial towers, and deep groundwater extraction.
             </motion.p>
+
+            {/* Vadodara Office & Factory Card as requested */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.25 }}
+              className="bg-neutral-950/85 border border-white/15 backdrop-blur-md rounded-2xl p-5 sm:p-6 shadow-2xl max-w-xl text-left space-y-3.5"
+            >
+              <h3 className="text-sm sm:text-base font-display font-black text-white uppercase tracking-wider">
+                VADODARA OFFICE &amp; FACTORY
+              </h3>
+
+              <div className="space-y-2.5 text-xs sm:text-sm">
+                <div className="flex items-center gap-3">
+                  <User className="w-5 h-5 text-[#E86A2D] shrink-0" />
+                  <span className="font-extrabold text-white tracking-wide">
+                    MADHAVJI K. JAVIYA
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-[#E86A2D] shrink-0" />
+                  <div className="flex flex-wrap items-center gap-1.5 text-white font-medium">
+                    <a href="tel:+917041772780" className="hover:text-[#E86A2D] transition-colors">
+                      +91 70417 72780
+                    </a>
+                    <span className="text-neutral-400">/</span>
+                    <a href="tel:+919924040633" className="hover:text-[#E86A2D] transition-colors">
+                      +91 99240 40633
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <Mail className="w-5 h-5 text-[#E86A2D] shrink-0" />
+                  <a
+                    href="mailto:madhaventerprise.fire007@gmail.com"
+                    className="text-white hover:text-[#E86A2D] transition-colors font-medium break-all"
+                  >
+                    madhaventerprise.fire007@gmail.com
+                  </a>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <Clock className="w-5 h-5 text-[#E86A2D] shrink-0" />
+                  <span className="text-neutral-200">
+                    Mon - Sat: 9:00 AM - 7:00 PM
+                  </span>
+                </div>
+
+                <div className="border-t border-white/15 pt-2.5 flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-[#E86A2D] shrink-0 mt-0.5" />
+                  <span className="text-neutral-200 leading-snug">
+                    C-10, Gaurav Park, Diwalipura, Vasna Road, Vadodara- 390007, Gujarat, India
+                  </span>
+                </div>
+              </div>
+            </motion.div>
 
             {/* Hero Action Buttons */}
             <motion.div
@@ -204,7 +265,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-black">
                 <iframe
                   src="https://drive.google.com/file/d/1xXBJV4msT2zOzCz5SFNmN_rRksMzmeYO/preview"
-                  title="Madhav Enterprise Video Showcase"
+                  title="Madhav Enterprise and Automation Video Showcase"
                   className="w-full h-80 sm:h-96 rounded-2xl"
                   allow="autoplay; encrypted-media"
                   allowFullScreen
@@ -229,7 +290,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="lg:col-span-6 space-y-6">
               <div className="inline-flex items-center gap-2 bg-[#E86A2D]/10 text-[#E86A2D] px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
                 <Building2 className="w-3.5 h-3.5" />
-                <span>About Madhav Enterprise</span>
+                <span>About Madhav Enterprise and Automation</span>
               </div>
 
               <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-neutral-900 leading-tight">
@@ -237,7 +298,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               </h2>
 
               <p className="text-sm text-neutral-600 leading-relaxed">
-                Established in 2008 in Vadodara, Gujarat, <strong>Madhav Enterprise</strong> has grown into a trusted manufacturer and supplier of fully automatic digital motor starters with level controller and protection, ISI marked fire fighting materials & hydrant valves, butterfly valves, sewage pumps, and booster pressure pumps.
+                Established in 2008 in Vadodara, Gujarat, <strong>Madhav Enterprise and Automation</strong> has grown into a trusted manufacturer and supplier of fully automatic digital motor starters with level controller and protection, ISI marked fire fighting materials & hydrant valves, butterfly valves, sewage pumps, and booster pressure pumps.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-semibold text-neutral-800 pt-2">
@@ -360,7 +421,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               <span>Vadodara Manufacturing Advantage</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-neutral-900">
-              Why Engineers Choose Madhav Enterprise
+              Why Engineers Choose Madhav Enterprise and Automation
             </h2>
             <p className="text-xs sm:text-sm text-neutral-600 mt-2">
               We combine robust mechanical design, electronics testing, and direct factory distribution from Vadodara.

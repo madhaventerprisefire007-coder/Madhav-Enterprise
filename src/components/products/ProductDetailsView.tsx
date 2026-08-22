@@ -116,7 +116,7 @@ export const ProductDetailsView: React.FC<ProductDetailsViewProps> = ({
             </button>
 
             <a
-              href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hello%20Madhav%20Enterprise%20team,%20I%20am%20interested%20in%20your%20product%20${encodeURIComponent(product.name)}%20(Model:%20${product.modelNumber}).%20Please%20send%20quote.`}
+              href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hello%20Madhav%20Enterprise%20and%20Automation%20team,%20I%20am%20interested%20in%20your%20product%20${encodeURIComponent(product.name)}%20(Model:%20${product.modelNumber}).%20Please%20send%20quote.`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-3 rounded-full text-xs font-bold transition-all flex items-center gap-2 shadow-lg shadow-emerald-900/30"
@@ -173,7 +173,7 @@ export const ProductDetailsView: React.FC<ProductDetailsViewProps> = ({
               <div className="p-4 bg-amber-50 rounded-2xl border border-amber-200 text-xs text-amber-900 font-medium flex items-start gap-3">
                 <ShieldCheck className="w-5 h-5 text-[#E86A2D] shrink-0 mt-0.5" />
                 <span>
-                  <strong>Madhav Enterprise Quality Guarantee:</strong> Manufactured & tested under strict quality norms in Vadodara, Gujarat. Guaranteed performance with complete test certificates.
+                  <strong>Madhav Enterprise and Automation Quality Guarantee:</strong> Manufactured & tested under strict quality norms in Vadodara, Gujarat. Guaranteed performance with complete test certificates.
                 </span>
               </div>
             </div>
@@ -193,7 +193,7 @@ export const ProductDetailsView: React.FC<ProductDetailsViewProps> = ({
                   </span>
                 </div>
                 <p className="text-xs sm:text-sm text-neutral-600">
-                  Watch the live working video demonstration of the Madhav Enterprise Automatic Water Level Controller.
+                  Watch the live working video demonstration of the Madhav Enterprise and Automation Automatic Water Level Controller.
                 </p>
                 <div className="relative aspect-video rounded-2xl overflow-hidden bg-neutral-900 border border-neutral-200 shadow-lg">
                   <iframe
@@ -347,7 +347,7 @@ export const ProductDetailsView: React.FC<ProductDetailsViewProps> = ({
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-bold text-neutral-900">
-                    Why Choose Madhav Enterprise Vadodara
+                    Why Choose Madhav Enterprise and Automation Vadodara
                   </h3>
                   <p className="text-xs text-neutral-500">
                     Trusted industrial supplier with over 16+ years of technical experience
@@ -408,7 +408,7 @@ export const ProductDetailsView: React.FC<ProductDetailsViewProps> = ({
                   </a>
 
                   <a
-                    href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hello%20Madhav%20Enterprise,%20I%20need%20details%20for%20${encodeURIComponent(product.name)}.`}
+                    href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hello%20Madhav%20Enterprise%20and%20Automation,%20I%20need%20details%20for%20${encodeURIComponent(product.name)}.`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between p-3.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-2xl transition-colors text-xs font-bold"

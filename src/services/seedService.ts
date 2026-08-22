@@ -45,7 +45,7 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
         applications: p.applications || [],
         specifications: p.specs || [],
         keywords: [p.name, p.category, p.modelNumber],
-        metaTitle: `${p.name} - Madhav Enterprise Vadodara`,
+        metaTitle: `${p.name} - Madhav Enterprise and Automation Vadodara`,
         metaDescription: p.description.slice(0, 150),
         featured: !!p.featured,
         status: 'active',
@@ -73,7 +73,7 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
       heroTitle: 'Industrial Water Level Controllers & Butterfly Valves',
       heroSubtitle: 'Vadodara’s Leading Manufacturer & Supplier of Precision Flow Controls, Sewage Dewatering Pumps, and Hydro-Pneumatic Pressure Boosters.',
       heroImage: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
-      aboutPreview: 'Madhav Enterprise has been delivering premium industrial automation, water level logic controllers, and high-pressure fluid valves in Vadodara, Gujarat since 2008.',
+      aboutPreview: 'Madhav Enterprise and Automation has been delivering premium industrial automation, water level logic controllers, and high-pressure fluid valves in Vadodara, Gujarat since 2008.',
       whyChooseUs: [
         { id: '1', title: '100% Quality Tested', description: 'Strict quality control & pressure test verification before delivery.', icon: 'ShieldCheck' },
         { id: '2', title: '16+ Years Industry Expertise', description: 'Trusted by over 1,500+ chemical, pharmaceutical, and textile plants in Gujarat.', icon: 'Award' },
@@ -98,7 +98,7 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
 
     // 4. Seed About Doc
     const aboutData: FirestoreAbout = {
-      companyDescription: 'Madhav Enterprise is a premier manufacturer and technical distributor of industrial water level controllers, stainless steel valves, monoblock pumps, and CPVC piping systems based in Vadodara, Gujarat.',
+      companyDescription: 'Madhav Enterprise and Automation is a premier manufacturer and technical distributor of industrial water level controllers, stainless steel valves, monoblock pumps, and CPVC piping systems based in Vadodara, Gujarat.',
       mission: 'To empower industries and commercial buildings with zero-water-loss automation, superior fluid handling equipment, and uncompromised industrial safety.',
       vision: 'To be India’s most reliable single-source brand for water level logic automation and heavy-duty butterfly valve engineering.',
       values: [
@@ -142,7 +142,7 @@ export async function seedFirestoreIfEmpty(): Promise<boolean> {
 
     // 8. Seed Settings Doc
     const settingsData: FirestoreSettings = {
-      websiteName: 'Madhav Enterprise',
+      websiteName: 'Madhav Enterprise and Automation',
       logo: '/logo.png',
       favicon: '/favicon.ico',
       primaryColor: '#E86A2D',

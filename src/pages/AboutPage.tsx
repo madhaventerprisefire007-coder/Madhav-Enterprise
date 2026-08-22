@@ -29,10 +29,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
     <div className="min-h-screen bg-white font-sans text-neutral-900">
       <SEOHead
         pageName="about"
-        title="About Madhav Enterprise | Industrial Equipment Manufacturer Vadodara"
-        description="Learn about Madhav Enterprise - Vadodara's benchmark manufacturer & supplier of Automatic Water Level Controllers, Butterfly Valves & Pumps located at Diwalipura / Vasna Road, Vadodara."
+        title="About Madhav Enterprise and Automation | Industrial Equipment Manufacturer Vadodara"
+        description="Learn about Madhav Enterprise and Automation - Vadodara's benchmark manufacturer & supplier of Automatic Water Level Controllers, Butterfly Valves & Pumps located at Diwalipura / Vasna Road, Vadodara."
         keywords={[
-          'About Madhav Enterprise Vadodara',
+          'About Madhav Enterprise and Automation Vadodara',
           'Industrial Equipment Manufacturer Gujarat',
           'Water Level Controller Factory Vadodara',
           'Butterfly Valve Supplier Diwalipura'
@@ -48,7 +48,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
             <span>Vadodara, Gujarat Manufacturing Legacy</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
-            About Madhav Enterprise Vadodara
+            About Madhav Enterprise and Automation Vadodara
           </h1>
           <p className="text-sm md:text-base text-neutral-300 leading-relaxed">
             Leading manufacturer and supplier of Automatic Water Level Controllers, Butterfly Valves, Sewage Dewatering Pumps, Submersible Systems, and Hydro Boosters based in Vadodara, Gujarat.
@@ -72,7 +72,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
               </h2>
 
               <p className="text-sm text-neutral-600 leading-relaxed">
-                Founded in Vadodara—the engineering and industrial capital of Gujarat—<strong>Madhav Enterprise</strong> started with a mission to solve water wastage and pump burnouts across regional manufacturing plants and commercial properties.
+                Founded in Vadodara—the engineering and industrial capital of Gujarat—<strong>Madhav Enterprise and Automation</strong> started with a mission to solve water wastage and pump burnouts across regional manufacturing plants and commercial properties.
               </p>
 
               <p className="text-sm text-neutral-600 leading-relaxed">
@@ -95,7 +95,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                 <img
                   src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80"
-                  alt="Madhav Enterprise Assembly Floor Vadodara"
+                  alt="Madhav Enterprise and Automation Assembly Floor Vadodara"
                   className="w-full h-96 object-cover"
                   onError={(e) => {
                     e.currentTarget.src = "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80";
@@ -154,7 +154,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
               Our 4-Stage Testing Rigor
             </h2>
             <p className="text-xs sm:text-sm text-neutral-600 mt-2">
-              Every unit dispatched from Madhav Enterprise Vadodara undergoes strict quality verification.
+              Every unit dispatched from Madhav Enterprise and Automation Vadodara undergoes strict quality verification.
             </p>
           </div>
 

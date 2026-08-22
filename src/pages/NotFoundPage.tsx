@@ -38,7 +38,7 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = ({
       <SEOHead
         pageName="404"
         title="404 - Page Not Found"
-        description="The requested page could not be located on Madhav Enterprise Vadodara website. Search our industrial product catalog."
+        description="The requested page could not be located on Madhav Enterprise and Automation Vadodara website. Search our industrial product catalog."
         noIndex={true}
       />
 
@@ -125,7 +125,7 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = ({
             className="inline-flex items-center gap-2 bg-neutral-900 hover:bg-neutral-800 text-white px-8 py-3.5 rounded-full text-xs font-bold transition-all shadow-lg shadow-neutral-900/10 hover:scale-[1.02]"
           >
             <Home className="w-4 h-4 text-[#E86A2D]" />
-            <span>Return to Madhav Enterprise Homepage</span>
+            <span>Return to Madhav Enterprise and Automation Homepage</span>
           </button>
         </div>
       </div>

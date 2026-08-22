@@ -67,7 +67,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     setMeta('property', 'og:url', seo.canonicalUrl);
     setMeta('property', 'og:type', seo.ogType);
     setMeta('property', 'og:image', seo.ogImage);
-    setMeta('property', 'og:site_name', 'Madhav Enterprise Vadodara');
+    setMeta('property', 'og:site_name', 'Madhav Enterprise and Automation Vadodara');
 
     // Update Twitter Card Meta Tags
     setMeta('name', 'twitter:card', 'summary_large_image');

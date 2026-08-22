@@ -42,7 +42,7 @@ export const CallNowModal: React.FC<CallNowModalProps> = ({ isOpen, onClose }) =
               <span>Vadodara Sales & Support Hotline</span>
             </div>
             <h3 className="text-xl font-display font-bold text-white">
-              Connect with Madhav Enterprise
+              Connect with Madhav Enterprise and Automation
             </h3>
             <p className="text-xs text-neutral-300 mt-1">
               Speak directly with our technical application engineer.
@@ -94,7 +94,7 @@ export const CallNowModal: React.FC<CallNowModalProps> = ({ isOpen, onClose }) =
 
             {/* WhatsApp Action Card */}
             <a
-              href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hello%20Madhav%20Enterprise%20Vadodara,%20I%20want%20to%20inquire%20about%20your%20products.`}
+              href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hello%20Madhav%20Enterprise%20and%20Automation%20Vadodara,%20I%20want%20to%20inquire%20about%20your%20products.`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between p-4 bg-emerald-50 border border-emerald-200 rounded-2xl hover:bg-emerald-100/70 transition-all group"

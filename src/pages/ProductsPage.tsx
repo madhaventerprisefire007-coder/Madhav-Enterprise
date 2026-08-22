@@ -79,9 +79,9 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
   const isDetail = !!internalSelectedProduct;
   const currentTitle = isDetail
     ? (internalSelectedProduct.slug === 'fire-material-supplier-vadodara'
-        ? `Fire Material Supplier in Vadodara | Madhav Enterprise`
+        ? `Fire Material Supplier in Vadodara | Madhav Enterprise and Automation`
         : (internalSelectedProduct.slug === 'fully-automatic-digital-motor-starter-with-level-controller-and-protection' || internalSelectedProduct.slug === 'reliable-water-pumping-system-vadodara')
-        ? `Fully Automatic Digital Motor Starter with Level Controller and Protection in Vadodara | Madhav Enterprise`
+        ? `Fully Automatic Digital Motor Starter with Level Controller and Protection in Vadodara | Madhav Enterprise and Automation`
         : `${internalSelectedProduct.name} - ${
             internalSelectedProduct.category === 'Butterfly Valve'
               ? 'Butterfly Valve Supplier'
@@ -93,18 +93,18 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
           } Vadodara`)
     : currentDivision
     ? (currentDivision.category === 'Butterfly Valve'
-        ? `Butterfly Valve Supplier in Vadodara | Madhav Enterprise`
+        ? `Butterfly Valve Supplier in Vadodara | Madhav Enterprise and Automation`
         : currentDivision.category === 'Sewage Pump'
-        ? `Sewage Pump Supplier in Vadodara | Madhav Enterprise`
-        : `${currentDivision.displayName} Manufacturer & Supplier in Vadodara | Madhav Enterprise`)
+        ? `Sewage Pump Supplier in Vadodara | Madhav Enterprise and Automation`
+        : `${currentDivision.displayName} Manufacturer & Supplier in Vadodara | Madhav Enterprise and Automation`)
     : 'Industrial Water Level Controllers, Valves & Pumps Catalog Vadodara';
 
   const currentDesc = isDetail
-    ? `${internalSelectedProduct.description.slice(0, 155)}... Buy ${internalSelectedProduct.name} directly from Madhav Enterprise Vadodara.`
+    ? `${internalSelectedProduct.description.slice(0, 155)}... Buy ${internalSelectedProduct.name} directly from Madhav Enterprise and Automation Vadodara.`
     : currentDivision
     ? (currentDivision.category === 'Butterfly Valve' || currentDivision.category === 'Sewage Pump'
-        ? `Explore premier ${currentDivision.displayName} supplied by Madhav Enterprise in Vadodara, Gujarat. Get instant industrial quotes & specs.`
-        : `Explore premier ${currentDivision.displayName} manufactured and supplied by Madhav Enterprise in Vadodara, Gujarat. Get instant industrial quotes & specs.`)
+        ? `Explore premier ${currentDivision.displayName} supplied by Madhav Enterprise and Automation in Vadodara, Gujarat. Get instant industrial quotes & specs.`
+        : `Explore premier ${currentDivision.displayName} manufactured and supplied by Madhav Enterprise and Automation in Vadodara, Gujarat. Get instant industrial quotes & specs.`)
     : 'Complete catalog of Automatic Water Level Controllers, Butterfly Valves, Sewage Pumps & Booster Systems in Vadodara.';
 
   const canonicalPath = isDetail

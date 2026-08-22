@@ -167,7 +167,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
             <div className="flex items-center gap-2 w-full sm:w-auto">
               <a
-                href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hi%20Madhav%20Enterprise,%20I%20would%20like%20details%20and%20pricing%20for%20${encodeURIComponent(product.name)}%20(Model:%20${product.modelNumber}).`}
+                href={`https://wa.me/${COMPANY_INFO.whatsappNumber}?text=Hi%20Madhav%20Enterprise%20and%20Automation,%20I%20would%20like%20details%20and%20pricing%20for%20${encodeURIComponent(product.name)}%20(Model:%20${product.modelNumber}).`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-full text-xs font-bold transition-colors w-1/2 sm:w-auto"

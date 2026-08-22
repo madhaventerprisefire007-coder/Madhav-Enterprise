@@ -35,7 +35,7 @@ export const WaterLevelCalculator: React.FC<WaterLevelCalculatorProps> = ({ onOp
               Water Level Controller Sizing & Savings Estimator
             </h3>
             <p className="text-xs md:text-sm text-neutral-400 mt-1">
-              Select your plant or facility parameters to find the exact Madhav Enterprise controller model and projected energy savings.
+              Select your plant or facility parameters to find the exact Madhav Enterprise and Automation controller model and projected energy savings.
             </p>
           </div>
 
