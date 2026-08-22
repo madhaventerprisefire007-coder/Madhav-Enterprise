@@ -84,17 +84,17 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-2xl bg-black/45 sm:bg-black/40 backdrop-blur-md p-6 sm:p-8 lg:p-10 rounded-3xl border border-white/10 shadow-2xl space-y-6">
+          <div className="max-w-2xl bg-transparent sm:bg-black/40 sm:backdrop-blur-md p-0 sm:p-8 lg:p-10 sm:rounded-3xl sm:border sm:border-white/10 sm:shadow-2xl space-y-5 sm:space-y-6">
             
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 bg-[#E86A2D]/20 border border-[#E86A2D]/40 backdrop-blur-md px-4 py-1.5 rounded-full"
+              className="inline-flex items-center gap-2 bg-[#E86A2D]/20 border border-[#E86A2D]/40 backdrop-blur-md px-3.5 py-1.5 rounded-full"
             >
               <div className="w-2 h-2 rounded-full bg-[#E86A2D] animate-ping" />
-              <span className="text-xs font-extrabold uppercase tracking-widest text-[#E86A2D]">
+              <span className="text-[11px] sm:text-xs font-extrabold uppercase tracking-widest text-[#E86A2D]">
                 Vadodara's Trusted Industrial Manufacturer & Supplier
               </span>
             </motion.div>
@@ -104,7 +104,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-black text-white leading-[1.2] tracking-tight drop-shadow-md"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-black text-white leading-[1.2] tracking-tight drop-shadow-lg"
             >
               Fully Automatic Digital <span className="text-[#E86A2D] underline decoration-[#E86A2D]/40 underline-offset-8">Motor Starter</span> With Level Controller & Protection and <span className="text-[#E86A2D]">Fire Material</span>
             </motion.h1>
@@ -114,7 +114,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-sm sm:text-base md:text-lg text-neutral-200 font-medium leading-relaxed drop-shadow-sm"
+              className="text-sm sm:text-base md:text-lg text-neutral-200 font-medium leading-relaxed drop-shadow-md"
             >
               {COMPANY_INFO.subheading}. Engineered for heavy industrial plants, chemical processing units, commercial towers, and deep groundwater extraction.
             </motion.p>
@@ -124,24 +124,24 @@ export const HomePage: React.FC<HomePageProps> = ({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="pt-2 flex flex-wrap items-center gap-4"
+              className="pt-2 flex flex-wrap items-center gap-3 sm:gap-4"
             >
               {/* Get Quote Button */}
               <button
                 onClick={() => onOpenQuoteModal()}
-                className="inline-flex items-center gap-3 bg-[#E86A2D] hover:bg-[#d0591f] text-white px-7 py-3.5 rounded-full text-sm font-extrabold transition-all shadow-xl shadow-[#E86A2D]/30 hover:scale-[1.03] active:scale-[0.98] group"
+                className="inline-flex items-center gap-2.5 sm:gap-3 bg-[#E86A2D] hover:bg-[#d0591f] text-white px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-xs sm:text-sm font-extrabold transition-all shadow-xl shadow-[#E86A2D]/30 hover:scale-[1.03] active:scale-[0.98] group"
               >
-                <FileText className="w-5 h-5" />
+                <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>Get Factory Quote</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
               </button>
 
               {/* Call Now Button */}
               <button
                 onClick={onOpenCallModal}
-                className="inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md px-7 py-3.5 rounded-full text-sm font-extrabold transition-all hover:scale-[1.03]"
+                className="inline-flex items-center gap-2.5 sm:gap-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-xs sm:text-sm font-extrabold transition-all hover:scale-[1.03]"
               >
-                <Phone className="w-5 h-5 text-[#E86A2D]" />
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-[#E86A2D]" />
                 <span>Call Now</span>
               </button>
             </motion.div>
@@ -151,7 +151,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="pt-4 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs text-neutral-200"
+              className="pt-4 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3 text-[11px] sm:text-xs text-neutral-200"
             >
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#E86A2D] shrink-0" />
