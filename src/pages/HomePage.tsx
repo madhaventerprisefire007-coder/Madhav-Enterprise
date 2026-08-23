@@ -156,12 +156,14 @@ export const HomePage: React.FC<HomePageProps> = ({
 
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-[#E86A2D] shrink-0" />
-                  <a
-                    href="mailto:madhaventerprise.fire007@gmail.com"
-                    className="text-white hover:text-[#E86A2D] transition-colors font-medium break-all"
-                  >
-                    madhaventerprise.fire007@gmail.com
-                  </a>
+                  <div className="flex flex-wrap items-center gap-1.5 text-white font-medium break-all">
+                    <a
+                      href="mailto:madhaventerprise7298@gmail.com"
+                      className="text-white hover:text-[#E86A2D] transition-colors"
+                    >
+                      madhaventerprise7298@gmail.com
+                    </a>
+                  </div>
                 </div>
 
                 <div className="flex items-center gap-3">
