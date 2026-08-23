@@ -250,7 +250,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               <p className="text-xs text-neutral-400 uppercase font-semibold tracking-wider mt-1">Pressure & Hydro Tested</p>
             </div>
             <div className="p-4 rounded-2xl bg-white/5 border border-white/5">
-              <p className="text-3xl md:text-4xl font-display font-extrabold text-white">24 Hours</p>
+              <p className="text-3xl md:text-4xl font-display font-extrabold text-white">12 Hours</p>
               <p className="text-xs text-neutral-400 uppercase font-semibold tracking-wider mt-1">Dispatch Across Gujarat</p>
             </div>
           </div>
