@@ -98,36 +98,16 @@ export const HomePage: React.FC<HomePageProps> = ({
             >
               <div className="w-2 h-2 rounded-full bg-[#E86A2D] animate-ping" />
               <span className="text-[11px] sm:text-xs font-extrabold uppercase tracking-widest text-[#E86A2D]">
-                Vadodara's Trusted Industrial Manufacturer & Supplier
+                Vadodara's Trusted Industrial Supplier
               </span>
             </motion.div>
 
-            {/* Main Headline */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-black text-white leading-[1.2] tracking-tight drop-shadow-lg"
-            >
-              Fully Automatic Digital with <span className="text-[#E86A2D]">Panel Starter</span> and <span className="text-[#E86A2D]">Level Controller</span>, <span className="text-[#E86A2D]">Submersible Pump</span>, <span className="text-[#E86A2D]">Pressure System</span>, <span className="text-[#E86A2D]">Butterfly Valve</span>, <span className="text-[#E86A2D]">Fire Material</span>
-            </motion.h1>
-
-            {/* Subheading */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-sm sm:text-base md:text-lg text-neutral-200 font-medium leading-relaxed drop-shadow-md"
-            >
-              {COMPANY_INFO.subheading}. Engineered for heavy industrial plants, chemical processing units, commercial towers, and deep groundwater extraction.
-            </motion.p>
-
-            {/* Vadodara Office & Factory Card as requested */}
+            {/* Vadodara Office & Factory Card - Placed directly below 'Vadodara's Trusted Industrial Supplier' */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.25 }}
-              className="bg-neutral-950/85 border border-white/15 backdrop-blur-md rounded-2xl p-5 sm:p-6 shadow-2xl max-w-xl text-left space-y-3.5"
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-[#0e0e0e]/95 border border-neutral-800 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 shadow-2xl max-w-xl text-left space-y-3.5 ring-1 ring-white/10"
             >
               <h3 className="text-sm sm:text-base font-display font-black text-white uppercase tracking-wider">
                 VADODARA OFFICE &amp; FACTORY
@@ -173,7 +153,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   </span>
                 </div>
 
-                <div className="border-t border-white/15 pt-2.5 flex items-start gap-3">
+                <div className="border-t border-white/10 pt-2.5 flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-[#E86A2D] shrink-0 mt-0.5" />
                   <span className="text-neutral-200 leading-snug">
                     C-10, Gaurav Park, Diwalipura, Vasna Road, Vadodara- 390007, Gujarat, India
@@ -181,6 +161,26 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </div>
               </div>
             </motion.div>
+
+            {/* Main Headline */}
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-black text-white leading-[1.2] tracking-tight drop-shadow-lg"
+            >
+              Fully Automatic Digital with <span className="text-[#E86A2D]">Panel Starter</span> and <span className="text-[#E86A2D]">Level Controller</span>, <span className="text-[#E86A2D]">Submersible Pump</span>, <span className="text-[#E86A2D]">Pressure System</span>, <span className="text-[#E86A2D]">Butterfly Valve</span>, <span className="text-[#E86A2D]">Fire Material</span>
+            </motion.h1>
+
+            {/* Subheading */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-sm sm:text-base md:text-lg text-neutral-200 font-medium leading-relaxed drop-shadow-md"
+            >
+              {COMPANY_INFO.subheading}. Engineered for heavy industrial plants, chemical processing units, commercial towers, and deep groundwater extraction.
+            </motion.p>
 
             {/* Hero Action Buttons */}
             <motion.div
