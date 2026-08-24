@@ -91,21 +91,17 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange, onOpenQuoteM
               </div>
             </div>
 
-            <div className="lg:col-span-6">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <div className="lg:col-span-6 flex items-center justify-center">
+              <div className="w-full min-h-[340px] bg-white rounded-3xl border border-neutral-200 shadow-xl p-8 sm:p-14 flex items-center justify-center transition-all duration-300 hover:shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80"
-                  alt="Madhav Enterprise and Automation Assembly Floor Vadodara"
-                  className="w-full h-96 object-cover"
+                  src="https://lh3.googleusercontent.com/d/1hWnzMb53ymJux2aTUhpXNc9zUog5Hbr1"
+                  alt="Madhav Enterprise and Automation Logo"
+                  className="max-h-60 sm:max-h-72 w-auto max-w-full object-contain transition-transform duration-300 hover:scale-105"
+                  referrerPolicy="no-referrer"
                   onError={(e) => {
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80";
+                    e.currentTarget.src = "https://drive.google.com/uc?export=view&id=1hWnzMb53ymJux2aTUhpXNc9zUog5Hbr1";
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <p className="text-xs font-mono text-[#E86A2D]">Vadodara Manufacturing Facility</p>
-                  <p className="text-base font-bold text-white">State-of-the-Art Electronics & Pressure Testing Lab</p>
-                </div>
               </div>
             </div>
 
