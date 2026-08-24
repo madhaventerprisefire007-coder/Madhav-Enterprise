@@ -262,16 +262,18 @@ export const HomePage: React.FC<HomePageProps> = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
-            {/* Left Video Cluster */}
+            {/* Left Image Cluster */}
             <div className="lg:col-span-6 relative">
-              <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-black">
-                <iframe
-                  src="https://drive.google.com/file/d/1xXBJV4msT2zOzCz5SFNmN_rRksMzmeYO/preview"
-                  title="Madhav Enterprise and Automation Video Showcase"
-                  className="w-full h-80 sm:h-96 rounded-2xl"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                ></iframe>
+              <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-neutral-900 group">
+                <img
+                  src="https://lh3.googleusercontent.com/d/1fFFvgGNd4eJtNnwTT8tHdKzd_ZAl6wDP"
+                  alt="Madhav Enterprise and Automation Vadodara"
+                  className="w-full h-80 sm:h-96 object-cover transition-transform duration-500 group-hover:scale-105"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://drive.google.com/uc?export=view&id=1fFFvgGNd4eJtNnwTT8tHdKzd_ZAl6wDP";
+                  }}
+                />
               </div>
 
               {/* Floating Badge */}
