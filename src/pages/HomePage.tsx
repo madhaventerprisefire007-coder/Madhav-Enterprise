@@ -89,20 +89,7 @@ export const HomePage: React.FC<HomePageProps> = ({
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-2xl bg-transparent sm:bg-black/40 sm:backdrop-blur-md p-0 sm:p-8 lg:p-10 sm:rounded-3xl sm:border sm:border-white/10 sm:shadow-2xl space-y-5 sm:space-y-6">
             
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 bg-[#E86A2D]/20 border border-[#E86A2D]/40 backdrop-blur-md px-3.5 py-1.5 rounded-full"
-            >
-              <div className="w-2 h-2 rounded-full bg-[#E86A2D] animate-ping" />
-              <span className="text-[11px] sm:text-xs font-extrabold uppercase tracking-widest text-[#E86A2D]">
-                Vadodara's Trusted Industrial Supplier
-              </span>
-            </motion.div>
-
-            {/* Vadodara Office & Factory Card - Placed directly below 'Vadodara's Trusted Industrial Supplier' */}
+            {/* Vadodara Office Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -110,7 +97,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               className="bg-[#0e0e0e]/95 border border-neutral-800 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 shadow-2xl max-w-xl text-left space-y-3.5 ring-1 ring-white/10"
             >
               <h3 className="text-sm sm:text-base font-display font-black text-white uppercase tracking-wider">
-                VADODARA OFFICE &amp; FACTORY
+                VADODARA OFFICE
               </h3>
 
               <div className="space-y-2.5 text-xs sm:text-sm">
@@ -250,8 +237,8 @@ export const HomePage: React.FC<HomePageProps> = ({
               <p className="text-xs text-neutral-400 uppercase font-semibold tracking-wider mt-1">Pressure & Hydro Tested</p>
             </div>
             <div className="p-4 rounded-2xl bg-white/5 border border-white/5">
-              <p className="text-3xl md:text-4xl font-display font-extrabold text-white">12 Hours</p>
-              <p className="text-xs text-neutral-400 uppercase font-semibold tracking-wider mt-1">Dispatch Across Gujarat</p>
+              <p className="text-2xl sm:text-3xl md:text-4xl font-display font-extrabold text-white">Dispatch</p>
+              <p className="text-xs text-neutral-400 uppercase font-semibold tracking-wider mt-1">Across Gujarat</p>
             </div>
           </div>
         </div>
