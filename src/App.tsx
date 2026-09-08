@@ -7,6 +7,7 @@ import { AboutPage } from './pages/AboutPage';
 import { ProductsPage } from './pages/ProductsPage';
 import { ContactPage } from './pages/ContactPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { Temporary404View } from './components/Temporary404View';
 import { QuoteModal } from './components/QuoteModal';
 import { CallNowModal } from './components/CallNowModal';
 import { AdminLoginModal } from './components/auth/AdminLoginModal';
@@ -17,6 +18,17 @@ import { MessageSquare, Phone, ArrowUp, RefreshCw, AlertTriangle } from 'lucide-
 import { motion, AnimatePresence } from 'motion/react';
 
 export default function App() {
+  // Temporary 404 Error State (User requested: "ama mare thodo time 404 ni error add kari do")
+  const [is404Active, setIs404Active] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('live') === 'true' || params.get('preview') === 'true') {
+        return false;
+      }
+    }
+    return true;
+  });
+
   const [currentPage, setCurrentPage] = useState<PageType>('home');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedCategory, setSelectedCategory] = useState<ProductCategory>('All');
@@ -228,9 +240,30 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // If 404 error mode is active, render full-screen 404 error view
+  if (is404Active) {
+    return <Temporary404View onBypass={() => setIs404Active(false)} />;
+  }
+
   return (
     <div className="min-h-screen flex flex-col bg-white text-neutral-900 selection:bg-[#E86A2D]/20 selection:text-[#E86A2D]">
       
+      {/* 404 Mode Preview Notification Banner for Site Owner */}
+      <div className="bg-neutral-900 text-white text-xs py-2 px-4 flex flex-col sm:flex-row items-center justify-between z-50 border-b border-neutral-800">
+        <div className="flex items-center gap-2 mb-1.5 sm:mb-0">
+          <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping" />
+          <span className="text-neutral-300">
+            <strong>Preview Mode:</strong> 404 Error page is temporarily paused in your session. Visitors currently see the 404 error page.
+          </span>
+        </div>
+        <button
+          onClick={() => setIs404Active(true)}
+          className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded text-[11px] font-bold transition-colors shadow"
+        >
+          Re-enable 404 Error
+        </button>
+      </div>
+
       {/* Sticky Header Navigation */}
       <Navbar
         currentPage={currentPage}
